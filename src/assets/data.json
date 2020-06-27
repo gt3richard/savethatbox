@@ -1,0 +1,709 @@
+[
+	{
+		"name": "Abercrombie",
+		"link": "abercrombie.com",
+		"logo": "822.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 24 2020",
+		"cat": ["Clothing"]
+	},
+	{
+		"name": "Adidas",
+		"link": "adidas.com",
+		"logo": "823.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 24 2020",
+		"cat": ["Shoes"]
+	},
+	{
+		"name": "Amazon",
+		"link": "amazon.com",
+		"logo": "801.png",
+		"nrf": true,
+		"gn": false,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Ann Taylor",
+		"link": "anntaylor.com",
+		"logo": "824.png",
+		"gn": true,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 24 2020",
+		"cat": ["Clothing"]
+	},
+	{
+		"name": "Anthropologie",
+		"link": "anthropologie.com",
+		"logo": "825.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 24 2020",
+		"cat": ["Home"]
+	},
+	{
+		"name": "Apple",
+		"link": "apple.com",
+		"logo": "826.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 24 2020",
+		"cat": ["Electronics"]
+	},
+	{
+		"name": "Aritzia",
+		"link": "aritzia.com/us/en",
+		"logo": "827.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 24 2020",
+		"cat": ["Clothing"]
+	},
+	{
+		"name": "BH Photo Video",
+		"link": "bhphotovideo.com",
+		"logo": "806.png",
+		"nrf": false,
+		"gn": false,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 21 2020",
+		"cat": ["Electronics"]
+	},
+	{
+		"name": "Backcountry",
+		"link": "backcountry.com",
+		"logo": "802.png",
+		"nrf": true,
+		"gn": false,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Banana Republic",
+		"link": "bananarepublic.com",
+		"logo": "803.png",
+		"nrf": true,
+		"gn": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Bed Bath and Beyond",
+		"link": "bedbathandbeyond.com",
+		"logo": "804.png",
+		"nrf": true,
+		"gn": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Best Buy",
+		"link": "bestbuy.com",
+		"logo": "805.png",
+		"nrf": true,
+		"gn": false,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Bloomingdales",
+		"link": "bloomingdales.com",
+		"logo": "828.png",
+		"gn": true,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Bonobos",
+		"link": "bonobos.com/",
+		"logo": "807.png",
+		"nrf": true,
+		"gn": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 20 2020"
+	},
+	{
+		"name": "Buy Buy Baby",
+		"link": "buybuybaby.com",
+		"logo": "869.png",
+		"gn": true,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Chicos",
+		"link": "chicos.com",
+		"logo": "829.png",
+		"gn": true,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Club Monaco",
+		"link": "clubmonaco.com",
+		"logo": "830.jpg",
+		"gn": false,
+		"nrf": true,
+		"sl": true,
+		"frs": false,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Cole Haan",
+		"link": "colehaan.com",
+		"logo": "831.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Crate and Barrel",
+		"link": "crateandbarrel.com",
+		"logo": "808.png",
+		"nrf": true,
+		"gn": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Diesel",
+		"link": "shop.diesel.com",
+		"logo": "832.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Disney",
+		"link": "shopdisney.com",
+		"logo": "833.png",
+		"gn": false,
+		"nrf": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Ecco",
+		"link": "us.ecco.com",
+		"logo": "834.png",
+		"gn": false,
+		"nrf": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Express",
+		"link": "express.com",
+		"logo": "835.png",
+		"gn": false,
+		"nrf": true,
+		"sl": true,
+		"frs": false,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "FootLocker",
+		"link": "footlocker.com",
+		"logo": "836.png",
+		"gn": false,
+		"nrf": true,
+		"sl": true,
+		"frs": false,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Forever 21",
+		"link": "forever21.com",
+		"logo": "868.jpg",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Fossil",
+		"link": "fossil.com",
+		"logo": "837.png",
+		"gn": true,
+		"nrf": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Free People",
+		"link": "freepeople.com",
+		"logo": "838.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Gap",
+		"link": "gap.com",
+		"logo": "809.png",
+		"nrf": true,
+		"gn": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Guess",
+		"link": "guess.com",
+		"logo": "839.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "H&M HM",
+		"link": "hm.com/us",
+		"logo": "840.png",
+		"gn": false,
+		"nrf": true,
+		"sl": true,
+		"frs": false,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Home Depot",
+		"link": "homedepot.com",
+		"logo": "810.png",
+		"nrf": true,
+		"gn": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Icebreaker",
+		"link": "icebreaker.com",
+		"logo": "811.png",
+		"nrf": true,
+		"gn": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "JCrew",
+		"link": "jcrew.com",
+		"logo": "841.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 24 2020"
+	},
+	{
+		"name": "Joes Jeans",
+		"link": "joesjeans.com",
+		"logo": "842.png",
+		"gn": false,
+		"nrf": true,
+		"frs": false,
+		"sl": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Johnston Murphy",
+		"link": "johnstonmurphy.com",
+		"logo": "843.png",
+		"nrf": true,
+		"gn": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Journeys",
+		"link": "journeys.com",
+		"logo": "844.png",
+		"gn": true,
+		"nrf": true,
+		"frs": false,
+		"sl": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Kate Spade",
+		"link": "katespade.com",
+		"logo": "845.png",
+		"gn": false,
+		"nrf": true,
+		"frs": true,
+		"sl": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Kohls",
+		"link": "kohls.com",
+		"logo": "870.png",
+		"gn": false,
+		"nrf": true,
+		"sl": true,
+		"frs": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Lacoste",
+		"link": "lacoste.com",
+		"logo": "846.png",
+		"gn": false,
+		"nrf": true,
+		"frs": true,
+		"sl": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Lowes",
+		"link": "lowes.com",
+		"logo": "812.png",
+		"nrf": true,
+		"gn": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Lululemon",
+		"link": "shop.lululemon.com",
+		"logo": "847.png",
+		"gn": false,
+		"nrf": true,
+		"frs": true,
+		"sl": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "MAC Cosmetrics",
+		"link": "maccosmetics.com",
+		"logo": "848.png",
+		"gn": true,
+		"nrf": true,
+		"frs": true,
+		"sl": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Macys",
+		"link": "macys.com",
+		"logo": "813.png",
+		"nrf": true,
+		"gn": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Madewell",
+		"link": "madewell.com",
+		"logo": "849.png",
+		"gn": false,
+		"nrf": true,
+		"frs": false,
+		"sl": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Michael Kors",
+		"link": "michaelkors.com",
+		"logo": "850.png",
+		"gn": false,
+		"nrf": true,
+		"frs": true,
+		"sl": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Michaels",
+		"link": "michaels.com",
+		"logo": "867.png",
+		"gn": true,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "New Balance",
+		"link": "newbalance.com",
+		"logo": "851.png",
+		"gn": false,
+		"nrf": true,
+		"frs": true,
+		"sl": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Newegg",
+		"link": "newegg.com",
+		"logo": "814.png",
+		"nrf": false,
+		"gn": false,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Nike",
+		"link": "nike.com",
+		"logo": "852.png",
+		"gn": false,
+		"nrf": true,
+		"frs": true,
+		"sl": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Nordstrom",
+		"link": "shop.nordstrom.com",
+		"logo": "815.png",
+		"nrf": true,
+		"gn": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 20 2020"
+	},
+	{
+		"name": "Old Navy",
+		"link": "oldnavy.com",
+		"logo": "816.png",
+		"nrf": true,
+		"gn": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Origins",
+		"link": "origins.com",
+		"logo": "854.png",
+		"gn": true,
+		"nrf": true,
+		"frs": true,
+		"sl": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Patagonia",
+		"link": "patagonia.com",
+		"logo": "817.png",
+		"nrf": true,
+		"gn": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Pottery Barn",
+		"link": "potterybarn.com",
+		"logo": "818.png",
+		"nrf": true,
+		"gn": false,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Ralph Lauren",
+		"link": "ralphlauren.com",
+		"logo": "855.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Scotch Soda",
+		"link": "scotch-soda.com",
+		"logo": "856.png",
+		"gn": true,
+		"nrf": true,
+		"sl": true,
+		"frs": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Sephora",
+		"link": "sephora.com",
+		"logo": "857.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Steve Madden",
+		"link": "stevemadden.com",
+		"logo": "858.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Sur La Table",
+		"link": "surlatable.com",
+		"logo": "859.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Target",
+		"link": "target.com",
+		"logo": "819.png",
+		"nrf": true,
+		"gn": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "The North Face",
+		"link": "thenorthface.com",
+		"logo": "853.png",
+		"gn": false,
+		"nrf": true,
+		"frs": true,
+		"sl": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Tillys",
+		"link": "tillys.com",
+		"logo": "866.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Ulta Beauty",
+		"link": "ulta.com",
+		"logo": "865.png",
+		"gn": true,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Uniqlo",
+		"link": "uniqlo.com",
+		"logo": "860.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Vans",
+		"link": "vans.com",
+		"logo": "861.png",
+		"gn": false,
+		"nrf": true,
+		"sl": true,
+		"frs": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Victorias Secret",
+		"link": "victoriassecret.com",
+		"logo": "862.png",
+		"gn": true,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "West Elm",
+		"link": "westelm.com",
+		"logo": "820.png",
+		"nrf": true,
+		"gn": false,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Williams Sonoma",
+		"link": "williams-sonoma.com",
+		"logo": "821.png",
+		"nrf": true,
+		"gn": false,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 21 2020"
+	},
+	{
+		"name": "Z Gallerie",
+		"link": "zgallerie.com",
+		"logo": "863.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": false,
+		"lu": "Jun 25 2020"
+	},
+	{
+		"name": "Zara",
+		"link": "zara.com",
+		"logo": "864.png",
+		"gn": false,
+		"nrf": true,
+		"sl": false,
+		"frs": true,
+		"lu": "Jun 25 2020"
+	}
+]

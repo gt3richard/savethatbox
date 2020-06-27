@@ -1,0 +1,18 @@
+{
+    "greater_than_90": {
+        "text": "90 Day Returns or More",
+        "tooltip": "Returns are accepted at least 90 days from date of purchase if in unused condition."
+    },
+    "shipping_label": {
+        "text": "Included Shipping Label",
+        "tooltip": "A printed shipping label is included with your shipment. No at home printer needed."
+    },
+    "no_restocking_fee": {
+        "text": "No Restocking Fee",
+        "tooltip": "No restocking fees for majority of returns."
+    },
+    "free_return_shipping": {
+        "text": "Free Return Shipping",
+        "tooltip": "The return shipping is free."
+    }
+}
