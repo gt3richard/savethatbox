@@ -1,15 +1,15 @@
 <template>
   <div>
-    <NavBar v-on:changeSearch="search=$event" />
+    <NavBar v-on:changeSearch="changeSearch" />
     <div class="container">
       <Header />
-      <FilterBar v-on:changePolicyGN="gn=$event" v-on:changePolicyNRF="nrf=$event" v-on:changePolicyFRS="frs=$event" v-on:changePolicySL="sl=$event" />
+      <FilterBar v-on:changePolicyGN="changePolicyGN" v-on:changePolicyNRF="changePolicyNRF" v-on:changePolicyFRS="changePolicyFRS" v-on:changePolicySL="changePolicySL" />
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-6 business" v-for="business in businesses
-            .filter(p => (p.gn || !gn) && (p.nrf || !nrf) && (p.frs || !frs) && (p.sl || !sl))
-            .filter(p => p.name.toLowerCase().indexOf(search.toLowerCase().trim()) > -1)
-            " :key="business.name">
+        <div class="row" v-for="category in Object.keys(grouping)" :key="category">
+          <div class="col-12 category">
+            <h3 class="category">{{ category }}</h3>
+          </div>
+          <div class="col-xs-12 col-md-6 business" v-for="business in grouping[category]" :key="business.name">
             <Business :business="business" />
           </div>
         </div>
@@ -36,7 +36,52 @@ export default {
       gn: false,
       nrf: false,
       frs: false,
-      sl: false
+      sl: false,
+      grouping: {}
+    }
+  },
+  created () {
+    this.grouping = this.group()
+  },
+  methods: {
+    changeSearch: function (event) {
+      this.search = event
+      this.grouping = this.group()
+    },
+    changePolicyGN: function (event) {
+      this.gn = event
+      this.grouping = this.group()
+    },
+    changePolicyNRF: function (event) {
+      this.nrf = event
+      this.grouping = this.group()
+    },
+    changePolicyFRS: function (event) {
+      this.frs = event
+      this.grouping = this.group()
+    },
+    changePolicySL: function (event) {
+      this.sl = event
+      this.grouping = this.group()
+    },
+    filter: function () {
+      return this.businesses
+        .filter(p => (p.gn || !this.gn) && (p.nrf || !this.nrf) && (p.frs || !this.frs) && (p.sl || !this.sl))
+        .filter(p => p.name.toLowerCase().indexOf(this.search.toLowerCase().trim()) > -1)
+    },
+    group: function () {
+      var grouping = { }
+      this.filter()
+        .map(p => {
+          if ('cat' in p === false) {
+            p['cat'] = ['Other']
+          }
+          return p
+        })
+        .forEach(p => {
+          p.cat[0] in grouping ? grouping[p.cat[0]].push(p) : grouping[p.cat[0]] = [ p ]
+        })
+      return grouping
     }
   }
 }
@@ -53,5 +98,12 @@ a {
 }
 .business {
   padding: 5px;
+}
+.category {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding-left: 0;
+  padding-top: 1em;
 }
 </style>

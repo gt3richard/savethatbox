@@ -4,7 +4,7 @@
         <div class="container img-container" :style="{ 'background-color': business.bg || 'white' }">
           <div class="row align-items-center img-row">
             <a class="img-a" :href="'https://'+business.link" v-on:click="track()">
-                <img :src="'./static/'+business.logo" class="img" loading="lazy" alt="...">
+                <img :src="'./static/'+business.logo" class="img" loading="lazy" :alt="business.name">
             </a>
           </div>
         </div>
