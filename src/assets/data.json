@@ -8,7 +8,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 24 2020",
-		"cat": ["Clothing"]
+		"cat": ["Apparel"]
 	},
 	{
 		"name": "Adidas",
@@ -29,7 +29,8 @@
 		"gn": false,
 		"sl": false,
 		"frs": false,
-		"lu": "Jun 21 2020"
+		"lu": "Jun 21 2020",
+		"bg": "#131921"
 	},
 	{
 		"name": "Ann Taylor",
@@ -40,7 +41,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 24 2020",
-		"cat": ["Clothing"]
+		"cat": ["Apparel"]
 	},
 	{
 		"name": "Anthropologie",
@@ -51,7 +52,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 24 2020",
-		"cat": ["Home"]
+		"cat": ["Home & Outdoor"]
 	},
 	{
 		"name": "Apple",
@@ -73,7 +74,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 24 2020",
-		"cat": ["Clothing"]
+		"cat": ["Apparel"]
 	},
 	{
 		"name": "BH Photo Video",
@@ -84,7 +85,8 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 21 2020",
-		"cat": ["Electronics"]
+		"cat": ["Electronics"],
+		"bg": "#EDEDED"
 	},
 	{
 		"name": "Backcountry",
@@ -114,7 +116,8 @@
 		"gn": true,
 		"sl": true,
 		"frs": true,
-		"lu": "Jun 21 2020"
+		"lu": "Jun 21 2020",
+		"bg": "#194F8B"
 	},
 	{
 		"name": "Best Buy",
@@ -124,7 +127,8 @@
 		"gn": false,
 		"sl": false,
 		"frs": true,
-		"lu": "Jun 21 2020"
+		"lu": "Jun 21 2020",
+		"bg": "#0046BE"
 	},
 	{
 		"name": "Bloomingdales",
@@ -244,7 +248,8 @@
 		"nrf": true,
 		"sl": true,
 		"frs": false,
-		"lu": "Jun 24 2020"
+		"lu": "Jun 24 2020",
+		"bg": "#0F1111"
 	},
 	{
 		"name": "Forever 21",
@@ -304,7 +309,8 @@
 		"nrf": true,
 		"sl": true,
 		"frs": false,
-		"lu": "Jun 24 2020"
+		"lu": "Jun 24 2020",
+		"bg": "#FAF9F8"
 	},
 	{
 		"name": "Home Depot",
@@ -374,7 +380,8 @@
 		"nrf": true,
 		"frs": true,
 		"sl": true,
-		"lu": "Jun 25 2020"
+		"lu": "Jun 25 2020",
+		"bg": "#FCEFF3"
 	},
 	{
 		"name": "Kohls",
@@ -414,7 +421,8 @@
 		"nrf": true,
 		"frs": true,
 		"sl": false,
-		"lu": "Jun 25 2020"
+		"lu": "Jun 25 2020",
+		"bg": "#FAFAFA"
 	},
 	{
 		"name": "MAC Cosmetrics",
@@ -424,7 +432,8 @@
 		"nrf": true,
 		"frs": true,
 		"sl": false,
-		"lu": "Jun 25 2020"
+		"lu": "Jun 25 2020",
+		"bg": "#000000"
 	},
 	{
 		"name": "Macys",
@@ -484,7 +493,8 @@
 		"gn": false,
 		"sl": false,
 		"frs": false,
-		"lu": "Jun 21 2020"
+		"lu": "Jun 21 2020",
+		"bg": "#00283A"
 	},
 	{
 		"name": "Nike",
@@ -564,7 +574,8 @@
 		"nrf": true,
 		"sl": true,
 		"frs": false,
-		"lu": "Jun 25 2020"
+		"lu": "Jun 25 2020",
+		"bg": "#FAF8F6"
 	},
 	{
 		"name": "Sephora",
@@ -704,6 +715,7 @@
 		"nrf": true,
 		"sl": false,
 		"frs": true,
-		"lu": "Jun 25 2020"
+		"lu": "Jun 25 2020",
+		"bg": "#DFE3E6"
 	}
 ]

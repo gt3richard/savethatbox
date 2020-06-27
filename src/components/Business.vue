@@ -1,7 +1,7 @@
 <template>
   <div class="business">
     <div class="card w-100">
-        <div class="container img-container">
+        <div class="container img-container" :style="{ 'background-color': business.bg || 'white' }">
           <div class="row align-items-center img-row">
             <a class="img-a" :href="'https://'+business.link" v-on:click="track()">
                 <img :src="'./static/'+business.logo" class="img" loading="lazy" alt="...">
@@ -63,12 +63,13 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
 }
 .img-container {
-  width: 200px;
   height: 120px;
   display: grid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .img-row {
-  margin: auto;
+  padding: auto;
 }
 .img-a {
   margin: auto;
@@ -76,6 +77,9 @@ export default {
 .img {
   max-width: 200px;
   max-height: 75px;
+}
+.policies-container {
+  padding-top: 1em;
 }
 .policies-row {
   margin: auto;
@@ -87,5 +91,8 @@ export default {
 }
 .link {
   color: black;
+}
+.card-text {
+  padding-bottom: 1em;
 }
 </style>
