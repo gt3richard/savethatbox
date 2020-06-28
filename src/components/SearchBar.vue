@@ -1,5 +1,5 @@
 <template>
-  <div class="searchbar col-md-6">
+  <div class="searchbar col-lg-6">
     <form class="form-inline">
       <div class="input-group w-100">
         <input v-model="search" @input="changeSearch" class="form-control" alt="search" placeholder="Search for a store..." />

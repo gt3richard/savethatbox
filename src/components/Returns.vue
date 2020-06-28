@@ -1,19 +1,22 @@
 <template>
   <div>
-    <NavBar v-on:changeSearch="changeSearch" />
+    <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" />
     <div class="container">
       <Header />
       <FilterBar v-on:changePolicyGN="changePolicyGN" v-on:changePolicyNRF="changePolicyNRF" v-on:changePolicyFRS="changePolicyFRS" v-on:changePolicySL="changePolicySL" />
       <div class="container">
         <div class="row" v-for="category in Object.keys(grouping)" :key="category">
           <div class="col-12 category">
-            <h3 class="category">{{ category }}</h3>
+            <h3 class="category" :id="category.replace(/\s/g, '').toLowerCase()">
+              {{ category }}
+            </h3>
           </div>
           <div class="col-xs-12 col-md-6 business" v-for="business in grouping[category]" :key="business.name">
             <Business :business="business" />
           </div>
         </div>
       </div>
+      <button @click="goToTop" v-bind:class="showTop ? 'topBtn visible' : 'topBtn hidden'" title="Go to top">Top</button>
       <Footer />
     </div>
   </div>
@@ -37,11 +40,18 @@ export default {
       nrf: false,
       frs: false,
       sl: false,
-      grouping: {}
+      grouping: {},
+      categories: [],
+      showTop: false
     }
   },
   created () {
     this.grouping = this.group()
+    this.categories = Object.keys(this.grouping)
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
     changeSearch: function (event) {
@@ -82,6 +92,21 @@ export default {
           p.cat[0] in grouping ? grouping[p.cat[0]].push(p) : grouping[p.cat[0]] = [ p ]
         })
       return grouping
+    },
+    goToTop: function () {
+      // eslint-disable-next-line
+      gtag('event', 'nav', {
+        'event_category': 'engagement',
+        'event_label': 'scroll_top'
+      })
+      document.getElementById('top').scrollIntoView({behavior: 'smooth'})
+    },
+    handleScroll: function (event) {
+      if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+        this.showTop = true
+      } else {
+        this.showTop = false
+      }
     }
   }
 }
@@ -105,5 +130,29 @@ a {
   font-size: 1.5em;
   padding-left: 0;
   padding-top: 1em;
+}
+.topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.topBtn:hover {
+  background-color: #555;
+}
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
 }
 </style>

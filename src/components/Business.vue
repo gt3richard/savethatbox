@@ -50,6 +50,7 @@ export default {
       gtag('event', 'referral', {
         'event_category': 'engagement',
         'event_label': this.business.name,
+        'category': this.business.cat[0],
         'value': 1
       })
     }

@@ -36,7 +36,7 @@ export default {
       // eslint-disable-next-line
       gtag('event', 'filter', {
         'event_category': 'engagement',
-        'event_label': 'GN:' + this.gn
+        'event_label': '90_day_returns_or_more:' + this.gn
       })
       this.$emit('changePolicyGN', this.gn)
     },
@@ -45,7 +45,7 @@ export default {
       // eslint-disable-next-line
       gtag('event', 'filter', {
         'event_category': 'engagement',
-        'event_label': 'NRF:' + this.nrf
+        'event_label': 'not_restocking_fee:' + this.nrf
       })
       this.$emit('changePolicyNRF', this.nrf)
     },
@@ -54,7 +54,7 @@ export default {
       // eslint-disable-next-line
       gtag('event', 'filter', {
         'event_category': 'engagement',
-        'event_label': 'FRS:' + this.frs
+        'event_label': 'free_return_shipping:' + this.frs
       })
       this.$emit('changePolicyFRS', this.frs)
     },
@@ -63,7 +63,7 @@ export default {
       // eslint-disable-next-line
       gtag('event', 'filter', {
         'event_category': 'engagement',
-        'event_label': 'SL:' + this.sl
+        'event_label': 'included_shipping_label:' + this.sl
       })
       this.$emit('changePolicySL', this.sl)
     }
