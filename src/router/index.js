@@ -1,24 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Returns from '@/components/Returns'
+import Admin from '@/components/Admin'
 
 Vue.use(Router)
 
 export default new Router({
-  scrollBehavior (to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    }
-    if (to.hash) {
-      return { selector: to.hash }
-    }
-    return { x: 0, y: 0 }
-  },
   routes: [
     {
       path: '/',
       name: 'Returns',
       component: Returns
+    },
+    {
+      path: '/editor',
+      name: 'Admin',
+      component: Admin
     }
   ]
 })

@@ -89,7 +89,7 @@ export default {
           return p
         })
         .forEach(p => {
-          p.cat[0] in grouping ? grouping[p.cat[0]].push(p) : grouping[p.cat[0]] = [ p ]
+          p.cat in grouping ? grouping[p.cat].push(p) : grouping[p.cat] = [ p ]
         })
       return grouping
     },

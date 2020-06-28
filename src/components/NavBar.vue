@@ -1,26 +1,26 @@
 <template>
   <div>
-  <nav class="navbar navbar-dark" style="background-color: #9a573e;">
-    <a class="navbar-brand" href="#">
-      <h1>📦 Save That Box</h1>
-    </a>
-    <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
-      Categories
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-      </svg>
-    </button>
-    <SearchBar v-on:changeSearch="changeSearch" />
-  </nav>
-  <div class="collapse collapse-categories" id="navbarToggleExternalContent">
-    <div class="p-3" style="background-color: #754330;">
-      <ul class="list-group list-group-horizontal-md">
-        <li class="list-group-item flex-fill" v-for="category in categories" :key="category">
-          <button class="btn" @click="clickCategory(category.replace(/\s/g, '').toLowerCase())">{{ category }}</button>
-        </li>
-      </ul>
+    <nav class="navbar navbar-dark" style="background-color: #9a573e;">
+      <a class="navbar-brand" href="#">
+        <h1>📦 Save That Box</h1>
+      </a>
+      <button v-if="!simple" class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+        Categories
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+      </button>
+      <SearchBar v-if="!simple" v-on:changeSearch="changeSearch" />
+    </nav>
+    <div class="collapse collapse-categories" id="navbarToggleExternalContent">
+      <div class="p-3" style="background-color: #754330;">
+        <ul class="list-group list-group-horizontal-md">
+          <li class="list-group-item flex-fill" v-for="category in categories" :key="category">
+            <button class="btn" @click="clickCategory(category.replace(/\s/g, '').toLowerCase())">{{ category }}</button>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ import SearchBar from './SearchBar.vue'
 export default {
   name: 'NavBar',
   components: { SearchBar },
-  props: [ 'categories' ],
+  props: [ 'categories', 'simple' ],
   data () {
     return {}
   },
