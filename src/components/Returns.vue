@@ -5,7 +5,7 @@
       <Header />
       <FilterBar v-on:changePolicyGN="changePolicyGN" v-on:changePolicyNRF="changePolicyNRF" v-on:changePolicyFRS="changePolicyFRS" v-on:changePolicySL="changePolicySL" />
       <div class="container">
-        <div class="row" v-for="category in Object.keys(grouping)" :key="category">
+        <div class="row" v-for="category in categories" :key="category">
           <div class="col-12 category">
             <h3 class="category" :id="category.replace(/\s/g, '').toLowerCase()">
               {{ category }}
@@ -29,6 +29,7 @@ import FilterBar from './FilterBar.vue'
 import Business from './Business.vue'
 import Footer from './Footer.vue'
 import data from '../assets/data.json'
+import taxonomy from '../assets/taxonomy.json'
 export default {
   name: 'Returns',
   components: { NavBar, Header, FilterBar, Business, Footer },
@@ -41,13 +42,12 @@ export default {
       frs: false,
       sl: false,
       grouping: {},
-      categories: [],
+      categories: taxonomy,
       showTop: false
     }
   },
   created () {
     this.grouping = this.group()
-    this.categories = Object.keys(this.grouping)
     window.addEventListener('scroll', this.handleScroll)
   },
   destroyed () {
