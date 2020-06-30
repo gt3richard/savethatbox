@@ -2,11 +2,11 @@
   <div>
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" />
     <div class="container">
-      <Header />
-      <FilterBar v-on:changePolicyGN="changePolicyGN" v-on:changePolicyNRF="changePolicyNRF" v-on:changePolicyFRS="changePolicyFRS" v-on:changePolicySL="changePolicySL" />
+      <Header :search="search" />
+      <!-- <FilterBar v-on:changePolicyGN="changePolicyGN" v-on:changePolicyNRF="changePolicyNRF" v-on:changePolicyFRS="changePolicyFRS" v-on:changePolicySL="changePolicySL" /> -->
       <div class="container">
         <div class="row" v-for="category in categories" :key="category">
-          <div class="col-12 category">
+          <div v-if="Object.keys(grouping).includes(category)" class="col-12 category">
             <h3 class="category" :id="category.replace(/\s/g, '').toLowerCase()">
               {{ category }}
             </h3>
@@ -78,17 +78,41 @@ export default {
       return this.businesses
         .filter(p => (p.gn || !this.gn) && (p.nrf || !this.nrf) && (p.frs || !this.frs) && (p.sl || !this.sl))
         .filter(p => p.name.toLowerCase().indexOf(this.search.toLowerCase().trim()) > -1)
+        .sort(function (a, b) {
+          var nameA = a.name.toUpperCase()
+          var nameB = b.name.toUpperCase()
+          if (nameA < nameB) {
+            return -1
+          } else if (nameA > nameB) {
+            return 1
+          } else {
+            return 0
+          }
+        })
+        .sort(function (a, b) {
+          var scoreA = (a.nrf ? 1000 : 0) + (a.frs ? 100 : 0) + (a.sl ? 10 : 0) + (a.gn ? 1 : 0)
+          var scoreB = (b.nrf ? 1000 : 0) + (b.frs ? 100 : 0) + (b.sl ? 10 : 0) + (b.gn ? 1 : 0)
+          if (scoreA > scoreB) {
+            return -1
+          } else if (scoreA < scoreB) {
+            return 1
+          } else {
+            return 0
+          }
+        })
     },
     group: function () {
       var grouping = { }
       this.filter()
         .map(p => {
+          // Add default category
           if ('cat' in p === false) {
             p['cat'] = ['Other']
           }
           return p
         })
         .forEach(p => {
+          // Group data by category
           p.cat in grouping ? grouping[p.cat].push(p) : grouping[p.cat] = [ p ]
         })
       return grouping
