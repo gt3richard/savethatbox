@@ -1,33 +1,34 @@
 <template>
-  <div>
+  <div class="returns">
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" />
     <Header :search="search" />
-    <div v-if="search.length === 0" class="row" v-for="topic in Object.keys(layout)" :key="topic">
-      <div class="col-12 category">
-        <h3 class="category" :id="topic">
-          {{ topic }}
-        </h3>
-      </div>
-      <div class="container">
-        <div class="row">
-        <div class="col-xs-12 col-md-6 business" v-for="id in layout[topic].content" :key="id">
-          <Business :business="businesses.find(b => b.id === id)" staticBase="/" />
+    <div class="container">
+      <div v-if="search.length === 0" class="row" v-for="topic in Object.keys(layout)" :key="topic">
+        <div class="col-12 category">
+          <h3 class="category" :id="topic">
+            {{ topic }}
+          </h3>
         </div>
+        <div class="container">
+          <div class="row">
+          <div class="col-xs-12 col-md-6 business" v-for="id in layout[topic].content" :key="id">
+            <Business :business="businesses.find(b => b.id === id)" staticBase="/" />
+          </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div v-if="search.length > 0" class="row" v-for="category in categories.filter(c => c !== 'all' && Object.keys(grouping).includes(c))" :key="category">
-      <div class="col-12 category">
-        <h3 class="category" :id="category">
-          {{ taxonomy[category].display }}
-        </h3>
-      </div>
-      <div class="container">
-        <div class="row">
-        <div class="col-xs-12 col-md-6 business" v-for="business in grouping[category]" :key="business.name">
-          <Business :business="business" staticBase="/" />
+      <div v-if="search.length > 0" class="row" v-for="category in categories.filter(c => c !== 'all' && Object.keys(grouping).includes(c))" :key="category">
+        <div class="col-12 category">
+          <h3 class="category" :id="category">
+            {{ taxonomy[category].display }}
+          </h3>
         </div>
+        <div class="container">
+          <div class="row">
+          <div class="col-xs-12 col-md-6 business" v-for="business in grouping[category]" :key="business.name">
+            <Business :business="business" staticBase="/" />
+          </div>
+          </div>
         </div>
       </div>
     </div>
@@ -174,5 +175,4 @@ a {
 .hidden {
   display: none;
 }
-
 </style>
