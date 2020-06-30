@@ -1,23 +1,7 @@
 <template>
   <div>
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" />
-    <Header :search="search" />
-    <div v-if="search.length === 0" class="row" v-for="topic in Object.keys(layout)" :key="topic">
-      <div class="col-12 category">
-        <h3 class="category" :id="topic">
-          {{ topic }}
-        </h3>
-      </div>
-      <div class="container">
-        <div class="row">
-        <div class="col-xs-12 col-md-6 business" v-for="id in layout[topic].content" :key="id">
-          <Business :business="businesses.find(b => b.id === id)" staticBase="/" />
-        </div>
-        </div>
-      </div>
-    </div>
-
-    <div v-if="search.length > 0" class="row" v-for="category in categories.filter(c => c !== 'all' && Object.keys(grouping).includes(c))" :key="category">
+    <div v-if="categories.includes(category)" class="row">
       <div class="col-12 category">
         <h3 class="category" :id="category">
           {{ taxonomy[category].display }}
@@ -25,8 +9,8 @@
       </div>
       <div class="container">
         <div class="row">
-        <div class="col-xs-12 col-md-6 business" v-for="business in grouping[category]" :key="business.name">
-          <Business :business="business" staticBase="/" />
+        <div class="col-xs-12 col-md-6 business" v-for="business in filter(category)" :key="business.name">
+          <Business :business="business" staticBase="../" />
         </div>
         </div>
       </div>
@@ -38,29 +22,24 @@
 
 <script>
 import NavBar from './NavBar.vue'
-import Header from './Header.vue'
-import FilterBar from './FilterBar.vue'
 import Business from './Business.vue'
 import Footer from './Footer.vue'
 import data from '../assets/data.json'
 import taxonomy from '../assets/taxonomy.json'
-import layout from '../assets/layout.json'
 export default {
-  name: 'Returns',
-  components: { NavBar, Header, FilterBar, Business, Footer },
+  name: 'Category',
+  components: { NavBar, Business, Footer },
+  props: [ 'category' ],
   data () {
     return {
       search: '',
       businesses: data,
-      grouping: {},
-      layout: layout,
       taxonomy: taxonomy,
       categories: Object.keys(taxonomy),
       showTop: false
     }
   },
   created () {
-    this.grouping = this.group()
     window.addEventListener('scroll', this.handleScroll)
   },
   destroyed () {
@@ -69,17 +48,18 @@ export default {
   methods: {
     changeSearch: function (event) {
       this.search = event
-      this.grouping = this.group()
     },
-    filter: function () {
+    filter: function (category) {
       return this.businesses
         .map(p => {
           // Add default category
           if ('cat' in p === false) {
             p['cat'] = 'Other'
+            console.log(p)
           }
           return p
         })
+        .filter(p => (p.cat && p.cat === category) || category === 'all')
         .filter(p => p.name.toLowerCase().indexOf(this.search.toLowerCase().trim()) > -1)
         .sort(function (a, b) {
           var nameA = a.name.toUpperCase()
@@ -103,15 +83,6 @@ export default {
             return 0
           }
         })
-    },
-    group: function () {
-      var grouping = { }
-      this.filter()
-        .forEach(p => {
-          // Group data by category
-          p.cat in grouping ? grouping[p.cat].push(p) : grouping[p.cat] = [ p ]
-        })
-      return grouping
     },
     goToTop: function () {
       // eslint-disable-next-line

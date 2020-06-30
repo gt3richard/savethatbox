@@ -16,7 +16,7 @@ export default {
 
 <style scoped>
 .header {
-  padding-top: 3em;
+  padding: 3em;
 }
 h2 {
   font-size: 2rem;

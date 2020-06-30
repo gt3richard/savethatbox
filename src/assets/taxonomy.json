@@ -1,12 +1,35 @@
-[
-    "Apparel",
-    "Shoes",
-    "Accessories",
-    "Home",
-    "Electronics",
-    "Kids",
-    "Sports & Outdoor",
-    "Beauty",
-    "Other",
-    ""
-]
+{
+    "all": {
+        "display": "All"
+    },
+    "apparel": {
+        "display": "Apparel"
+    },
+    "shoes": {
+        "display": "Shoes"
+    },
+    "accessories": {
+        "display": "Accessories"
+    },
+    "home": {
+        "display": "Home"
+    },
+    "electronics": {
+        "display": "Electronics"
+    },
+    "kids": {
+        "display": "Kids"
+    },
+    "sportsandoutdoor": {
+        "display": "Sports & Outdoor"
+    },
+    "beauty": {
+        "display": "Beauty"
+    },
+    "other": {
+        "display": "Other"
+    },
+    "": {
+        "display": ""
+    }
+}

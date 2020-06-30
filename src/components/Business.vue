@@ -4,7 +4,7 @@
         <div class="container img-container" :style="{ 'background-color': business.bg || 'white' }">
           <div class="row align-items-center img-row">
             <a class="img-a" :href="'https://'+business.link" v-on:click="track()">
-                <img :src="'./static/'+business.logo" class="img" loading="lazy" :alt="business.name">
+                <img :src="staticBase + 'static/'+business.logo" class="img" loading="lazy" :alt="business.name">
             </a>
           </div>
         </div>
@@ -38,7 +38,7 @@ import policies from '../assets/policy.json'
 export default {
   name: 'Business',
   components: { Policy },
-  props: [ 'business' ],
+  props: [ 'business', 'staticBase' ],
   data () {
     return {
       policies: policies
@@ -81,6 +81,8 @@ export default {
 }
 .policies-container {
   padding-top: 1em;
+  border-top: 1px solid #DFDFDF;
+
 }
 .policies-row {
   margin: auto;
@@ -89,9 +91,6 @@ export default {
 }
 .action {
   padding: 1em;
-}
-.link {
-  color: black;
 }
 .card-text {
   padding-bottom: 1em;

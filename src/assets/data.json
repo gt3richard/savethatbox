@@ -9,7 +9,7 @@
 		"frs": false,
 		"lu": "Jun 24 2020",
 		"bg": "#243746",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Adidas",
@@ -20,7 +20,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 24 2020",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Amazon",
@@ -43,7 +43,7 @@
 		"frs": true,
 		"lu": "Jun 24 2020",
 		"bg": "#575C5D",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Anthropologie",
@@ -55,7 +55,7 @@
 		"frs": true,
 		"lu": "Jun 24 2020",
 		"bg": "#B19964",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Apple",
@@ -66,7 +66,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 24 2020",
-		"cat": "Electronics"
+		"cat": "electronics"
 	},
 	{
 		"name": "Aritzia",
@@ -77,7 +77,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 24 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "BH Photo Video",
@@ -88,7 +88,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 21 2020",
-		"cat": "Electronics",
+		"cat": "electronics",
 		"bg": "#EDEDED"
 	},
 	{
@@ -100,9 +100,10 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 21 2020",
-		"cat": "Sports & Outdoor"
+		"cat": "sportsandoutdoor"
 	},
 	{
+		"id": 803,
 		"name": "Banana Republic",
 		"link": "bananarepublic.com",
 		"logo": "803.png",
@@ -112,7 +113,7 @@
 		"frs": true,
 		"lu": "Jun 21 2020",
 		"bg": "#231F20",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Bed Bath and Beyond",
@@ -123,7 +124,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 21 2020",
-		"cat": "Home",
+		"cat": "home",
 		"bg": "#194F8B"
 	},
 	{
@@ -135,7 +136,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 21 2020",
-		"cat": "Electronics",
+		"cat": "electronics",
 		"bg": "#0046BE"
 	},
 	{
@@ -147,9 +148,10 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 24 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
+		"id": 807,
 		"name": "Bonobos",
 		"link": "bonobos.com/",
 		"logo": "807.png",
@@ -158,7 +160,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 20 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Buy Buy Baby",
@@ -169,7 +171,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 25 2020",
-		"cat": "Kids"
+		"cat": "kids"
 	},
 	{
 		"name": "Chicos",
@@ -180,7 +182,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 24 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Club Monaco",
@@ -192,7 +194,7 @@
 		"frs": false,
 		"lu": "Jun 24 2020",
 		"bg": "#000000",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Cole Haan",
@@ -204,9 +206,10 @@
 		"frs": true,
 		"lu": "Jun 24 2020",
 		"bg": "#062A48",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
+		"id": 808,
 		"name": "Crate and Barrel",
 		"link": "crateandbarrel.com",
 		"logo": "808.png",
@@ -215,7 +218,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 21 2020",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Diesel",
@@ -226,7 +229,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 24 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Disney",
@@ -238,7 +241,7 @@
 		"frs": true,
 		"lu": "Jun 24 2020",
 		"bg": "#0E2754",
-		"cat": "Kids"
+		"cat": "kids"
 	},
 	{
 		"name": "Bass Pro",
@@ -249,7 +252,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Sports & Outdoor",
+		"cat": "sportsandoutdoor",
 		"bg": "#CE0A08"
 	},
 	{
@@ -262,7 +265,7 @@
 		"frs": true,
 		"lu": "Jun 24 2020",
 		"bg": "#878786",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Express",
@@ -273,7 +276,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 24 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "FootLocker",
@@ -284,7 +287,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 24 2020",
-		"cat": "Shoes",
+		"cat": "shoes",
 		"bg": "#0F1111"
 	},
 	{
@@ -297,7 +300,7 @@
 		"frs": true,
 		"lu": "Jun 25 2020",
 		"bg": "#231F20",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Fossil",
@@ -308,7 +311,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 24 2020",
-		"cat": "Accessories"
+		"cat": "accessories"
 	},
 	{
 		"name": "Free People",
@@ -319,7 +322,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 24 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Gap",
@@ -331,7 +334,7 @@
 		"frs": true,
 		"lu": "Jun 21 2020",
 		"bg": "#002A60",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Guess",
@@ -342,7 +345,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 24 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "H&M HM",
@@ -353,7 +356,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 24 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#E71D2B"
 	},
 	{
@@ -366,7 +369,7 @@
 		"frs": false,
 		"lu": "Jun 21 2020",
 		"bg": "#F96304",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Icebreaker",
@@ -378,7 +381,7 @@
 		"frs": true,
 		"lu": "Jun 21 2020",
 		"bg": "#FF6600",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "JCrew",
@@ -390,7 +393,7 @@
 		"frs": false,
 		"lu": "Jun 24 2020",
 		"bg": "#1E1E1E",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Joes Jeans",
@@ -401,9 +404,10 @@
 		"frs": false,
 		"sl": false,
 		"lu": "Jun 25 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
+		"id": 843,
 		"name": "Johnston Murphy",
 		"link": "johnstonmurphy.com",
 		"logo": "843.png",
@@ -413,7 +417,7 @@
 		"frs": true,
 		"lu": "Jun 25 2020",
 		"bg": "#4B3041",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Journeys",
@@ -425,7 +429,7 @@
 		"sl": false,
 		"lu": "Jun 25 2020",
 		"bg": "#71CD44",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Kate Spade",
@@ -436,7 +440,7 @@
 		"frs": true,
 		"sl": true,
 		"lu": "Jun 25 2020",
-		"cat": "Accessories",
+		"cat": "accessories",
 		"bg": "#60A043"
 	},
 	{
@@ -449,7 +453,7 @@
 		"frs": false,
 		"lu": "Jun 25 2020",
 		"bg": "#03A0A0",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Lacoste",
@@ -460,9 +464,10 @@
 		"frs": true,
 		"sl": true,
 		"lu": "Jun 25 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
+		"id": 812,
 		"name": "Lowes",
 		"link": "lowes.com",
 		"logo": "812.png",
@@ -472,9 +477,10 @@
 		"frs": true,
 		"lu": "Jun 21 2020",
 		"bg": "#003F9A",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
+		"id": 847,
 		"name": "Lululemon",
 		"link": "shop.lululemon.com",
 		"logo": "847.png",
@@ -483,7 +489,7 @@
 		"frs": true,
 		"sl": false,
 		"lu": "Jun 25 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#FAFAFA"
 	},
 	{
@@ -495,7 +501,7 @@
 		"frs": true,
 		"sl": false,
 		"lu": "Jun 25 2020",
-		"cat": "Beauty",
+		"cat": "beauty",
 		"bg": "#000000"
 	},
 	{
@@ -507,7 +513,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 21 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Madewell",
@@ -518,7 +524,7 @@
 		"frs": false,
 		"sl": false,
 		"lu": "Jun 25 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Michael Kors",
@@ -530,7 +536,7 @@
 		"sl": true,
 		"lu": "Jun 25 2020",
 		"bg": "#E7C192",
-		"cat": "Accessories"
+		"cat": "accessories"
 	},
 	{
 		"name": "Michaels",
@@ -541,7 +547,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 25 2020",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "New Balance",
@@ -553,7 +559,7 @@
 		"sl": false,
 		"lu": "Jun 25 2020",
 		"bg": "#B3AFAC",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Newegg",
@@ -564,10 +570,11 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 21 2020",
-		"cat": "Electronics",
+		"cat": "electronics",
 		"bg": "#00283A"
 	},
 	{
+		"id": 852,
 		"name": "Nike",
 		"link": "nike.com",
 		"logo": "852.png",
@@ -576,7 +583,7 @@
 		"frs": true,
 		"sl": false,
 		"lu": "Jun 25 2020",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Nordstrom",
@@ -588,7 +595,7 @@
 		"frs": true,
 		"lu": "Jun 20 2020",
 		"bg": "#4D4D4D",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Old Navy",
@@ -600,7 +607,7 @@
 		"frs": true,
 		"lu": "Jun 21 2020",
 		"bg": "#003C69",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Origins",
@@ -611,7 +618,7 @@
 		"frs": true,
 		"sl": false,
 		"lu": "Jun 25 2020",
-		"cat": "Beauty"
+		"cat": "beauty"
 	},
 	{
 		"name": "Patagonia",
@@ -622,7 +629,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 21 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Pottery Barn",
@@ -633,7 +640,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 21 2020",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Ralph Lauren",
@@ -644,7 +651,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 25 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Scotch Soda",
@@ -655,7 +662,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 25 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#FAF8F6"
 	},
 	{
@@ -667,7 +674,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 25 2020",
-		"cat": "Beauty"
+		"cat": "beauty"
 	},
 	{
 		"name": "Steve Madden",
@@ -678,7 +685,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 25 2020",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Sur La Table",
@@ -689,7 +696,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 25 2020",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Target",
@@ -701,9 +708,10 @@
 		"frs": true,
 		"lu": "Jun 21 2020",
 		"bg": "#CB0000",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
+		"id": 853,
 		"name": "The North Face",
 		"link": "thenorthface.com",
 		"logo": "853.png",
@@ -713,7 +721,7 @@
 		"sl": true,
 		"lu": "Jun 25 2020",
 		"bg": "#E72B25",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Tillys",
@@ -725,7 +733,7 @@
 		"frs": false,
 		"lu": "Jun 25 2020",
 		"bg": "#FFD500",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Ulta Beauty",
@@ -737,7 +745,7 @@
 		"frs": false,
 		"lu": "Jun 25 2020",
 		"bg": "#F67B3A",
-		"cat": "Beauty"
+		"cat": "beauty"
 	},
 	{
 		"name": "Uniqlo",
@@ -749,7 +757,7 @@
 		"frs": false,
 		"lu": "Jun 25 2020",
 		"bg": "#EE1D25",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Vans",
@@ -760,7 +768,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 25 2020",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Victorias Secret",
@@ -772,7 +780,7 @@
 		"frs": true,
 		"lu": "Jun 25 2020",
 		"bg": "#222021",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "West Elm",
@@ -783,7 +791,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 21 2020",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Williams Sonoma",
@@ -794,7 +802,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 21 2020",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Z Gallerie",
@@ -805,7 +813,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 25 2020",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Zara",
@@ -816,7 +824,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 25 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#DFE3E6"
 	},
 	{
@@ -829,7 +837,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#FF420B",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Office Depot",
@@ -841,7 +849,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#ED1B3B",
-		"cat": "Electronics"
+		"cat": "electronics"
 	},
 	{
 		"name": "Fashion Nova",
@@ -853,7 +861,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#000000",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "American Eagle",
@@ -865,7 +873,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#001149",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "JC Penney",
@@ -877,7 +885,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#CD1F25",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Walgreens",
@@ -899,7 +907,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 27 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Childrens Place",
@@ -911,7 +919,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#21A1EA",
-		"cat": "Kids"
+		"cat": "kids"
 	},
 	{
 		"name": "Party City",
@@ -932,7 +940,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 27 2020",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Staples",
@@ -954,7 +962,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#005696",
-		"cat": "Beauty"
+		"cat": "beauty"
 	},
 	{
 		"name": "Costco",
@@ -976,7 +984,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 27 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#CD9766"
 	},
 	{
@@ -989,7 +997,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#EBECEC",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Zappos",
@@ -1001,7 +1009,7 @@
 		"frs": true,
 		"lu": "Jun 27 2020",
 		"bg": "#7299C7",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Converse",
@@ -1013,7 +1021,7 @@
 		"frs": true,
 		"lu": "Jun 27 2020",
 		"bg": "#000000",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "ASOS",
@@ -1025,7 +1033,7 @@
 		"frs": true,
 		"lu": "Jun 27 2020",
 		"bg": "#010101",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Toms",
@@ -1036,9 +1044,10 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 27 2020",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
+		"id": 890,
 		"name": "ASICS",
 		"link": "asics.com",
 		"logo": "890.png",
@@ -1047,7 +1056,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 27 2020",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Reebok",
@@ -1058,7 +1067,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 27 2020",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Pacsun",
@@ -1070,7 +1079,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#000000",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Athleta",
@@ -1082,7 +1091,7 @@
 		"frs": true,
 		"lu": "Jun 27 2020",
 		"bg": "#000000",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Samsung",
@@ -1094,7 +1103,7 @@
 		"frs": true,
 		"lu": "Jun 27 2020",
 		"bg": "#004595",
-		"cat": "Electronics"
+		"cat": "electronics"
 	},
 	{
 		"name": "HP",
@@ -1106,7 +1115,7 @@
 		"frs": true,
 		"lu": "Jun 27 2020",
 		"bg": "#004E90",
-		"cat": "Electronics"
+		"cat": "electronics"
 	},
 	{
 		"name": "Gamestop",
@@ -1118,7 +1127,7 @@
 		"frs": true,
 		"lu": "Jun 27 2020",
 		"bg": "#000000",
-		"cat": "Electronics"
+		"cat": "electronics"
 	},
 	{
 		"name": "Sally Beauty",
@@ -1130,7 +1139,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#DB1E36",
-		"cat": "Beauty"
+		"cat": "beauty"
 	},
 	{
 		"name": "Overstock",
@@ -1142,7 +1151,7 @@
 		"frs": true,
 		"lu": "Jun 27 2020",
 		"bg": "#D3E2E9",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "World Market",
@@ -1154,7 +1163,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#F5E6C8",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "CB2",
@@ -1166,7 +1175,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#52565C",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Lego",
@@ -1178,7 +1187,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#E40004",
-		"cat": "Kids"
+		"cat": "kids"
 	},
 	{
 		"name": "American Girl",
@@ -1190,7 +1199,7 @@
 		"frs": false,
 		"lu": "Jun 27 2020",
 		"bg": "#BF2D4E",
-		"cat": "Kids"
+		"cat": "kids"
 	},
 	{
 		"name": "Harbor Freight",
@@ -1221,7 +1230,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 27 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Ikea",
@@ -1232,7 +1241,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Home",
+		"cat": "home",
 		"bg": "#0057A4"
 	},
 	{
@@ -1244,7 +1253,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Home"
+		"cat": "home"
 	},
 	{
 		"name": "Under Armour",
@@ -1255,7 +1264,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#ED1D23"
 	},
 	{
@@ -1267,7 +1276,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Sports & Outdoor",
+		"cat": "sportsandoutdoor",
 		"bg": "#334601"
 	},
 	{
@@ -1279,10 +1288,11 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Sports & Outdoor",
+		"cat": "sportsandoutdoor",
 		"bg": "#211F20"
 	},
 	{
+		"id": 712,
 		"name": "Sports Basement",
 		"link": "shop.sportsbasement.com",
 		"logo": "712.png",
@@ -1291,7 +1301,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Sports & Outdoor",
+		"cat": "sportsandoutdoor",
 		"bg": "#009933"
 	},
 	{
@@ -1303,7 +1313,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Sports & Outdoor",
+		"cat": "sportsandoutdoor",
 		"bg": "#CC0200"
 	},
 	{
@@ -1315,7 +1325,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Beauty"
+		"cat": "beauty"
 	},
 	{
 		"name": "The Body Shop",
@@ -1326,7 +1336,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Beauty",
+		"cat": "beauty",
 		"bg": "#159EDA"
 	},
 	{
@@ -1339,7 +1349,7 @@
 		"frs": false,
 		"lu": "Jun 29 2020",
 		"bg": "#553E96",
-		"cat": "Accessories"
+		"cat": "accessories"
 	},
 	{
 		"name": "CVS",
@@ -1360,7 +1370,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Beauty"
+		"cat": "beauty"
 	},
 	{
 		"name": "Urban Decay",
@@ -1371,7 +1381,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Beauty"
+		"cat": "beauty"
 	},
 	{
 		"name": "Gucci",
@@ -1383,7 +1393,7 @@
 		"frs": true,
 		"lu": "Jun 29 2020",
 		"bg": "#1B1B1B",
-		"cat": "Accessories"
+		"cat": "accessories"
 	},
 	{
 		"name": "Coach",
@@ -1394,7 +1404,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Accessories"
+		"cat": "accessories"
 	},
 	{
 		"name": "Brooks Brothers",
@@ -1405,7 +1415,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#000000"
 	},
 	{
@@ -1417,7 +1427,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Sports & Outdoor",
+		"cat": "sportsandoutdoor",
 		"bg": "#000000"
 	},
 	{
@@ -1429,7 +1439,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#CF2031"
 	},
 	{
@@ -1441,7 +1451,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#000000"
 	},
 	{
@@ -1453,7 +1463,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Eagle Creek",
@@ -1485,7 +1495,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#303030"
 	},
 	{
@@ -1497,7 +1507,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#000000"
 	},
 	{
@@ -1520,7 +1530,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#000000"
 	},
 	{
@@ -1532,7 +1542,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#085743"
 	},
 	{
@@ -1544,7 +1554,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#C21D2D"
 	},
 	{
@@ -1556,7 +1566,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#58585B"
 	},
 	{
@@ -1568,7 +1578,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#F9B18A"
 	},
 	{
@@ -1580,7 +1590,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#002A5C"
 	},
 	{
@@ -1592,7 +1602,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel"
+		"cat": "apparel"
 	},
 	{
 		"name": "Nine West",
@@ -1603,7 +1613,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Shoes",
+		"cat": "shoes",
 		"bg": "#000000"
 	},
 	{
@@ -1615,7 +1625,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#000000"
 	},
 	{
@@ -1627,7 +1637,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#1C5733"
 	},
 	{
@@ -1639,7 +1649,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#FB0201"
 	},
 	{
@@ -1651,7 +1661,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Shoes"
+		"cat": "shoes"
 	},
 	{
 		"name": "Superdry",
@@ -1662,7 +1672,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#808080"
 	},
 	{
@@ -1674,7 +1684,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#000000"
 	},
 	{
@@ -1686,7 +1696,7 @@
 		"sl": true,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Shoes",
+		"cat": "shoes",
 		"bg": "#282321"
 	},
 	{
@@ -1710,7 +1720,7 @@
 		"frs": false,
 		"lu": "Jun 29 2020",
 		"bg": "#F62720",
-		"cat": "Accessories"
+		"cat": "accessories"
 	},
 	{
 		"name": "TopShop",
@@ -1721,7 +1731,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#000000"
 	},
 	{
@@ -1733,7 +1743,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#95ACC0"
 	},
 	{
@@ -1745,7 +1755,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#5C737F"
 	},
 	{
@@ -1757,7 +1767,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#231F20"
 	},
 	{
@@ -1769,7 +1779,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Shoes",
+		"cat": "shoes",
 		"bg": "#0052A1"
 	},
 	{
@@ -1781,7 +1791,7 @@
 		"sl": true,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#788ABD"
 	},
 	{
@@ -1793,7 +1803,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Accessories",
+		"cat": "accessories",
 		"bg": "#002454"
 	},
 	{
@@ -1805,7 +1815,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Shoes",
+		"cat": "shoes",
 		"bg": "#111111"
 	},
 	{
@@ -1817,7 +1827,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Apparel",
+		"cat": "apparel",
 		"bg": "#000000"
 	},
 	{
@@ -1829,7 +1839,7 @@
 		"sl": false,
 		"frs": false,
 		"lu": "Jun 29 2020",
-		"cat": "Electronics",
+		"cat": "electronics",
 		"bg": "#D14324"
 	},
 	{
@@ -1852,7 +1862,7 @@
 		"sl": false,
 		"frs": true,
 		"lu": "Jun 29 2020",
-		"cat": "Electronics",
+		"cat": "electronics",
 		"bg": "#575352"
 	}
 ]

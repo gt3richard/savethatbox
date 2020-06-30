@@ -8,7 +8,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <a href="mailto:support@savethatbox.com" v-on:click="track()">support@savethatbox.com</a>
+                <a class="link" href="mailto:support@savethatbox.com" v-on:click="track()">support@savethatbox.com</a>
             </div>
         </div>
         <div class="row">
