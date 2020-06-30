@@ -12,7 +12,8 @@
         <div class="container">
           <div class="row">
           <div class="col-xs-12 col-md-6 business" v-for="id in layout[topic].content" :key="id">
-            <BusinessCard :business="businesses.find(b => b.id === id)" staticBase="/" />
+            <BusinessCard v-if="id > 500" :business="businesses.find(b => b.id === id)" staticBase="/" />
+            <SceneCard v-if="id >= 100 && id < 200" :name="scenes[id].name" staticBase="/" />
           </div>
           </div>
         </div>
@@ -64,13 +65,15 @@ import Header from './Header.vue'
 import FilterBar from './FilterBar.vue'
 import BusinessCard from './BusinessCard.vue'
 import CategoryCard from './CategoryCard.vue'
+import SceneCard from './SceneCard.vue'
 import Footer from './Footer.vue'
 import data from '../assets/data.json'
 import taxonomy from '../assets/taxonomy.json'
 import layout from '../assets/layout.json'
+import scenes from '../assets/scenes.json'
 export default {
   name: 'Returns',
-  components: { NavBar, Header, FilterBar, BusinessCard, CategoryCard, Footer },
+  components: { NavBar, Header, FilterBar, BusinessCard, CategoryCard, SceneCard, Footer },
   data () {
     return {
       search: '',
@@ -78,6 +81,7 @@ export default {
       grouping: {},
       layout: layout,
       taxonomy: taxonomy,
+      scenes: scenes,
       categories: Object.keys(taxonomy),
       showTop: false
     }

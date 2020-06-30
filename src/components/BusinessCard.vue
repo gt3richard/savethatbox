@@ -1,5 +1,5 @@
 <template>
-  <div class="businesscard">
+  <div class="businesscard" id="bc">
     <div class="card w-100">
         <div class="container img-container" :style="{ 'background-color': business.bg || 'white' }">
           <div class="row align-items-center img-row">
