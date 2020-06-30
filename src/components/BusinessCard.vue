@@ -1,5 +1,5 @@
 <template>
-  <div class="business">
+  <div class="businesscard">
     <div class="card w-100">
         <div class="container img-container" :style="{ 'background-color': business.bg || 'white' }">
           <div class="row align-items-center img-row">
@@ -36,7 +36,7 @@
 import Policy from './Policy.vue'
 import policies from '../assets/policy.json'
 export default {
-  name: 'Business',
+  name: 'BusinessCard',
   components: { Policy },
   props: [ 'business', 'staticBase' ],
   data () {

@@ -39,6 +39,7 @@ export default {
 
 <style scoped>
 .footer {
+  margin-top: 2em;
   padding: 3em;
 }
 </style>

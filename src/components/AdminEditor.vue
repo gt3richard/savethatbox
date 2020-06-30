@@ -73,7 +73,7 @@
         </div>
         <div class="col">
             <div class="row">
-                <Business :business="business" />
+                <BusinessCard :business="business" />
             </div>
             <div class="row pretty-print">
                 <vue-json-pretty :data="business" />
@@ -84,12 +84,12 @@
 </template>
 
 <script>
-import Business from './Business.vue'
+import BusinessCard from './BusinessCard.vue'
 import VueJsonPretty from 'vue-json-pretty'
 export default {
   name: 'AdminEditor',
   props: [ 'business' ],
-  components: { Business, VueJsonPretty },
+  components: { BusinessCard, VueJsonPretty },
   data () {
     return {}
   }

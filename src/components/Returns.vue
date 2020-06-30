@@ -12,11 +12,12 @@
         <div class="container">
           <div class="row">
           <div class="col-xs-12 col-md-6 business" v-for="id in layout[topic].content" :key="id">
-            <Business :business="businesses.find(b => b.id === id)" staticBase="/" />
+            <BusinessCard :business="businesses.find(b => b.id === id)" staticBase="/" />
           </div>
           </div>
         </div>
       </div>
+
       <div v-if="search.length > 0" class="row" v-for="category in categories.filter(c => c !== 'all' && Object.keys(grouping).includes(c))" :key="category">
         <div class="col-12 category">
           <h3 class="category" :id="category">
@@ -26,9 +27,29 @@
         <div class="container">
           <div class="row">
           <div class="col-xs-12 col-md-6 business" v-for="business in grouping[category]" :key="business.name">
-            <Business :business="business" staticBase="/" />
+            <BusinessCard :business="business" staticBase="/" />
           </div>
           </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 category">
+          <h3 class="category">
+            Categories
+          </h3>
+        </div>
+        <div class="col-xs-12 col-md-6 business">
+          <CategoryCard category="apparel" staticBase="/" />
+        </div>
+        <div class="col-xs-12 col-md-6 business">
+          <CategoryCard category="home" staticBase="/" />
+        </div>
+        <div class="col-xs-12 col-md-6 business">
+          <CategoryCard category="electronics" staticBase="/" />
+        </div>
+        <div class="col-xs-12 col-md-6 business">
+          <CategoryCard category="kids" staticBase="/" />
         </div>
       </div>
     </div>
@@ -41,14 +62,15 @@
 import NavBar from './NavBar.vue'
 import Header from './Header.vue'
 import FilterBar from './FilterBar.vue'
-import Business from './Business.vue'
+import BusinessCard from './BusinessCard.vue'
+import CategoryCard from './CategoryCard.vue'
 import Footer from './Footer.vue'
 import data from '../assets/data.json'
 import taxonomy from '../assets/taxonomy.json'
 import layout from '../assets/layout.json'
 export default {
   name: 'Returns',
-  components: { NavBar, Header, FilterBar, Business, Footer },
+  components: { NavBar, Header, FilterBar, BusinessCard, CategoryCard, Footer },
   data () {
     return {
       search: '',

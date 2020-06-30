@@ -10,7 +10,7 @@
       <div class="container">
         <div class="row">
         <div class="col-xs-12 col-md-6 business" v-for="business in filter(category)" :key="business.name">
-          <Business :business="business" staticBase="../" />
+          <BusinessCard :business="business" staticBase="../" />
         </div>
         </div>
       </div>
@@ -22,13 +22,13 @@
 
 <script>
 import NavBar from './NavBar.vue'
-import Business from './Business.vue'
+import BusinessCard from './BusinessCard.vue'
 import Footer from './Footer.vue'
 import data from '../assets/data.json'
 import taxonomy from '../assets/taxonomy.json'
 export default {
   name: 'Category',
-  components: { NavBar, Business, Footer },
+  components: { NavBar, BusinessCard, Footer },
   props: [ 'category' ],
   data () {
     return {
