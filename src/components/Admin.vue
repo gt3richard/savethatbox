@@ -14,7 +14,7 @@
 
 <script>
 import NavBar from './bars/NavBar.vue'
-import EditorTemplate from './template/EditorTemplate.vue'
+import EditorTemplate from './templates/EditorTemplate.vue'
 import data from '../assets/data.json'
 export default {
   name: 'Admin',

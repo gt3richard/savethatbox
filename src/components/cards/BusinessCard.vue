@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import PolicyTemplate from '../template/PolicyTemplate.vue'
+import PolicyTemplate from '../templates/PolicyTemplate.vue'
 import policies from '../../assets/policy.json'
 export default {
   name: 'BusinessCard',

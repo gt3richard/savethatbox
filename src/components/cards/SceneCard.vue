@@ -25,12 +25,18 @@ export default {
         'event_label': name,
         'value': 1
       })
+    },
+    onResize () {
+      this.cardHeight = window.document.getElementById('bc').offsetHeight + 'px'
     }
   },
-  mounted () {
-    this.cardHeight = window.document.getElementById('bc').offsetHeight + 'px'
+  created () {
+    window.addEventListener('resize', this.onResize, { passive: true })
   },
-  updated () {
+  destroyed () {
+    window.removeEventListener('resize', this.onResize, { passive: true })
+  },
+  mounted () {
     this.cardHeight = window.document.getElementById('bc').offsetHeight + 'px'
   }
 }
