@@ -35,7 +35,7 @@ export default {
 .navbar-btn:hover {
   color: black;
 }
-.header {
+.headerbar {
   background-color: #FFEC53;
   color: #2C3E50;
 }
@@ -46,7 +46,7 @@ export default {
 .link,.link:hover {
   color: grey;
 }
-.footer {
+.footerbar {
   background-color: #FFEC53;
 }
 </style>

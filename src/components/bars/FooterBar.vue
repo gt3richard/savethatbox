@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footerbar">
     <div class="container">
       <div class="row">
             <div class="col">
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'FooterBar',
   data () {
     return {}
   },
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style scoped>
-.footer {
+.footerbar {
   margin-top: 2em;
   padding: 3em;
 }

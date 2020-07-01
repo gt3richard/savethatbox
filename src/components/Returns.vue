@@ -1,7 +1,8 @@
 <template>
   <div class="returns">
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" />
-    <Header :search="search" />
+    <BannerBar :mobile="isMobile" :search="search" />
+    <HeaderBar :search="search" />
     <div class="container">
       <div v-if="search.length === 0" class="row" v-for="topic in Object.keys(layout)" :key="topic">
         <div class="col-12 category">
@@ -55,25 +56,25 @@
       </div>
     </div>
     <button @click="goToTop" v-bind:class="showTop ? 'topBtn visible' : 'topBtn hidden'" title="Go to top">Top</button>
-    <Footer />
+    <FooterBar />
   </div>
 </template>
 
 <script>
-import NavBar from './NavBar.vue'
-import Header from './Header.vue'
-import FilterBar from './FilterBar.vue'
-import BusinessCard from './BusinessCard.vue'
-import CategoryCard from './CategoryCard.vue'
-import SceneCard from './SceneCard.vue'
-import Footer from './Footer.vue'
+import NavBar from './bars/NavBar.vue'
+import HeaderBar from './bars/HeaderBar.vue'
+import BannerBar from './bars/BannerBar.vue'
+import FooterBar from './bars/FooterBar.vue'
+import BusinessCard from './cards/BusinessCard.vue'
+import CategoryCard from './cards/CategoryCard.vue'
+import SceneCard from './cards/SceneCard.vue'
 import data from '../assets/data.json'
 import taxonomy from '../assets/taxonomy.json'
 import layout from '../assets/layout.json'
 import scenes from '../assets/scenes.json'
 export default {
   name: 'Returns',
-  components: { NavBar, Header, FilterBar, BusinessCard, CategoryCard, SceneCard, Footer },
+  components: { NavBar, HeaderBar, BannerBar, BusinessCard, CategoryCard, SceneCard, FooterBar },
   data () {
     return {
       search: '',
@@ -83,15 +84,19 @@ export default {
       taxonomy: taxonomy,
       scenes: scenes,
       categories: Object.keys(taxonomy),
-      showTop: false
+      showTop: false,
+      isMobile: false
     }
   },
   created () {
     this.grouping = this.group()
+    this.onResize()
     window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('resize', this.onResize, { passive: true })
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('resize', this.onResize, { passive: true })
   },
   methods: {
     changeSearch: function (event) {
@@ -103,7 +108,7 @@ export default {
         .map(p => {
           // Add default category
           if ('cat' in p === false) {
-            p['cat'] = 'Other'
+            p['cat'] = 'other'
           }
           return p
         })
@@ -154,6 +159,9 @@ export default {
       } else {
         this.showTop = false
       }
+    },
+    onResize () {
+      this.isMobile = window.innerWidth < 600
     }
   }
 }

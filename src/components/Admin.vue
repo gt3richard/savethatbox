@@ -3,22 +3,22 @@
     <NavBar id="top" :simple=true />
     <div class="container">
       <div class="row" :key="newBusiness">
-        <AdminEditor :business=newBusiness />
+        <EditorTemplate :business=newBusiness />
       </div>
       <div class="row" v-for="business in businesses" :key="business.name">
-        <AdminEditor :business="business" />
+        <EditorTemplate :business="business" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import NavBar from './NavBar.vue'
-import AdminEditor from './AdminEditor.vue'
+import NavBar from './bars/NavBar.vue'
+import EditorTemplate from './template/EditorTemplate.vue'
 import data from '../assets/data.json'
 export default {
   name: 'Admin',
-  components: { NavBar, AdminEditor },
+  components: { NavBar, EditorTemplate },
   data () {
     return {
       newBusiness: {

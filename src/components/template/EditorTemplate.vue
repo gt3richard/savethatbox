@@ -1,5 +1,5 @@
 <template>
-  <div class="editor">
+  <div class="editortemplate">
     <div class="row">
         <div class="col">
             <div class="row">
@@ -73,7 +73,7 @@
         </div>
         <div class="col">
             <div class="row">
-                <BusinessCard :business="business" />
+                <BusinessCard :business="business" staticBase="../" />
             </div>
             <div class="row pretty-print">
                 <vue-json-pretty :data="business" />
@@ -84,10 +84,10 @@
 </template>
 
 <script>
-import BusinessCard from './BusinessCard.vue'
+import BusinessCard from '../cards/BusinessCard.vue'
 import VueJsonPretty from 'vue-json-pretty'
 export default {
-  name: 'AdminEditor',
+  name: 'EditorTemplate',
   props: [ 'business' ],
   components: { BusinessCard, VueJsonPretty },
   data () {
@@ -97,7 +97,7 @@ export default {
 </script>
 
 <style scoped>
-.editor {
+.editortemplate {
     border-style: solid;
     border-width: 1px;
     padding: 1.2em;

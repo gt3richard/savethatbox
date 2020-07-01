@@ -1,5 +1,5 @@
 <template>
-  <div class="col container policy" v-bind:class="valid ? 'yes' : 'no'" data-toggle="tooltip" data-placement="top" :title="data.tooltip">
+  <div class="col container policytemplate" v-bind:class="valid ? 'yes' : 'no'" data-toggle="tooltip" data-placement="top" :title="data.tooltip">
     <div class="row policy-row">
         <div class="col mark">{{ valid ? '✅' : '❌' }}</div>
         <div class="col text">{{ data.text }}</div>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'Policy',
+  name: 'PolicyTemplate',
   props: [ 'data', 'valid' ],
   data () {
     return {

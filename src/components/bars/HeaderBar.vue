@@ -1,12 +1,12 @@
 <template>
-  <div v-if="search.length === 0" class="header">
+  <div v-if="search.length === 0" class="headerbar">
     <h2>Shop <b>confidently</b> knowing you can return your purchase <b>easily</b></h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
+  name: 'HeaderBar',
   props: [ 'search' ],
   data () {
     return {}
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-.header {
+.headerbar {
   padding: 3em;
 }
 h2 {

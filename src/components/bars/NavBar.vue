@@ -26,11 +26,11 @@
 
 <script>
 import SearchBar from './SearchBar.vue'
-import taxonomy from '../assets/taxonomy.json'
+import taxonomy from '../../assets/taxonomy.json'
 export default {
   name: 'NavBar',
   components: { SearchBar },
-  props: [ 'categories', 'simple' ],
+  props: [ 'categories', 'simple', 'mobile' ],
   data () {
     return {
       taxonomy: taxonomy
@@ -38,6 +38,10 @@ export default {
   },
   methods: {
     changeSearch: function (event) {
+      if (this.mobile) {
+        window.document.getElementById('navbarToggleExternalContent').classList.remove('show')
+      }
+
       this.$emit('changeSearch', event)
     },
     clickCategory: function (event) {
@@ -46,7 +50,11 @@ export default {
         'event_category': 'engagement',
         'event_label': event
       })
-      // document.getElementById(event).scrollIntoView({behavior: 'smooth'})
+
+      if (this.mobile) {
+        window.document.getElementById('navbarToggleExternalContent').classList.remove('show')
+      }
+
       window.location.href = '#/category/' + event
     }
   }

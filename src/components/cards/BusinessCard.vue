@@ -4,18 +4,18 @@
         <div class="container img-container" :style="{ 'background-color': business.bg || 'white' }">
           <div class="row align-items-center img-row">
             <a class="img-a" :href="'https://'+business.link" v-on:click="track()">
-                <img :src="staticBase + 'static/'+business.logo" class="img" loading="lazy" :alt="business.name">
+                <img :src="staticBase + 'static/business/'+business.logo" class="img" loading="lazy" :alt="business.name">
             </a>
           </div>
         </div>
         <div class="container policies-container">
           <div class="row align-items-center policies-row">
-            <Policy :data="policies['greater_than_90']" :valid="business.gn"/>
-            <Policy :data="policies['free_return_shipping']" :valid='business.frs'/>
+            <PolicyTemplate :data="policies['greater_than_90']" :valid="business.gn"/>
+            <PolicyTemplate :data="policies['free_return_shipping']" :valid='business.frs'/>
           </div>
           <div class="row align-items-center policies-row">
-            <Policy :data="policies['no_restocking_fee']" :valid="business.nrf"/>
-            <Policy :data="policies['shipping_label']" :valid="business.sl"/>
+            <PolicyTemplate :data="policies['no_restocking_fee']" :valid="business.nrf"/>
+            <PolicyTemplate :data="policies['shipping_label']" :valid="business.sl"/>
           </div>
           <div class="action">
             <a class="link" :href="'https://'+business.link" v-on:click="track()">
@@ -33,11 +33,11 @@
 </template>
 
 <script>
-import Policy from './Policy.vue'
-import policies from '../assets/policy.json'
+import PolicyTemplate from '../template/PolicyTemplate.vue'
+import policies from '../../assets/policy.json'
 export default {
   name: 'BusinessCard',
-  components: { Policy },
+  components: { PolicyTemplate },
   props: [ 'business', 'staticBase' ],
   data () {
     return {

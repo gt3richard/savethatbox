@@ -1,34 +1,36 @@
 <template>
   <div>
-    <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" />
-    <div v-if="categories.includes(category)" class="row">
-      <div class="col-12 category">
-        <h3 class="category" :id="category">
-          {{ taxonomy[category].display }}
-        </h3>
-      </div>
-      <div class="container">
-        <div class="row">
-        <div class="col-xs-12 col-md-6 business" v-for="business in filter(category)" :key="business.name">
-          <BusinessCard :business="business" staticBase="../" />
+    <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" :mobile="isMobile" />
+    <div class="container">
+      <div v-if="categories.includes(category)" class="row">
+        <div class="col-12 category">
+          <h3 class="category" :id="category">
+            {{ taxonomy[category].display }}
+          </h3>
         </div>
+        <div class="container">
+          <div class="row">
+          <div class="col-xs-12 col-md-6 business" v-for="business in filter(category)" :key="business.name">
+            <BusinessCard :business="business" staticBase="../" />
+          </div>
+          </div>
         </div>
       </div>
     </div>
     <button @click="goToTop" v-bind:class="showTop ? 'topBtn visible' : 'topBtn hidden'" title="Go to top">Top</button>
-    <Footer />
+    <FooterBar />
   </div>
 </template>
 
 <script>
-import NavBar from './NavBar.vue'
-import BusinessCard from './BusinessCard.vue'
-import Footer from './Footer.vue'
+import NavBar from './bars/NavBar.vue'
+import BusinessCard from './cards/BusinessCard.vue'
+import FooterBar from './bars/FooterBar.vue'
 import data from '../assets/data.json'
 import taxonomy from '../assets/taxonomy.json'
 export default {
   name: 'Category',
-  components: { NavBar, BusinessCard, Footer },
+  components: { NavBar, BusinessCard, FooterBar },
   props: [ 'category' ],
   data () {
     return {
@@ -36,14 +38,18 @@ export default {
       businesses: data,
       taxonomy: taxonomy,
       categories: Object.keys(taxonomy),
-      showTop: false
+      showTop: false,
+      isMobile: false
     }
   },
   created () {
+    this.onResize()
     window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('resize', this.onResize, { passive: true })
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('resize', this.onResize, { passive: true })
   },
   methods: {
     changeSearch: function (event) {
@@ -54,7 +60,7 @@ export default {
         .map(p => {
           // Add default category
           if ('cat' in p === false) {
-            p['cat'] = 'Other'
+            p['cat'] = 'other'
             console.log(p)
           }
           return p
@@ -98,6 +104,9 @@ export default {
       } else {
         this.showTop = false
       }
+    },
+    onResize () {
+      this.isMobile = window.innerWidth < 600
     }
   }
 }
