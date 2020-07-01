@@ -3,7 +3,7 @@
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" :mobile="isMobile" />
     <div class="container">
       <div v-if="categories.includes(category)" class="row">
-        <BusinessSection :businesses="filter(category)" :category="category" />
+        <BusinessSection :businesses="filter(category)" :category="category" staticBase="../" />
       </div>
     </div>
     <ScrollTopTool />

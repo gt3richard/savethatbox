@@ -9,7 +9,7 @@
         <TopicSection :topic="topic" />
       </div>
       <div v-if="search.length > 0" class="row" v-for="category in categories.filter(c => c !== 'all' && Object.keys(grouping).includes(c))" :key="category">
-        <BusinessSection :businesses="grouping[category]" :category="category" />
+        <BusinessSection :businesses="grouping[category]" :category="category" staticBase="/" />
       </div>
       <CategorySection v-if="search.length === 0" />
     </div>

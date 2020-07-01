@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-6 business" v-for="business in businesses" :key="business.name">
-                <BusinessCard :business="business" staticBase="/" />
+                <BusinessCard :business="business" :staticBase="staticBase" />
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@ import taxonomy from '../../assets/taxonomy.json'
 export default {
   name: 'BusinessSection',
   components: { BusinessCard },
-  props: [ 'category', 'businesses' ],
+  props: [ 'category', 'businesses', 'staticBase' ],
   data () {
     return {
       taxonomy: taxonomy
