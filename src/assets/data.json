@@ -128,6 +128,7 @@
 		"bg": "#194F8B"
 	},
 	{
+		"id": 805,
 		"name": "Best Buy",
 		"link": "bestbuy.com",
 		"logo": "805.png",
@@ -840,6 +841,7 @@
 		"cat": "home"
 	},
 	{
+		"id": 872,
 		"name": "Office Depot",
 		"link": "officedepot.com",
 		"logo": "872.png",
@@ -943,6 +945,7 @@
 		"cat": "shoes"
 	},
 	{
+		"id": 881,
 		"name": "Staples",
 		"link": "staples.com",
 		"logo": "881.png",
@@ -1168,6 +1171,7 @@
 		"cat": "home"
 	},
 	{
+		"id": 700,
 		"name": "CB2",
 		"link": "cb2.com",
 		"logo": "700.png",

@@ -1,7 +1,8 @@
 <template>
   <div class="topicsection">
     <div class="col-12 category">
-        <h3 class="category" :id="topic">{{ topic }}</h3>
+        <h3 class="topic" :id="topic">{{ topic }}</h3>
+        <span v-if="layout[topic].subheader" class="subheader">{{ layout[topic].subheader }}</span>
     </div>
     <div class="container">
         <div class="row">
@@ -43,8 +44,14 @@ export default {
 }
 .category {
   text-align: left;
-  font-weight: 600;
-  font-size: 1.5em;
-  padding: .5em;
+  padding: 3em;
+  padding-bottom: 1em;
+}
+.topic {
+  font-size: 2.5em;
+}
+.subheader {
+  font-size: 1.2em;
+  font-weight: 300;
 }
 </style>

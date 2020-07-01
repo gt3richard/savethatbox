@@ -1,7 +1,7 @@
 <template>
   <div class="returns">
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" :mobile="isMobile" />
-    <BannerBar :search="search" :mobile="isMobile" />
+    <BannerBar :show="search.length === 0 && !isMobile" image="help" />
     <HeaderBar :search="search" />
 
     <div class="container">

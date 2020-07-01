@@ -1,14 +1,18 @@
 {
     "Top Retailers": {
-        "content": [893, 807, 103, 843]
+        "content": [893, 807, 103, 843],
+        "subheader": "These retailers make the return process a breeze by offering a generous return window with free shipping and even include a return label in your shipment."
     },
     "Get Back into Fitness": {
-        "content": [890, 100, 847, 709]
+        "content": [890, 100, 847, 709],
+        "subheader": "Get off the couch and utilize this opportunity to start a new workout routine."
     },
     "Redecorate the Home": {
-        "content": [102, 808, 812, 898]
+        "content": [102, 808, 812, 898],
+        "subheader": "Tired of staring at the same coffee table each day? Brighten it up with some new decor elements."
     },
     "Escape to the Mountains": {
-        "content": [712, 101, 853 ]
+        "content": [712, 101, 853 ],
+        "subheader": "Social distancing is easy when you're miles away from the city enjoying nature."
     }
 }

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Returns from '@/components/Returns'
 import Admin from '@/components/Admin'
 import Category from '@/components/Category'
+import Discover from '@/components/Discover'
 
 Vue.use(Router)
 
@@ -22,6 +23,12 @@ export default new Router({
       path: '/category/:category',
       name: 'Category',
       component: Category,
+      props: true
+    },
+    {
+      path: '/discover/:title',
+      name: 'Discover',
+      component: Discover,
       props: true
     },
     {

@@ -1,6 +1,6 @@
 <template>
-  <div v-if="search.length === 0 && !mobile" class="bannerbar">
-    <div class="banner" :style="{ 'background':'transparent url(\'../static/banner/' + banner['1'].image + '.jpg\')'}">
+  <div v-if="show" class="bannerbar">
+    <div class="banner" :style="{ 'background':'transparent url(\'../static/banner/' + banner[image].image + '.jpg\')', 'background-repeat':'no-repeat', 'background-position': 'center'}">
       <div class="container w-100">
         <div class="row align-items-end">
         </div>
@@ -13,7 +13,7 @@
 import banner from '../../assets/banner.json'
 export default {
   name: 'BannerBar',
-  props: [ 'search', 'mobile' ],
+  props: [ 'show', 'image' ],
   data () {
     return {
       banner: banner
@@ -26,6 +26,7 @@ export default {
 .bannerbar {
   max-height: 400px;
   height: 400px;
+  background-color: #2C3E50;
 }
 .banner {
   height: 400px;

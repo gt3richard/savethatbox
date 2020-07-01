@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-12 category">
-        <h3 class="category">Categories</h3>
+        <h3 class="topic">Popular Categories</h3>
     </div>
     <div class="col-xs-12 col-md-6 categorycard">
         <CategoryCard category="apparel" staticBase="/" />
@@ -34,9 +34,11 @@ export default {
 <style scoped>
 .category {
   text-align: left;
-  font-weight: 600;
-  font-size: 1.5em;
-  padding: .5em;
+  padding: 3em;
+  padding-bottom: 1em;
+}
+.topic {
+  font-size: 2.5em;
 }
 .categorycard {
   padding: 5px;
