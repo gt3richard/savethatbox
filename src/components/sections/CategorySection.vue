@@ -1,11 +1,13 @@
 <template>
-  <div class="row">
-    <div class="col-12 section">
-        <h3 class="header">{{ layout[layoutkey].header }}</h3>
-        <span v-if="layout[layoutkey].subheader" class="subheader">{{ layout[layoutkey].subheader }}</span>
-    </div>
-    <div class="col-xs-12 col-md-6 sectioncard" v-for="(category, idx) in layout[layoutkey].content" :key="idx">
-        <CategoryCard :category="category" staticBase="/" />
+  <div class="container">
+    <div class="row">
+      <div class="col-12 section">
+          <h3 class="header">{{ layout[layoutkey].header }}</h3>
+          <span v-if="layout[layoutkey].subheader" class="subheader">{{ layout[layoutkey].subheader }}</span>
+      </div>
+      <div class="col-xs-12 col-md-6 sectioncard" v-for="(category, idx) in layout[layoutkey].content" :key="idx">
+          <CategoryCard :category="category" staticBase="/" />
+      </div>
     </div>
   </div>
 </template>

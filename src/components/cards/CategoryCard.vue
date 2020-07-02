@@ -1,16 +1,14 @@
 <template>
-  <div class="categorycard">
-    <div class="card">
-    <a class="btn card-btn" :href="'#/category/' + category" @click="track(category)">
-        <div class="container img-container" :style="{ 'background':'transparent url(\'../static/taxonomy/' + category + '.jpg\')'}">
-          <div class="row align-items-end img-row" >
-            <div class="container text-container">
-                {{ taxonomy[category].header }}
-            </div>
+  <div class="categorycard card w-100">
+    <a class="btn card-btn" :href="'#/category/' + category" @click="track(category)" :style="{ 'background':'transparent url(\'../static/taxonomy/' + category + '.jpg\')'}">
+      <div class="container img-container" >
+        <div class="row align-items-end" >
+          <div class="container text-container">
+              {{ taxonomy[category].header }}
           </div>
         </div>
-        </a>
-    </div>
+      </div>
+    </a>
   </div>
 </template>
 
@@ -39,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-.card {
+.categorycard {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
 }
@@ -47,16 +45,6 @@ export default {
   height: 240px;
   display: grid;
   border-radius: 10px;
-}
-.img-row {
-  padding: auto;
-}
-.img-a {
-  margin: auto;
-}
-.img {
-  width: 200px;
-  height: auto;
 }
 .text-container {
   padding: 1em;
@@ -66,14 +54,14 @@ export default {
   opacity: 0.7;
 }
 .card-btn {
-    color: white;
-    font-weight: 600;
-    font-size: 1.5em;
-    padding: 0em;
-    border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 0;
+  border: none;
 }
 .card-btn:hover {
-    color: #FFEC53;
-    opacity: 0.9;
+  color: #FFEC53;
+  opacity: 0.9;
 }
 </style>
