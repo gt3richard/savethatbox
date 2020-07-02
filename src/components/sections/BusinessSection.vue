@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <div class="col-12 category">
-        <h3 class="category" :id="category">{{ taxonomy[category].display }}</h3>
+    <div class="col-12 section">
+        <h3 class="header" :id="category">{{ taxonomy[category].header }}</h3>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-6 business" v-for="business in businesses" :key="business.name">
+            <div class="col-xs-12 col-md-6 sectioncard" v-for="business in businesses" :key="business.name">
                 <BusinessCard :business="business" :staticBase="staticBase" />
             </div>
         </div>
@@ -30,13 +30,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.business {
+.sectioncard {
   padding: 5px;
 }
-.category {
+.section {
+  padding: .5em;
+}
+.header {
   text-align: left;
-  font-weight: 600;
-  font-size: 1.5em;
+  font-size: 2em;
   padding: .5em;
 }
 </style>

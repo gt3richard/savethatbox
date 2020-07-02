@@ -11,7 +11,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js",
+    "build": "node build/build.js && cp robots.txt sitemap.xml dist/",
     "deploy": "aws s3 rm s3://returnpolicy.com --recursive && aws s3 cp dist/ s3://returnpolicy.com --recursive --exclude '*.png' --exclude '*.jpg' --include '*' && aws s3 cp dist/ s3://returnpolicy.com --recursive --exclude '*' --include '*.png' --include '*.jpg' --cache-control max-age=86400"
   },
   "dependencies": {

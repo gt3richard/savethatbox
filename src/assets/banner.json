@@ -7,5 +7,8 @@
     },
     "homeoffice": {
         "image": "homeoffice"
+    },
+    "curbside": {
+        "image": "curbside"
     }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="footerbar">
+  <div class="footerbar" :style="{ 'background-image':'url(\'../static/textures/natural-paper.png\')' }">
     <div class="container">
       <div class="row">
             <div class="col">

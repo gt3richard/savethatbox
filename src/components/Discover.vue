@@ -3,8 +3,8 @@
     <NavBar id="top" :simple='true' />
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Build a Home Office</li>
+        <li class="breadcrumb-item"><a class="breadcrumb-item" href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ discover[title].breadcrumb }}</li>
       </ol>
     </nav>
     <BannerBar class="banner" :show="!isMobile" :image="discover[title].banner" />
@@ -16,14 +16,33 @@
         </div>
       </div>
       <div class="container" v-for="(paragraph, idx) in discover[title].article" :key="idx">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" v-if="!paragraph.content || paragraph.content.length > 1">
           <div class="col-10 article">
           {{ paragraph.text }}
           </div>
         </div>
-        <div class="row">
+        <div class="row" v-if="paragraph.content && paragraph.content.length > 1">
           <div class="col-xs-12 col-md-6 business" v-for="id in paragraph.content" :key="id">
             <BusinessCard v-if="id > 500" :business="businesses.find(b => b.id === id)" staticBase="/" />
+          </div>
+        </div>
+        <div class="row" v-if="paragraph.content && paragraph.content.length === 1">
+          <div class="col-xs-12 col-md-6 business" v-for="id in paragraph.content" :key="id">
+            <BusinessCard v-if="id > 500" :business="businesses.find(b => b.id === id)" staticBase="/" />
+          </div>
+          <div class="col-xs-12 col-md-6 business detail">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="text">{{ paragraph.text }}</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a class="url" :href="paragraph.link.url">{{ paragraph.link.text }}</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -88,7 +107,19 @@ export default {
 .breadcrumb-item,.breadcrumb-item::before {
   color: white;
 }
-a {
-  color: white;
+.url {
+  color: #2c3e50;
+}
+.business {
+  padding: 5px;
+}
+.detail {
+  display: flex;
+  align-items: center;
+  padding: 1.7em;
+
+}
+.text {
+  font-size: 1.5em;
 }
 </style>

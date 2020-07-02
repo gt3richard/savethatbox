@@ -1,11 +1,11 @@
 <template>
   <div class="categorycard">
-    <div class="card w-100">
+    <div class="card">
     <a class="btn card-btn" :href="'#/category/' + category" @click="track(category)">
         <div class="container img-container" :style="{ 'background':'transparent url(\'../static/taxonomy/' + category + '.jpg\')'}">
           <div class="row align-items-end img-row" >
             <div class="container text-container">
-                {{ taxonomy[category].display }}
+                {{ taxonomy[category].header }}
             </div>
           </div>
         </div>
@@ -73,6 +73,7 @@ export default {
     border: none;
 }
 .card-btn:hover {
-    color: grey;
+    color: #FFEC53;
+    opacity: 0.9;
 }
 </style>

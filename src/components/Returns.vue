@@ -5,13 +5,14 @@
     <HeaderBar :search="search" />
 
     <div class="container">
-      <div v-if="search.length === 0" class="row" v-for="topic in Object.keys(layout)" :key="topic">
-        <TopicSection :topic="topic" />
+      <div v-if="search.length === 0" class="row" v-for="(layoutkey, idx) in Object.keys(layout)" :key="idx">
+        <TopicSection v-if="layout[layoutkey].type === 'topic'"  :layoutkey="layoutkey" />
+        <CategorySection v-if="layout[layoutkey].type === 'category'" :layoutkey="layoutkey" />
+        <DiscoverSection v-if="layout[layoutkey].type === 'discover'" :layoutkey="layoutkey" />
       </div>
       <div v-if="search.length > 0" class="row" v-for="category in categories.filter(c => c !== 'all' && Object.keys(grouping).includes(c))" :key="category">
         <BusinessSection :businesses="grouping[category]" :category="category" staticBase="/" />
       </div>
-      <CategorySection v-if="search.length === 0" />
     </div>
 
     <ScrollTopTool />
@@ -28,6 +29,7 @@ import FooterBar from './bars/FooterBar.vue'
 import CategorySection from './sections/CategorySection.vue'
 import TopicSection from './sections/TopicSection.vue'
 import BusinessSection from './sections/BusinessSection.vue'
+import DiscoverSection from './sections/DiscoverSection.vue'
 
 import ScrollTopTool from './tools/ScrollTopTool.vue'
 
@@ -37,7 +39,7 @@ import layout from '../assets/layout.json'
 import { addDefaultCategory, filterBusinessBySearch, sortBusinessName, sortBusinessPolicy } from '../scripts/business.js'
 export default {
   name: 'Returns',
-  components: { NavBar, HeaderBar, BannerBar, FooterBar, CategorySection, TopicSection, BusinessSection, ScrollTopTool },
+  components: { NavBar, HeaderBar, BannerBar, FooterBar, CategorySection, TopicSection, BusinessSection, DiscoverSection, ScrollTopTool },
   data () {
     return {
       search: '',

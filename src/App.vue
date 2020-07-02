@@ -21,10 +21,10 @@ export default {
   width: 100%
 }
 .navbar {
-  background-color: #FFEC53;
+  background-color: #ffed21;
 }
 .navbar-expand {
-  background-color: #FFEC53;
+  background-color: #ffed21;
 }
 .navbar-brand,.navbar-brand:hover {
   color: #2C3E50;
@@ -36,7 +36,7 @@ export default {
   color: black;
 }
 .headerbar {
-  background-color: #FFEC53;
+  background-color: #ffed21;
   color: #2C3E50;
 }
 .category {
@@ -47,6 +47,6 @@ export default {
   color: grey;
 }
 .footerbar {
-  background-color: #FFEC53;
+  background-color: #ffed21;
 }
 </style>

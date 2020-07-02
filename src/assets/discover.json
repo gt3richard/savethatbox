@@ -1,14 +1,41 @@
 {
     "homeoffice": {
         "title": "It's Time to Build that Home Office",
+        "breadcrumb": "Build a Home Office",
         "banner": "homeoffice",
         "article": [
             {
-                "text": "If you're like most of us stuck at home working off a kitchen table or on the couch then it's time to start creating a home office. Start with a comfortable computer chair with lots of cushion and back support. Then add a newer 4K computer monitor and keyboard to make your daily job less stressful.",
+                "text": "If you're like most of us stuck at home working off a kitchen table or on the couch then it's time to create a home office. Start with a comfortable computer chair with lots of cushion and back support. Then add a new 4K computer monitor and keyboard to make your daily job less stressful.",
                 "content": [881, 700]
             },
             {
                 "content": [805, 872]
+            }
+        ]
+    },
+    "curbside": {
+        "title": "Try out Curbside Pickup & Returns",
+        "breadcrumb": "Try Curbside Pickup",
+        "banner": "curbside",
+        "article": [
+            {
+                "text": "For some of us finding the nearest UPS store or arranging a pickup and waiting for the return to process is not fast enough. This is why select stores are offering curbside order pickup and returns. Simply drive up to their physical stores and wait while your order is brought out to you or return is processed. Get your return funds immediately and get on with your life, no tracking code needed."
+            },
+            {
+                "text": "BestBuy Curbside Pickup",
+                "link": {
+                    "text": "Click For More Details",
+                    "url": "https://www.bestbuy.com/site/customer-service/fast-store-pickup/pcmcat218900050012.c"
+                },
+                "content": [805]
+            },
+            {
+                "text": "Target's Drive Up service",
+                "link": {
+                    "text": "Click For More Details",
+                    "url": "https://www.target.com/c/drive-up/-/N-9d42z"
+                },
+                "content": [819]
             }
         ]
     }
