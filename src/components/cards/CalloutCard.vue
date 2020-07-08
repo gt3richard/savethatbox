@@ -1,0 +1,59 @@
+<template>
+  <div class="calloutcard">
+      <div class="row align-items-center img-row">
+        <div class="col-3 img-bg w-100 py-3" :style="{ 'background-color': data.find(b => b.id === callout[content].brand).bg || 'white' }">
+          <a class="img-a w-100 py-3" :href="'https://'+data.find(b => b.id === callout[content].brand).link">
+              <img class="img w-100 py-3" :src="'../static/business/'+data.find(b => b.id === callout[content].brand).logo"  loading="lazy" :alt="data.find(b => b.id === callout[content].brand).name">
+          </a>
+        </div>
+        <div class="col text">
+            <h5>{{ callout[content].text }}</h5>
+            <a class="link" :href="callout[content].link.url">{{ callout[content].link.text }}</a>
+        </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import data from '../../assets/data.json'
+import callout from '../../assets/callout.json'
+export default {
+  name: 'CalloutCard',
+  props: [ 'content' ],
+  data () {
+    return {
+      data: data,
+      callout: callout
+    }
+  }
+}
+</script>
+
+<style scoped>
+.calloutcard {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+  height: 120px;
+  border: 1px solid rgba(0,0,0,.125);
+}
+.img-row {
+  margin: 0;
+}
+.img {
+  width: 100%;
+}
+.img-a {
+  display: grid;
+}
+.img-bg {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+  height: 120px;
+  border: 1px solid rgba(0,0,0,.125);
+  margin: -1px;
+}
+.text {
+  font-size: .7em;
+}
+</style>

@@ -1,0 +1,26 @@
+{
+    "200": {
+        "brand": 815,
+        "text": "Stores are reopening",
+        "link": {
+            "text": "Learn More",
+            "url": "https://shop.nordstrom.com/c/nordstrom-covid-19-hub"
+        }
+    },
+    "201": {
+        "brand": 852,
+        "text": "New releases",
+        "link": {
+            "text": "Go to Nike",
+            "url": "https://www.nike.com/w/new-3n82y"
+        }
+    },
+    "202": {
+        "brand": 865,
+        "text": "Summer Sale",
+        "link": {
+            "text": "Shop now",
+            "url": "https://www.ulta.com/promotion/sale"
+        }
+    }
+}
