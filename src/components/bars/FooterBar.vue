@@ -16,6 +16,17 @@
                 <span>Help us improve this list. Email us with your store's return experience.</span>
             </div>
         </div>
+        <div class="row justify-content-center py-4">
+          <div class="col-sm-3 col-md-2 fineprint">
+            <a class="link" href="./#/doc/terms">Terms and Conditions</a>
+          </div>
+          <div class="col-sm-3 col-md-2 fineprint">
+            <a class="link" href="./#/doc/privacy">Privacy Policy</a>
+          </div>
+          <div class="col-sm-3 col-md-2 fineprint">
+            <a class="link" href="/">Sitemap</a>
+          </div>
+        </div>
     </div>
   </div>
 </template>
@@ -41,5 +52,9 @@ export default {
 .footerbar {
   margin-top: 2em;
   padding: 3em;
+}
+.fineprint {
+  font-size: .7em;
+  white-space: nowrap;
 }
 </style>

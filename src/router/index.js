@@ -4,6 +4,7 @@ import Returns from '@/components/Returns'
 import Admin from '@/components/Admin'
 import Category from '@/components/Category'
 import Discover from '@/components/Discover'
+import Static from '@/components/Static'
 
 Vue.use(Router)
 
@@ -29,6 +30,12 @@ export default new Router({
       path: '/discover/:title',
       name: 'Discover',
       component: Discover,
+      props: true
+    },
+    {
+      path: '/doc/:page',
+      name: 'Static',
+      component: Static,
       props: true
     },
     {
