@@ -1,11 +1,11 @@
 <template>
-  <div class="returns">
+  <div class="returns body">
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" :mobile="isMobile" />
     <BannerBar :show="search.length === 0 && !isMobile" image="help" />
     <HeaderBar :search="search" />
 
     <div class="container">
-      <div v-if="search.length === 0" class="row" v-for="(layoutkey, idx) in Object.keys(layout)" :key="idx">
+      <div v-if="search.length === 0" :class="'row ' + layout[layoutkey].type" v-for="(layoutkey, idx) in Object.keys(layout)" :key="idx">
         <TopicSection v-if="layout[layoutkey].type === 'topic'"  :layoutkey="layoutkey" />
         <CategorySection v-if="layout[layoutkey].type === 'category'" :layoutkey="layoutkey" />
         <DiscoverSection v-if="layout[layoutkey].type === 'discover'" :layoutkey="layoutkey" />

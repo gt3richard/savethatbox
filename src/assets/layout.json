@@ -37,7 +37,7 @@
     },
     "callout": {
         "type": "callout",
-        "header": "Latest Events",
+        "header": "",
         "subheader": "",
         "content": [200, 201, 202]
     },

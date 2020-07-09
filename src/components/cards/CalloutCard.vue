@@ -8,7 +8,7 @@
         </div>
         <div class="col text">
             <h5>{{ callout[content].text }}</h5>
-            <a class="link" :href="callout[content].link.url">{{ callout[content].link.text }}</a>
+            <a class="link" :href="callout[content].link.url" v-on:click="track(callout[content].brand)">{{ callout[content].link.text }}</a>
         </div>
     </div>
   </div>
@@ -25,6 +25,17 @@ export default {
       data: data,
       callout: callout
     }
+  },
+  methods: {
+    track: function (event) {
+      // eslint-disable-next-line
+      gtag('event', 'referral', {
+        'event_category': 'engagement',
+        'event_label': this.data.find(b => b.id === event).name,
+        'category': this.data.find(b => b.id === event).cat,
+        'value': 1
+      })
+    }
   }
 }
 </script>
@@ -35,6 +46,7 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
   height: 120px;
   border: 1px solid rgba(0,0,0,.125);
+  background-color: white;
 }
 .img-row {
   margin: 0;

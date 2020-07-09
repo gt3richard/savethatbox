@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" :mobile="isMobile" />
     <div class="container">
       <div v-if="categories.includes(category)" class="row">

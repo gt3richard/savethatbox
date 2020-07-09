@@ -1,5 +1,5 @@
 <template>
-  <div class="discover" v-if="Object.keys(discover).includes(title)">
+  <div class="discover body" v-if="Object.keys(discover).includes(title)">
     <NavBar id="top" :simple='true' />
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
