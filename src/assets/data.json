@@ -304,8 +304,9 @@
 		"cat": "apparel"
 	},
 	{
+		"id": 837,
 		"name": "Fossil",
-		"link": "fossil.com",
+		"link": "www.fossil.com/en-us/",
 		"logo": "837.png",
 		"gn": true,
 		"nrf": true,
@@ -1698,6 +1699,7 @@
 		"bg": "#000000"
 	},
 	{
+		"id": 746,
 		"name": "Timberland",
 		"link": "timberland.com",
 		"logo": "746.png",

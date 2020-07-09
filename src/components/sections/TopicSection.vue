@@ -48,7 +48,8 @@ export default {
   padding-bottom: 1em;
 }
 .header {
-  font-size: 2.5em;
+  font-size: 2em;
+  font-weight: 600;
 }
 .subheader {
   font-size: 1.2em;

@@ -1,7 +1,6 @@
 <template>
   <div class="returns body">
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" :mobile="isMobile" />
-    <BannerBar :show="search.length === 0 && !isMobile" image="help" />
     <HeaderBar :search="search" />
 
     <div class="container">
@@ -10,6 +9,7 @@
         <CategorySection v-if="layout[layoutkey].type === 'category'" :layoutkey="layoutkey" />
         <DiscoverSection v-if="layout[layoutkey].type === 'discover'" :layoutkey="layoutkey" />
         <CalloutSection v-if="layout[layoutkey].type === 'callout'" :layoutkey="layoutkey" />
+        <DealSection v-if="layout[layoutkey].type === 'deals'" :layoutkey="layoutkey" />
       </div>
       <div v-if="search.length > 0" class="row" v-for="category in categories.filter(c => c !== 'all' && Object.keys(grouping).includes(c))" :key="category">
         <BusinessSection :businesses="grouping[category]" :category="category" staticBase="/" />
@@ -32,6 +32,7 @@ import TopicSection from './sections/TopicSection.vue'
 import BusinessSection from './sections/BusinessSection.vue'
 import DiscoverSection from './sections/DiscoverSection.vue'
 import CalloutSection from './sections/CalloutSection.vue'
+import DealSection from './sections/DealSection.vue'
 
 import ScrollTopTool from './tools/ScrollTopTool.vue'
 
@@ -41,7 +42,7 @@ import layout from '../assets/layout.json'
 import { addDefaultCategory, filterBusinessBySearch, sortBusinessName, sortBusinessPolicy } from '../scripts/business.js'
 export default {
   name: 'Returns',
-  components: { NavBar, HeaderBar, BannerBar, FooterBar, CategorySection, TopicSection, BusinessSection, DiscoverSection, CalloutSection, ScrollTopTool },
+  components: { NavBar, HeaderBar, BannerBar, FooterBar, CategorySection, TopicSection, BusinessSection, DiscoverSection, CalloutSection, DealSection, ScrollTopTool },
   data () {
     return {
       search: '',

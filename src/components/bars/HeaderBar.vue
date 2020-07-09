@@ -1,5 +1,5 @@
 <template>
-  <div v-if="search.length === 0" class="headerbar" :style="{ 'background-image':'url(\'../static/textures/natural-paper.png\')' }">
+  <div v-if="search.length === 0" class="headerbar">
     <h2>Shop <b>confidently</b> knowing you can return your purchase <b>easily</b></h2>
   </div>
 </template>

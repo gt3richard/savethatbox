@@ -1,16 +1,18 @@
 <template>
   <div class="calloutcard">
+    <a class="cardlink" :href="callout[content].link.url" v-on:click="track(callout[content].brand)">
       <div class="row align-items-center img-row">
         <div class="col-3 img-bg w-100 py-3" :style="{ 'background-color': data.find(b => b.id === callout[content].brand).bg || 'white' }">
           <a class="img-a w-100 py-3" :href="'https://'+data.find(b => b.id === callout[content].brand).link">
               <img class="img w-100 py-3" :src="'../static/business/'+data.find(b => b.id === callout[content].brand).logo"  loading="lazy" :alt="data.find(b => b.id === callout[content].brand).name">
           </a>
         </div>
-        <div class="col text">
-            <h5>{{ callout[content].text }}</h5>
+        <div class="col">
+            <h5 class="text">{{ callout[content].text }}</h5>
             <a class="link" :href="callout[content].link.url" v-on:click="track(callout[content].brand)">{{ callout[content].link.text }}</a>
         </div>
     </div>
+    </a>
   </div>
 </template>
 
@@ -66,6 +68,15 @@ export default {
   margin: -1px;
 }
 .text {
-  font-size: .7em;
+  font-size: 1.2em;
+  color: black;
 }
+.link {
+  font-weight: 600;
+  font-size: .8em;
+}
+.cardlink {
+  text-decoration: none !important;
+}
+
 </style>

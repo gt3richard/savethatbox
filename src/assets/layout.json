@@ -1,4 +1,16 @@
 {
+    "deals": {
+        "type": "deals",
+        "header": "",
+        "subheader": "",
+        "content": [300, 301, 302]
+    },
+    "trending": {
+        "type": "callout",
+        "header": "Latest News",
+        "subheader": "",
+        "content": [200, 201, 202]
+    },
     "topretailers": {
         "type": "topic",
         "header": "Top Retailers",
@@ -6,7 +18,7 @@
         "subheader": "These retailers make the return process a breeze by offering a generous return window with free shipping and even include a return label in your shipment."
     },
     "discover": {
-        "header": "Discover",
+        "header": "",
         "type": "discover",
         "content": [
             {
@@ -34,12 +46,6 @@
         "header": "Redecorate the Home",
         "content": [102, 808, 812, 898],
         "subheader": "Tired of staring at the same coffee table each day? Brighten it up with some new decor elements."
-    },
-    "callout": {
-        "type": "callout",
-        "header": "",
-        "subheader": "",
-        "content": [200, 201, 202]
     },
     "mountains": {
         "type": "topic",

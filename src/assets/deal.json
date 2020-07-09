@@ -1,0 +1,20 @@
+{
+    "300": {
+        "img": "target.png",
+        "brand": "Target",
+        "text": "Top Deals",
+        "link": "https://www.target.com/c/top-deals/-/N-4xw74?lnk=dNav_topdeals"
+    },
+    "301": {
+        "img": "nike.png",
+        "brand": "Nike",
+        "text": "New releases",
+        "link": "https://www.nike.com/w/new-3n82y"
+    },
+    "302": {
+        "img": "ulta.png",
+        "brand": "Ulta Beauty",
+        "text": "Summer Sale",
+        "link": "https://www.ulta.com/promotion/sale"
+    }
+}

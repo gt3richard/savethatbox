@@ -1,5 +1,5 @@
 <template>
-  <div class="footerbar" :style="{ 'background-image':'url(\'../static/textures/natural-paper.png\')' }">
+  <div class="footerbar">
     <div class="container">
       <div class="row">
             <div class="col">
@@ -52,9 +52,11 @@ export default {
 .footerbar {
   margin-top: 2em;
   padding: 3em;
+  font-weight: 600;
 }
 .fineprint {
   font-size: .7em;
   white-space: nowrap;
+  font-weight: 500;
 }
 </style>

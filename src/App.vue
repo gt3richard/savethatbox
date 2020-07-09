@@ -26,17 +26,14 @@ export default {
 .navbar-expand {
   background-color: #ffed21;
 }
-.navbar-brand,.navbar-brand:hover {
-  color: #2C3E50;
-}
-.navbar-btn {
+.navbar-brand,.navbar-brand:hover,.navbar-btn {
   color: #2C3E50;
 }
 .navbar-btn:hover {
   color: black;
 }
 .headerbar {
-  background-color: #ffed21;
+  background-color: #F1F0F2;
   color: #2C3E50;
 }
 .body {

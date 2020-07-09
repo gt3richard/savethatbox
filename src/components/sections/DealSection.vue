@@ -1,23 +1,23 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-12 section">
+      <div v-if="layout[layoutkey].header" class="col-12 section">
           <h3 class="header">{{ layout[layoutkey].header }}</h3>
           <span v-if="layout[layoutkey].subheader" class="subheader">{{ layout[layoutkey].subheader }}</span>
       </div>
-      <div class="col-xs-12 col-md-6 sectioncard" v-for="(category, idx) in layout[layoutkey].content" :key="idx">
-          <CategoryCard :category="category" staticBase="/" />
+      <div class="col-xs-12 col-md-4 sectioncard" v-for="(deal, idx) in layout[layoutkey].content" :key="idx">
+          <DealCard :dealkey="deal" staticBase="/" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CategoryCard from '../cards/CategoryCard.vue'
+import DealCard from '../cards/DealCard.vue'
 import layout from '../../assets/layout.json'
 export default {
-  name: 'CategorySection',
-  components: { CategoryCard },
+  name: 'DealSection',
+  components: { DealCard },
   props: [ 'layoutkey' ],
   data () {
     return {
@@ -35,8 +35,7 @@ export default {
   padding-bottom: 1em;
 }
 .header {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 2.5em;
 }
 .sectioncard {
   padding: 5px;
