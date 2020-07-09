@@ -31,11 +31,12 @@ export default {
 <style scoped>
 .section {
   text-align: left;
-  padding: 3em;
+  padding-top: 3em;
   padding-bottom: 1em;
 }
 .header {
-  font-size: 2.5em;
+  font-size: 2em;
+  font-weight: 600;
 }
 .sectioncard {
   padding: 5px;

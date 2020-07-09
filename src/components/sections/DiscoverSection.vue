@@ -1,6 +1,6 @@
 <template>
   <div class="discoversection w-100">
-    <div class="col-12 section">
+    <div v-if="layout[layoutkey].header" class="col-12 section">
         <h3 class="header" :id="layoutkey">{{ layout[layoutkey].header }}</h3>
         <span v-if="layout[layoutkey].subheader" class="subheader">{{ layout[layoutkey].subheader }}</span>
     </div>

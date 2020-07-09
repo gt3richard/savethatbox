@@ -33,7 +33,7 @@ export default {
   color: black;
 }
 .headerbar {
-  background-color: #F1F0F2;
+  background-color: #ffed21;
   color: #2C3E50;
 }
 .body {

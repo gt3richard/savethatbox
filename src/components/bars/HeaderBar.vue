@@ -17,6 +17,8 @@ export default {
 <style scoped>
 .headerbar {
   padding: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 h2 {
   font-size: 2rem;

@@ -1,8 +1,6 @@
 <template>
   <div class="returns body">
     <NavBar id="top" v-on:changeSearch="changeSearch" :categories="categories" :mobile="isMobile" />
-    <HeaderBar :search="search" />
-
     <div class="container">
       <div v-if="search.length === 0" :class="'row ' + layout[layoutkey].type" v-for="(layoutkey, idx) in Object.keys(layout)" :key="idx">
         <TopicSection v-if="layout[layoutkey].type === 'topic'"  :layoutkey="layoutkey" />
@@ -10,12 +8,12 @@
         <DiscoverSection v-if="layout[layoutkey].type === 'discover'" :layoutkey="layoutkey" />
         <CalloutSection v-if="layout[layoutkey].type === 'callout'" :layoutkey="layoutkey" />
         <DealSection v-if="layout[layoutkey].type === 'deals'" :layoutkey="layoutkey" />
+        <HeaderBar v-if="idx === 2" :search="search" />
       </div>
       <div v-if="search.length > 0" class="row" v-for="category in categories.filter(c => c !== 'all' && Object.keys(grouping).includes(c))" :key="category">
         <BusinessSection :businesses="grouping[category]" :category="category" staticBase="/" />
       </div>
     </div>
-
     <ScrollTopTool />
     <FooterBar />
   </div>

@@ -44,7 +44,7 @@ export default {
 }
 .section {
   text-align: left;
-  padding: 3em;
+  padding-top: 3em;
   padding-bottom: 1em;
 }
 .header {

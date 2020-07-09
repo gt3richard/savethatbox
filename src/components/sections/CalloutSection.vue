@@ -37,7 +37,7 @@ export default {
   padding: 5px;
 }
 .section {
-  padding: 3em;
+  padding-top: 3em;
   padding-bottom: 1em;
   text-align: left;
 }

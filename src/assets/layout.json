@@ -1,7 +1,7 @@
 {
     "deals": {
         "type": "deals",
-        "header": "",
+        "header": "What's Trending",
         "subheader": "",
         "content": [300, 301, 302]
     },
