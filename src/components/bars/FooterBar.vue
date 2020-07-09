@@ -24,7 +24,7 @@
             <a class="link" href="./#/doc/privacy">Privacy Policy</a>
           </div>
           <div class="col-sm-3 col-md-2 fineprint">
-            <a class="link" href="/">Sitemap</a>
+            <a class="link" href="./#/doc/sitemap">Sitemap</a>
           </div>
         </div>
     </div>

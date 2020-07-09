@@ -4,6 +4,7 @@
     <div class="container">
       <Privacy v-if="page === 'privacy'" />
       <Terms v-if="page === 'terms'"/>
+      <Sitemap v-if="page === 'sitemap'"/>
     </div>
     <FooterBar />
   </div>
@@ -15,10 +16,11 @@ import FooterBar from './bars/FooterBar.vue'
 
 import Privacy from './content/Privacy.vue'
 import Terms from './content/Terms.vue'
+import Sitemap from './content/Sitemap.vue'
 
 export default {
   name: 'Static',
-  components: { NavBar, Privacy, Terms, FooterBar },
+  components: { NavBar, Privacy, Terms, Sitemap, FooterBar },
   props: [ 'page' ],
   data () {
     return {
