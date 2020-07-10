@@ -1,6 +1,8 @@
 <template>
-  <div v-if="search.length === 0" class="headerbar">
-    <h2>Shop <b>confidently</b> knowing you can return your purchase <b>easily</b></h2>
+  <div class="container">
+    <div v-if="search.length === 0" class="headerbar">
+      <h2>Shop <b>confidently</b> knowing you can return your purchase <b>easily</b></h2>
+    </div>
   </div>
 </template>
 

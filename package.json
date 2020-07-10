@@ -12,9 +12,12 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js && cp robots.txt sitemap.xml dist/",
+    "generate": "node tools/generate.js",
     "deploy": "aws s3 rm s3://returnpolicy.com --recursive && aws s3 cp dist/ s3://returnpolicy.com --recursive --exclude '*.png' --exclude '*.jpg' --include '*' && aws s3 cp dist/ s3://returnpolicy.com --recursive --exclude '*' --include '*.png' --include '*.jpg' --cache-control max-age=86400"
   },
   "dependencies": {
+    "csv-parse": "^4.10.1",
+    "lodash": "^4.17.19",
     "vue": "^2.5.2",
     "vue-json-pretty": "^1.6.3",
     "vue-router": "^3.0.1"
