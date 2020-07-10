@@ -1,12 +1,11 @@
 <template>
-  <div class="content" v-html="html">
-  </div>
+  <div class="content" v-html="html"></div>
 </template>
 
 <script>
 export default {
-  name: 'Sitemap',
-  data () {
+  name: "Sitemap",
+  data() {
     return {
       html: `
       <h1 style="font-size: 26px;">Sitemap</h1>
@@ -34,10 +33,10 @@ export default {
       <li><a href="./#/discover/homeoffice">Build a Home Office</a></li>
       <li><a href="./#/discover/curbside">Try Curbside Pickup</a></li>
       </ul>
-      `
-    }
-  }
-}
+      `,
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

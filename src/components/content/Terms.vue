@@ -1,12 +1,11 @@
 <template>
-  <div class="content" v-html="html">
-  </div>
+  <div class="content" v-html="html"></div>
 </template>
 
 <script>
 export default {
-  name: 'Terms',
-  data () {
+  name: "Terms",
+  data() {
     return {
       html: `
       <h1 style="font-size: 26px;">Terms and Conditions</h1>
@@ -92,10 +91,10 @@ export default {
       <ul>
       <li>By email: support@savethatbox.com</li>
       </ul>
-      `
-    }
-  }
-}
+      `,
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -1,10 +1,18 @@
 <template>
   <div class="categorycard card w-100">
-    <a class="btn card-btn" :href="'#/category/' + category" @click="track(category)" :style="{ 'background':'transparent url(\'../static/taxonomy/' + category + '.jpg\')'}">
-      <div class="container img-container" >
-        <div class="row align-items-end" >
+    <a
+      class="btn card-btn"
+      :href="'#/category/' + category"
+      @click="track(category)"
+      :style="{
+        background:
+          'transparent url(\'../static/taxonomy/' + category + '.jpg\')',
+      }"
+    >
+      <div class="container img-container">
+        <div class="row align-items-end">
           <div class="container text-container">
-              {{ taxonomy[category].header }}
+            {{ taxonomy[category].header }}
           </div>
         </div>
       </div>
@@ -13,27 +21,27 @@
 </template>
 
 <script>
-import taxonomy from '../../assets/taxonomy.json'
+import taxonomy from "../../assets/taxonomy.json";
 export default {
-  name: 'CategoryCard',
-  components: { },
-  props: [ 'category', 'staticBase' ],
-  data () {
+  name: "CategoryCard",
+  components: {},
+  props: ["category", "staticBase"],
+  data() {
     return {
-      taxonomy: taxonomy
-    }
+      taxonomy: taxonomy,
+    };
   },
   methods: {
     track: function (category) {
       // eslint-disable-next-line
-      gtag('event', 'referral', {
-        'event_category': 'engagement',
-        'event_label': category,
-        'value': 1
-      })
-    }
-  }
-}
+      gtag("event", "referral", {
+        event_category: "engagement",
+        event_label: category,
+        value: 1,
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -61,7 +69,7 @@ export default {
   border: none;
 }
 .card-btn:hover {
-  color: #FFEC53;
+  color: #ffec53;
   opacity: 0.9;
 }
 </style>

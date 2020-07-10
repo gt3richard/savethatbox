@@ -1,21 +1,26 @@
 <template>
-  <div class="col container policytemplate" v-bind:class="valid ? 'yes' : 'no'" data-toggle="tooltip" data-placement="top" :title="data.tooltip">
+  <div
+    class="col container policytemplate"
+    v-bind:class="valid ? 'yes' : 'no'"
+    data-toggle="tooltip"
+    data-placement="top"
+    :title="data.tooltip"
+  >
     <div class="row policy-row">
-        <div class="col mark">{{ valid ? '✅' : '❌' }}</div>
-        <div class="col text">{{ data.text }}</div>
+      <div class="col mark">{{ valid ? "✅" : "❌" }}</div>
+      <div class="col text">{{ data.text }}</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'PolicyTemplate',
-  props: [ 'data', 'valid' ],
-  data () {
-    return {
-    }
-  }
-}
+  name: "PolicyTemplate",
+  props: ["data", "valid"],
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style scoped>
@@ -37,6 +42,6 @@ export default {
   color: #288728;
 }
 .no {
-  color: #C80000;
+  color: #c80000;
 }
 </style>

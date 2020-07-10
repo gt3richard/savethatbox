@@ -2,29 +2,35 @@
   <div class="container">
     <div class="row">
       <div v-if="layout[layoutkey].header" class="col-12 section">
-          <h3 class="header">{{ layout[layoutkey].header }}</h3>
-          <span v-if="layout[layoutkey].subheader" class="subheader">{{ layout[layoutkey].subheader }}</span>
+        <h3 class="header">{{ layout[layoutkey].header }}</h3>
+        <span v-if="layout[layoutkey].subheader" class="subheader">{{
+          layout[layoutkey].subheader
+        }}</span>
       </div>
-      <div class="col-xs-12 col-md-4 sectioncard" v-for="(deal, idx) in layout[layoutkey].content" :key="idx">
-          <DealCard :dealkey="deal" staticBase="/" />
+      <div
+        class="col-xs-12 col-md-4 sectioncard"
+        v-for="(deal, idx) in layout[layoutkey].content"
+        :key="idx"
+      >
+        <DealCard :dealkey="deal" staticBase="/" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import DealCard from '../cards/DealCard.vue'
-import layout from '../../assets/layout.json'
+import DealCard from "../cards/DealCard.vue";
+import layout from "../../assets/layout.json";
 export default {
-  name: 'DealSection',
+  name: "DealSection",
   components: { DealCard },
-  props: [ 'layoutkey' ],
-  data () {
+  props: ["layoutkey"],
+  data() {
     return {
-      layout: layout
-    }
-  }
-}
+      layout: layout,
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

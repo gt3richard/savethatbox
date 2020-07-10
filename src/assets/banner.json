@@ -1,14 +1,14 @@
 {
-    "help": {
-        "title": "Are returns a hassle?",
-        "description": "We're here to help.",
-        "business": 847,
-        "image": "delivery"
-    },
-    "homeoffice": {
-        "image": "homeoffice"
-    },
-    "curbside": {
-        "image": "curbside"
-    }
+  "help": {
+    "title": "Are returns a hassle?",
+    "description": "We're here to help.",
+    "business": 847,
+    "image": "delivery"
+  },
+  "homeoffice": {
+    "image": "homeoffice"
+  },
+  "curbside": {
+    "image": "curbside"
+  }
 }

@@ -1,39 +1,48 @@
 <template>
-  <button @click="goToTop" v-bind:class="showTop ? 'topBtn visible' : 'topBtn hidden'" title="Go to top">Top</button>
+  <button
+    @click="goToTop"
+    v-bind:class="showTop ? 'topBtn visible' : 'topBtn hidden'"
+    title="Go to top"
+  >
+    Top
+  </button>
 </template>
 
 <script>
 export default {
-  name: 'ScrollTopTool',
-  data () {
+  name: "ScrollTopTool",
+  data() {
     return {
-      showTop: false
-    }
+      showTop: false,
+    };
   },
-  created () {
-    window.addEventListener('scroll', this.handleScroll)
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
   },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll)
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     goToTop: function () {
       // eslint-disable-next-line
-      gtag('event', 'nav', {
-        'event_category': 'engagement',
-        'event_label': 'scroll_top'
-      })
-      document.getElementById('top').scrollIntoView({behavior: 'smooth'})
+      gtag("event", "nav", {
+        event_category: "engagement",
+        event_label: "scroll_top",
+      });
+      document.getElementById("top").scrollIntoView({ behavior: "smooth" });
     },
     handleScroll: function (event) {
-      if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
-        this.showTop = true
+      if (
+        document.body.scrollTop > 180 ||
+        document.documentElement.scrollTop > 180
+      ) {
+        this.showTop = true;
       } else {
-        this.showTop = false
+        this.showTop = false;
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

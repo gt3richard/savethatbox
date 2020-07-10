@@ -1,13 +1,12 @@
 <template>
-  <div class="content" v-html="html">
-  </div>
+  <div class="content" v-html="html"></div>
 </template>
 
 <script>
 /* eslint no-irregular-whitespace: ["error", { "skipTemplates": true }] */
 export default {
-  name: 'Privacy',
-  data () {
+  name: "Privacy",
+  data() {
     return {
       html: `
       <style>
@@ -64,10 +63,10 @@ export default {
       </style>
         </div>
         <div style="color: #595959;font-size: 14px;font-family: Arial;padding-top:16px;">This privacy policy was created using <a style="color: rgb(48, 48, 241);" href="https://termly.io/products/privacy-policy-generator/?ftseo">Termly’s Privacy Policy Generator</a>.</div>
-      `
-    }
-  }
-}
+      `,
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

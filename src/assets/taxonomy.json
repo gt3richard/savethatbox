@@ -1,35 +1,35 @@
 {
-    "all": {
-        "header": "All"
-    },
-    "apparel": {
-        "header": "Apparel"
-    },
-    "shoes": {
-        "header": "Shoes"
-    },
-    "accessories": {
-        "header": "Accessories"
-    },
-    "home": {
-        "header": "Home & Furniture"
-    },
-    "electronics": {
-        "header": "Electronics"
-    },
-    "kids": {
-        "header": "Kids"
-    },
-    "sportsandoutdoor": {
-        "header": "Sports & Outdoor"
-    },
-    "beauty": {
-        "header": "Beauty"
-    },
-    "other": {
-        "header": "Other"
-    },
-    "": {
-        "header": ""
-    }
+  "all": {
+    "header": "All"
+  },
+  "apparel": {
+    "header": "Apparel"
+  },
+  "shoes": {
+    "header": "Shoes"
+  },
+  "accessories": {
+    "header": "Accessories"
+  },
+  "home": {
+    "header": "Home & Furniture"
+  },
+  "electronics": {
+    "header": "Electronics"
+  },
+  "kids": {
+    "header": "Kids"
+  },
+  "sportsandoutdoor": {
+    "header": "Sports & Outdoor"
+  },
+  "beauty": {
+    "header": "Beauty"
+  },
+  "other": {
+    "header": "Other"
+  },
+  "": {
+    "header": ""
+  }
 }

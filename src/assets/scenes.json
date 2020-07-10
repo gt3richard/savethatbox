@@ -1,14 +1,14 @@
 {
-    "100": {
-        "name": "fitness"
-    },
-    "101": {
-        "name": "camping"
-    },
-    "102": {
-        "name": "paint"
-    },
-    "103": {
-        "name": "top"
-    }
+  "100": {
+    "name": "fitness"
+  },
+  "101": {
+    "name": "camping"
+  },
+  "102": {
+    "name": "paint"
+  },
+  "103": {
+    "name": "top"
+  }
 }

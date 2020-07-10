@@ -1,45 +1,51 @@
 <template>
   <div class="scenecard">
     <div class="card w-100">
-        <div class="container img-container" :style="{ 'height': cardHeight, 'background':'transparent url(\'../static/scene/' + name + '.jpg\')'}">
-        </div>
+      <div
+        class="container img-container"
+        :style="{
+          height: cardHeight,
+          background: 'transparent url(\'../static/scene/' + name + '.jpg\')',
+        }"
+      ></div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SceneCard',
-  components: { },
-  props: [ 'staticBase', 'name' ],
-  data () {
+  name: "SceneCard",
+  components: {},
+  props: ["staticBase", "name"],
+  data() {
     return {
-      cardHeight: '0px'
-    }
+      cardHeight: "0px",
+    };
   },
   methods: {
     track: function (name) {
       // eslint-disable-next-line
-      gtag('event', 'referral', {
-        'event_category': 'engagement',
-        'event_label': name,
-        'value': 1
-      })
+      gtag("event", "referral", {
+        event_category: "engagement",
+        event_label: name,
+        value: 1,
+      });
     },
-    onResize () {
-      this.cardHeight = window.document.getElementById('bc').offsetHeight + 'px'
-    }
+    onResize() {
+      this.cardHeight =
+        window.document.getElementById("bc").offsetHeight + "px";
+    },
   },
-  created () {
-    window.addEventListener('resize', this.onResize, { passive: true })
+  created() {
+    window.addEventListener("resize", this.onResize, { passive: true });
   },
-  destroyed () {
-    window.removeEventListener('resize', this.onResize, { passive: true })
+  destroyed() {
+    window.removeEventListener("resize", this.onResize, { passive: true });
   },
-  mounted () {
-    this.cardHeight = window.document.getElementById('bc').offsetHeight + 'px'
-  }
-}
+  mounted() {
+    this.cardHeight = window.document.getElementById("bc").offsetHeight + "px";
+  },
+};
 </script>
 
 <style scoped>
@@ -69,11 +75,11 @@ export default {
   opacity: 0.7;
 }
 .card-btn {
-    color: white;
-    font-weight: 600;
-    font-size: 1.5em;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5em;
 }
 .card-btn:hover {
-    color: grey;
+  color: grey;
 }
 </style>

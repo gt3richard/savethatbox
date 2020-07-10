@@ -1,62 +1,62 @@
 {
-    "deals": {
-        "type": "deals",
-        "header": "What's Trending",
-        "subheader": "",
-        "content": [300, 301, 302]
-    },
-    "trending": {
-        "type": "callout",
-        "header": "Latest News",
-        "subheader": "",
-        "content": [200, 201, 202]
-    },
-    "topretailers": {
-        "type": "topic",
-        "header": "Top Retailers",
-        "content": [893, 807, 103, 843],
-        "subheader": "These retailers make the return process a breeze by offering a generous return window with free shipping and even include a return label in your shipment."
-    },
-    "discover": {
-        "header": "",
-        "type": "discover",
-        "content": [
-            {
-                "name": "homeoffice",
-                "color": "#F43FBD",
-                "text": "Start a home office",
-                "texture": "asfalt-dark"
-            },
-            {
-                "name": "curbside",
-                "color": "#2FE199",
-                "text": "Try out curbside pickup",
-                "texture": "asfalt-light"
-            }
-        ]
-    },
-    "fitness": {
-        "type": "topic",
-        "header": "Get Back into Fitness",
-        "content": [890, 100, 847, 709],
-        "subheader": "Get off the couch and utilize this opportunity to start a new workout routine."
-    },
-    "redecorate": {
-        "type": "topic",
-        "header": "Redecorate the Home",
-        "content": [102, 808, 812, 898],
-        "subheader": "Tired of staring at the same coffee table each day? Brighten it up with some new decor elements."
-    },
-    "mountains": {
-        "type": "topic",
-        "header": "Escape to the Mountains",
-        "content": [712, 101, 853 ],
-        "subheader": "Social distancing is easy when you're miles away from the city enjoying nature."
-    },
-    "categories": {
-        "type": "category",
-        "header": "Popular Categories",
-        "content": [ "apparel", "home", "electronics", "kids" ],
-        "subheader": ""
-    }
+  "deals": {
+    "type": "deals",
+    "header": "What's Trending",
+    "subheader": "",
+    "content": [300, 301, 302]
+  },
+  "trending": {
+    "type": "callout",
+    "header": "Latest News",
+    "subheader": "",
+    "content": [200, 201, 202]
+  },
+  "topretailers": {
+    "type": "topic",
+    "header": "Top Retailers",
+    "content": [893, 807, 103, 843],
+    "subheader": "These retailers make the return process a breeze by offering a generous return window with free shipping and even include a return label in your shipment."
+  },
+  "discover": {
+    "header": "",
+    "type": "discover",
+    "content": [
+      {
+        "name": "homeoffice",
+        "color": "#F43FBD",
+        "text": "Start a home office",
+        "texture": "asfalt-dark"
+      },
+      {
+        "name": "curbside",
+        "color": "#2FE199",
+        "text": "Try out curbside pickup",
+        "texture": "asfalt-light"
+      }
+    ]
+  },
+  "fitness": {
+    "type": "topic",
+    "header": "Get Back into Fitness",
+    "content": [890, 100, 847, 709],
+    "subheader": "Get off the couch and utilize this opportunity to start a new workout routine."
+  },
+  "redecorate": {
+    "type": "topic",
+    "header": "Redecorate the Home",
+    "content": [102, 808, 812, 898],
+    "subheader": "Tired of staring at the same coffee table each day? Brighten it up with some new decor elements."
+  },
+  "mountains": {
+    "type": "topic",
+    "header": "Escape to the Mountains",
+    "content": [712, 101, 853],
+    "subheader": "Social distancing is easy when you're miles away from the city enjoying nature."
+  },
+  "categories": {
+    "type": "category",
+    "header": "Popular Categories",
+    "content": ["apparel", "home", "electronics", "kids"],
+    "subheader": ""
+  }
 }

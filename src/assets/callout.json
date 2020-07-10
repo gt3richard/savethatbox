@@ -1,26 +1,26 @@
 {
-    "200": {
-        "brand": 815,
-        "text": "Stores are reopening",
-        "link": {
-            "text": "Learn More",
-            "url": "https://shop.nordstrom.com/c/nordstrom-covid-19-hub"
-        }
-    },
-    "201": {
-        "brand": 837,
-        "text": "Fight for Equality",
-        "link": {
-            "text": "Find out more",
-            "url": "https://www.fossil.com/en-us/to-our-community.html"
-        }
-    },
-    "202": {
-        "brand": 746,
-        "text": "Plant the Change",
-        "link": {
-            "text": "Support Them",
-            "url": "https://www.timberland.com/responsibility/stories/plant-the-change.html"
-        }
+  "200": {
+    "brand": 815,
+    "text": "Stores are reopening",
+    "link": {
+      "text": "Learn More",
+      "url": "https://shop.nordstrom.com/c/nordstrom-covid-19-hub"
     }
+  },
+  "201": {
+    "brand": 837,
+    "text": "Fight for Equality",
+    "link": {
+      "text": "Find out more",
+      "url": "https://www.fossil.com/en-us/to-our-community.html"
+    }
+  },
+  "202": {
+    "brand": 746,
+    "text": "Plant the Change",
+    "link": {
+      "text": "Support Them",
+      "url": "https://www.timberland.com/responsibility/stories/plant-the-change.html"
+    }
+  }
 }

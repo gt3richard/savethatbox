@@ -1,9 +1,9 @@
 <template>
   <div class="admin">
-    <NavBar id="top" :simple=true />
+    <NavBar id="top" :simple="true" />
     <div class="container">
       <div class="row" :key="newBusiness">
-        <EditorTemplate :business=newBusiness />
+        <EditorTemplate :business="newBusiness" />
       </div>
       <div class="row" v-for="business in businesses" :key="business.name">
         <EditorTemplate :business="business" />
@@ -13,30 +13,30 @@
 </template>
 
 <script>
-import NavBar from './bars/NavBar.vue'
-import EditorTemplate from './templates/EditorTemplate.vue'
-import data from '../assets/data.json'
+import NavBar from "./bars/NavBar.vue";
+import EditorTemplate from "./templates/EditorTemplate.vue";
+import data from "../assets/data.json";
 export default {
-  name: 'Admin',
+  name: "Admin",
   components: { NavBar, EditorTemplate },
-  data () {
+  data() {
     return {
       newBusiness: {
-        'name': '',
-        'link': '',
-        'logo': '',
-        'gn': false,
-        'nrf': false,
-        'sl': false,
-        'frs': false,
-        'lu': 'Jun 27 2020',
-        'cat': ''
+        name: "",
+        link: "",
+        logo: "",
+        gn: false,
+        nrf: false,
+        sl: false,
+        frs: false,
+        lu: "Jun 27 2020",
+        cat: "",
       },
       businesses: data,
-      view: 'editor'
-    }
-  }
-}
+      view: "editor",
+    };
+  },
+};
 </script>
 
 <style scoped>
