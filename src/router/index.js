@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Returns from "@/components/Returns";
-import Admin from "@/components/Admin";
+import Editor from "@/components/Editor";
 import Category from "@/components/Category";
 import Discover from "@/components/Discover";
 import Static from "@/components/Static";
@@ -16,9 +16,10 @@ export default new Router({
       component: Returns,
     },
     {
-      path: "/editor",
-      name: "Admin",
-      component: Admin,
+      path: "/editor/:type",
+      name: "Editor",
+      component: Editor,
+      props: true,
     },
     {
       path: "/category/:category",

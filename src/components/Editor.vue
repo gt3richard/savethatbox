@@ -1,12 +1,18 @@
 <template>
-  <div class="admin">
+  <div class="editor">
     <NavBar id="top" :simple="true" />
-    <div class="container">
+    <DiscoverEditor v-if="type === 'discover'" />
+    <div class="container" v-if="type === 'business'">
       <div class="row" :key="newBusiness">
-        <EditorTemplate :business="newBusiness" />
+        <BusinessEditor :business="newBusiness" />
       </div>
-      <div class="row" v-for="business in businesses" :key="business.name">
-        <EditorTemplate :business="business" />
+      <div
+        v-if="full"
+        class="row"
+        v-for="business in businesses"
+        :key="business.name"
+      >
+        <BusinessEditor :business="business" />
       </div>
     </div>
   </div>
@@ -14,13 +20,16 @@
 
 <script>
 import NavBar from "./bars/NavBar.vue";
-import EditorTemplate from "./templates/EditorTemplate.vue";
+import BusinessEditor from "./templates/BusinessEditor.vue";
+import DiscoverEditor from "./templates/DiscoverEditor.vue";
 import data from "../assets/data.json";
 export default {
-  name: "Admin",
-  components: { NavBar, EditorTemplate },
+  name: "Editor",
+  components: { NavBar, BusinessEditor, DiscoverEditor },
+  props: ["type"],
   data() {
     return {
+      full: this.$route.query.full,
       newBusiness: {
         name: "",
         link: "",

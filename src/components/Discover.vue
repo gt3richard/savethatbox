@@ -33,7 +33,7 @@
           v-if="!paragraph.content || paragraph.content.length > 1"
         >
           <div class="col-10 article">
-            {{ paragraph.text }}
+            <div v-html="paragraph.text"></div>
           </div>
         </div>
         <div
@@ -74,7 +74,7 @@
                   <div class="text">{{ paragraph.text }}</div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" v-if="paragraph.link">
                 <div class="col">
                   <a class="url" :href="paragraph.link.url">{{
                     paragraph.link.text
@@ -102,11 +102,11 @@ import discover from "../assets/discover.json";
 export default {
   name: "Discover",
   components: { NavBar, FooterBar, BannerBar, BusinessCard },
-  props: ["title"],
+  props: ["title", "override"],
   data() {
     return {
       businesses: data,
-      discover: discover,
+      discover: this.override ? this.override : discover,
       isMobile: false,
     };
   },
