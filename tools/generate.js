@@ -27,6 +27,9 @@ fs.createReadStream("./tools/input.csv")
         case "category":
           row["cat"] = row[r].toLowerCase();
           break;
+        case "subcategory":
+          row["scat"] = row[r].toLowerCase();
+          break;
         case "background color":
           row["bg"] = row[r];
           break;
@@ -81,8 +84,8 @@ fs.createReadStream("./tools/input.csv")
 
     // Save
     if (validation.length === 0) {
-      const { id, name, link, logo, gn, nrf, sl, frs, lu, bg, cat } = row;
-      data.push({ id, name, link, logo, gn, nrf, sl, frs, lu, bg, cat });
+      const { id, name, link, logo, gn, nrf, sl, frs, lu, bg, cat, scat } = row;
+      data.push({ id, name, link, logo, gn, nrf, sl, frs, lu, bg, cat, scat });
     } else {
       console.log({
         data: row,

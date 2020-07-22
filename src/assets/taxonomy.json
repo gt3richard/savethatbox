@@ -1,35 +1,78 @@
 {
   "all": {
-    "header": "All"
+    "header": "All",
+    "sub": []
   },
   "apparel": {
-    "header": "Apparel"
+    "header": "Apparel",
+    "sub": []
   },
   "shoes": {
-    "header": "Shoes"
+    "header": "Shoes",
+    "sub": {
+      "athletic": {
+        "header": "Athletic"
+      }
+    }
   },
   "accessories": {
-    "header": "Accessories"
+    "header": "Accessories",
+    "sub": {
+      "sunglass": {
+        "header": "Sunglasses & Eyeglasses"
+      },
+      "bags": {
+        "header": "Bags & Backpacks"
+      },
+      "hats": {
+        "header": "Hats & Baseball Caps"
+      },
+      "watches": {
+        "header": "Watches"
+      }
+    }
   },
   "home": {
-    "header": "Home & Furniture"
+    "header": "Home & Furniture",
+    "sub": {
+      "hardware": {
+        "header": "Hardware"
+      }
+    }
   },
   "electronics": {
-    "header": "Electronics"
+    "header": "Electronics",
+    "sub": []
   },
   "kids": {
-    "header": "Kids"
+    "header": "Kids",
+    "sub": []
   },
   "sportsandoutdoor": {
-    "header": "Sports & Outdoor"
+    "header": "Sports & Outdoor",
+    "sub": {
+      "golf": {
+        "header": "Golf"
+      }
+    }
   },
   "beauty": {
-    "header": "Beauty"
+    "header": "Beauty",
+    "sub": []
   },
   "other": {
-    "header": "Other"
+    "header": "Other",
+    "sub": {
+      "auto": {
+        "header": "Auto"
+      },
+      "pets": {
+        "header": "Pets"
+      }
+    }
   },
   "": {
-    "header": ""
+    "header": "",
+    "sub": []
   }
 }

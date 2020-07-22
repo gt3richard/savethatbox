@@ -7,7 +7,30 @@
       <div class="row">
         <div
           class="col-xs-12 col-md-6 sectioncard"
-          v-for="business in businesses"
+          v-for="business in businesses.filter(
+            (f) => !f.scat || category === 'all'
+          )"
+          :key="business.name"
+        >
+          <BusinessCard :business="business" :staticBase="staticBase" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container"
+      v-for="subcategory in Object.keys(taxonomy[category].sub)"
+      :key="subcategory"
+    >
+      <div class="col-12 section">
+        <h3 class="subheader" :id="subcategory">
+          {{ taxonomy[category].sub[subcategory].header }}
+        </h3>
+      </div>
+      <div class="row">
+        <div
+          class="col-xs-12 col-md-6 sectioncard"
+          v-for="business in businesses.filter((f) => f.scat === subcategory)"
           :key="business.name"
         >
           <BusinessCard :business="business" :staticBase="staticBase" />
@@ -43,6 +66,11 @@ export default {
 .header {
   text-align: left;
   font-size: 2em;
+  padding: 0.5em;
+}
+.subheader {
+  text-align: left;
+  font-size: 1.5em;
   padding: 0.5em;
 }
 </style>
