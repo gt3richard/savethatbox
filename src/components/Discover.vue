@@ -110,15 +110,15 @@ export default {
       isMobile: false,
     };
   },
+  watch: {
+    title: function (newval, oldval) {
+      this.track();
+    },
+  },
   created() {
     this.onResize();
     window.addEventListener("resize", this.onResize, { passive: true });
-    // eslint-disable-next-line
-    gtag("event", "page_view", {
-      page_title: "home:discover:" + this.title,
-      page_location: window.location.host,
-      page_path: "/#/discover/" + this.title,
-    });
+    this.track();
   },
   destroyed() {
     window.removeEventListener("resize", this.onResize, { passive: true });
@@ -126,6 +126,14 @@ export default {
   methods: {
     onResize() {
       this.isMobile = window.innerWidth < 600;
+    },
+    track() {
+      // eslint-disable-next-line
+      gtag("config", "UA-170201347-1", {
+        page_title: "home:discover:" + this.title,
+        page_location: window.location.host,
+        page_path: "/#/discover/" + this.title,
+      });
     },
   },
 };

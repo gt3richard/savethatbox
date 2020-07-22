@@ -25,13 +25,23 @@ export default {
   data() {
     return {};
   },
+  watch: {
+    page: function (newval, oldval) {
+      this.track();
+    },
+  },
   created() {
-    // eslint-disable-next-line
-    gtag("event", "page_view", {
-      page_title: "home:doc:" + this.page,
-      page_location: window.location.host,
-      page_path: "/#/doc/" + this.page,
-    });
+    this.track();
+  },
+  methods: {
+    track() {
+      // eslint-disable-next-line
+      gtag("config", "UA-170201347-1", {
+        page_title: "home:doc:" + this.page,
+        page_location: window.location.host,
+        page_path: "/#/doc/" + this.page,
+      });
+    },
   },
 };
 </script>
