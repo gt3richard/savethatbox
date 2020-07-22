@@ -109,6 +109,12 @@ export default {
     this.grouping = this.group();
     this.onResize();
     window.addEventListener("resize", this.onResize, { passive: true });
+    // eslint-disable-next-line
+    gtag("event", "page_view", {
+      page_title: "home",
+      page_location: window.location.host,
+      page_path: "/#/",
+    });
   },
   destroyed() {
     window.removeEventListener("resize", this.onResize, { passive: true });

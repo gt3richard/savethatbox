@@ -25,6 +25,14 @@ export default {
   data() {
     return {};
   },
+  created() {
+    // eslint-disable-next-line
+    gtag("event", "page_view", {
+      page_title: "home:doc:" + this.page,
+      page_location: window.location.host,
+      page_path: "/#/doc/" + this.page,
+    });
+  },
 };
 </script>
 

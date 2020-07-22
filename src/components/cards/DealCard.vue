@@ -35,7 +35,7 @@ export default {
   methods: {
     track: function (deal) {
       // eslint-disable-next-line
-      gtag("event", "referral", {
+      gtag("event", "deal", {
         event_category: "engagement",
         event_label: deal,
         value: 1,

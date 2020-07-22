@@ -34,7 +34,7 @@ export default {
   methods: {
     track: function (category) {
       // eslint-disable-next-line
-      gtag("event", "referral", {
+      gtag("event", "nav", {
         event_category: "engagement",
         event_label: category,
         value: 1,

@@ -113,6 +113,12 @@ export default {
   created() {
     this.onResize();
     window.addEventListener("resize", this.onResize, { passive: true });
+    // eslint-disable-next-line
+    gtag("event", "page_view", {
+      page_title: "home:discover:" + this.title,
+      page_location: window.location.host,
+      page_path: "/#/discover/" + this.title,
+    });
   },
   destroyed() {
     window.removeEventListener("resize", this.onResize, { passive: true });

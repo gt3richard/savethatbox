@@ -60,7 +60,7 @@ export default {
   methods: {
     track: function (event) {
       // eslint-disable-next-line
-      gtag("event", "referral", {
+      gtag("event", "callout", {
         event_category: "engagement",
         event_label: this.data.find((b) => b.id === event).name,
         category: this.data.find((b) => b.id === event).cat,
