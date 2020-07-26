@@ -22,7 +22,10 @@
       v-for="subcategory in Object.keys(taxonomy[category].sub)"
       :key="subcategory"
     >
-      <div class="col-12 section">
+      <div
+        class="col-12 section"
+        v-if="businesses.filter((f) => f.scat === subcategory).length > 0"
+      >
         <h3 class="subheader" :id="subcategory">
           {{ taxonomy[category].sub[subcategory].header }}
         </h3>
