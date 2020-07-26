@@ -7,9 +7,9 @@
   },
   "trending": {
     "type": "callout",
-    "header": "Latest News",
+    "header": "Learn More",
     "subheader": "",
-    "content": [200, 201, 202]
+    "content": [203, 204, 202]
   },
   "topretailers": {
     "type": "topic",
@@ -44,7 +44,7 @@
   "redecorate": {
     "type": "topic",
     "header": "Redecorate the Home",
-    "content": [102, 808, 812, 898],
+    "content": [102, 616, 812, 898],
     "subheader": "Tired of staring at the same coffee table each day? Brighten it up with some new decor elements."
   },
   "mountains": {

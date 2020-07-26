@@ -22,5 +22,21 @@
       "text": "Support Them",
       "url": "https://www.timberland.com/responsibility/stories/plant-the-change.html"
     }
+  },
+  "203": {
+    "brand": 827,
+    "text": "Welcome Back",
+    "link": {
+      "text": "We're Reopening",
+      "url": "https://www.aritzia.com/us/en/store-locator"
+    }
+  },
+  "204": {
+    "brand": 665,
+    "text": "Really Good Sheets",
+    "link": {
+      "text": "About us",
+      "url": "https://www.brooklinen.com/pages/about"
+    }
   }
 }
