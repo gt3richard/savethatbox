@@ -63,6 +63,9 @@
   "other": {
     "header": "Other",
     "sub": {
+      "luggage": {
+        "header": "Travel & Luggage"
+      },
       "auto": {
         "header": "Auto"
       },
