@@ -91,14 +91,14 @@
 </template>
 
 <script>
-import NavBar from "./bars/NavBar.vue";
-import FooterBar from "./bars/FooterBar.vue";
-import BannerBar from "./bars/BannerBar.vue";
+import NavBar from "../../components/bars/NavBar";
+import FooterBar from "../../components/bars/FooterBar";
+import BannerBar from "../../components/bars/BannerBar";
 
-import BusinessCard from "./cards/BusinessCard.vue";
+import BusinessCard from "../../components/layout/BusinessSection/BusinessCard";
 
-import data from "../assets/data.json";
-import discover from "../assets/discover.json";
+import data from "../../assets/data.json";
+import discover from "../../assets/discover.json";
 export default {
   name: "Discover",
   components: { NavBar, FooterBar, BannerBar, BusinessCard },

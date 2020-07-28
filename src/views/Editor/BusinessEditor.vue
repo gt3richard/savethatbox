@@ -112,7 +112,7 @@
 </template>
 
 <script>
-import BusinessCard from "../cards/BusinessCard.vue";
+import BusinessCard from "../../components/layout/BusinessSection/BusinessCard";
 import VueJsonPretty from "vue-json-pretty";
 export default {
   name: "BusinessEditor",

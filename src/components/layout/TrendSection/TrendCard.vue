@@ -1,19 +1,19 @@
 <template>
-  <div class="dealcard card w-100">
+  <div class="trendcard card w-100">
     <a
       class="btn card-btn"
-      :href="deal[dealkey].link"
-      @click="track(dealkey)"
+      :href="trend[cardkey].link"
+      @click="track(cardkey)"
       :style="{
         background:
-          'transparent url(\'../static/deal/' + deal[dealkey].img + '\')',
+          'transparent url(\'../static/trend/' + trend[cardkey].img + '\')',
       }"
     >
       <div class="container img-container">
         <div class="row align-items-end">
           <div class="container text-container">
-            <div class="text">{{ deal[dealkey].text }}</div>
-            <div class="brand">{{ deal[dealkey].brand }}</div>
+            <div class="text">{{ trend[cardkey].text }}</div>
+            <div class="brand">{{ trend[cardkey].brand }}</div>
           </div>
         </div>
       </div>
@@ -22,22 +22,22 @@
 </template>
 
 <script>
-import deal from "../../assets/deal.json";
+import trend from "./trend.json";
 export default {
-  name: "DealCard",
+  name: "TrendCard",
   components: {},
-  props: ["dealkey", "staticBase"],
+  props: ["cardkey", "staticBase"],
   data() {
     return {
-      deal: deal,
+      trend: trend,
     };
   },
   methods: {
-    track: function (deal) {
+    track: function (cardkey) {
       // eslint-disable-next-line
-      gtag("event", "deal", {
+      gtag("event", "trend", {
         event_category: "engagement",
-        event_label: deal,
+        event_label: cardkey,
         value: 1,
       });
     },
@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style scoped>
-.dealcard {
+.trendcard {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
 }

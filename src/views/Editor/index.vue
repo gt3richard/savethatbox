@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import NavBar from "./bars/NavBar.vue";
-import BusinessEditor from "./templates/BusinessEditor.vue";
-import DiscoverEditor from "./templates/DiscoverEditor.vue";
-import data from "../assets/data.json";
+import NavBar from "../../components/bars/NavBar";
+import BusinessEditor from "./BusinessEditor";
+import DiscoverEditor from "./DiscoverEditor";
+import data from "../../assets/data.json";
 export default {
   name: "Editor",
   components: { NavBar, BusinessEditor, DiscoverEditor },

@@ -11,15 +11,15 @@
 </template>
 
 <script>
-import NavBar from "./bars/NavBar.vue";
-import FooterBar from "./bars/FooterBar.vue";
+import NavBar from "../../components/bars/NavBar";
+import FooterBar from "../../components/bars/FooterBar";
 
-import Privacy from "./content/Privacy.vue";
-import Terms from "./content/Terms.vue";
-import Sitemap from "./content/Sitemap.vue";
+import Privacy from "./content/Privacy";
+import Terms from "./content/Terms";
+import Sitemap from "./content/Sitemap";
 
 export default {
-  name: "Static",
+  name: "Doc",
   components: { NavBar, Privacy, Terms, Sitemap, FooterBar },
   props: ["page"],
   data() {

@@ -1,10 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Returns from "@/components/Returns";
-import Editor from "@/components/Editor";
-import Category from "@/components/Category";
-import Discover from "@/components/Discover";
-import Static from "@/components/Static";
+import Home from "@/views/Home";
+import Editor from "@/views/Editor";
+import Category from "@/views/Category";
+import Discover from "@/views/Discover";
+import Doc from "@/views/Doc";
+import Blog from "@/views/Blog";
 
 Vue.use(Router);
 
@@ -12,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "Returns",
-      component: Returns,
+      name: "Home",
+      component: Home,
     },
     {
       path: "/editor/:type",
@@ -35,14 +36,25 @@ export default new Router({
     },
     {
       path: "/doc/:page",
-      name: "Static",
-      component: Static,
+      name: "Doc",
+      component: Doc,
+      props: true,
+    },
+    {
+      path: "/blog/",
+      name: "Blog",
+      component: Blog,
+    },
+    {
+      path: "/blog/:title",
+      name: "Blog",
+      component: Blog,
       props: true,
     },
     {
       path: "*",
-      name: "Returns",
-      component: Returns,
+      name: "Home",
+      component: Home,
     },
   ],
   scrollBehavior() {

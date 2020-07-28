@@ -30,13 +30,13 @@
 </template>
 
 <script>
-import BusinessCard from "../cards/BusinessCard.vue";
-import CategoryCard from "../cards/CategoryCard.vue";
-import SceneCard from "../cards/SceneCard.vue";
+import BusinessCard from "../BusinessSection/BusinessCard";
+import CategoryCard from "../CategorySection/CategoryCard";
+import SceneCard from "./SceneCard";
 
-import data from "../../assets/data.json";
-import layout from "../../assets/layout.json";
-import scenes from "../../assets/scenes.json";
+import data from "../../../assets/data.json";
+import layout from "../../../assets/layout.json";
+import scenes from "./scenes.json";
 export default {
   name: "TopicSection",
   components: { BusinessCard, CategoryCard, SceneCard },

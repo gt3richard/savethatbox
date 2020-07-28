@@ -21,21 +21,21 @@
 </template>
 
 <script>
-import NavBar from "./bars/NavBar.vue";
-import FooterBar from "./bars/FooterBar.vue";
+import NavBar from "../../components/bars/NavBar";
+import FooterBar from "../../components/bars/FooterBar";
 
-import BusinessSection from "./sections/BusinessSection.vue";
+import BusinessSection from "../../components/layout/BusinessSection";
 
-import ScrollTopTool from "./tools/ScrollTopTool.vue";
+import ScrollTopTool from "../../components/tools/ScrollTopTool";
 
-import data from "../assets/data.json";
-import taxonomy from "../assets/taxonomy.json";
+import data from "../../assets/data.json";
+import taxonomy from "../../assets/taxonomy.json";
 import {
   addDefaultCategory,
   filterBusinessBySearch,
   sortBusinessName,
   sortBusinessPolicy,
-} from "../scripts/business.js";
+} from "../../scripts/business.js";
 export default {
   name: "Category",
   components: { NavBar, BusinessSection, ScrollTopTool, FooterBar },

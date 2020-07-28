@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import taxonomy from "../../assets/taxonomy.json";
+import taxonomy from "../../../assets/taxonomy.json";
 export default {
   name: "CategoryCard",
   components: {},

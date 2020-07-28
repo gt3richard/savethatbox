@@ -46,8 +46,8 @@
 </template>
 
 <script>
-import SearchBar from "./SearchBar.vue";
-import taxonomy from "../../assets/taxonomy.json";
+import SearchBar from "./SearchBar";
+import taxonomy from "../../../assets/taxonomy.json";
 export default {
   name: "NavBar",
   components: { SearchBar },

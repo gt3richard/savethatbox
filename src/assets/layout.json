@@ -1,12 +1,12 @@
 {
-  "deals": {
-    "type": "deals",
+  "trends": {
+    "type": "trend",
     "header": "What's Trending",
     "subheader": "",
     "content": [300, 301, 302]
   },
-  "trending": {
-    "type": "callout",
+  "news": {
+    "type": "news",
     "header": "Learn More",
     "subheader": "",
     "content": [203, 204, 202]

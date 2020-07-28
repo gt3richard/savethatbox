@@ -44,8 +44,8 @@
 </template>
 
 <script>
-import BusinessCard from "../cards/BusinessCard.vue";
-import taxonomy from "../../assets/taxonomy.json";
+import BusinessCard from "./BusinessCard";
+import taxonomy from "../../../assets/taxonomy.json";
 export default {
   name: "BusinessSection",
   components: { BusinessCard },

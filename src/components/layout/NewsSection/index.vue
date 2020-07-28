@@ -1,7 +1,9 @@
 <template>
-  <div class="discoversection w-100">
-    <div v-if="layout[layoutkey].header" class="col-12 section">
-      <h3 class="header" :id="layoutkey">{{ layout[layoutkey].header }}</h3>
+  <div class="container">
+    <div class="col-12 section">
+      <h3 v-if="layout[layoutkey].header" class="header" :id="layoutkey">
+        {{ layout[layoutkey].header }}
+      </h3>
       <span v-if="layout[layoutkey].subheader" class="subheader">{{
         layout[layoutkey].subheader
       }}</span>
@@ -9,11 +11,11 @@
     <div class="container">
       <div class="row">
         <div
-          class="col-xs-12 col-md-6 sectioncard"
+          class="col-xs-12 col-md-4 sectioncard"
           v-for="(content, idx) in layout[layoutkey].content"
           :key="idx"
         >
-          <DiscoverCard :content="content" />
+          <NewsCard :content="content" />
         </div>
       </div>
     </div>
@@ -21,15 +23,17 @@
 </template>
 
 <script>
-import DiscoverCard from "../cards/DiscoverCard.vue";
-import layout from "../../assets/layout.json";
+import NewsCard from "./NewsCard";
+import news from "./news.json";
+import layout from "../../../assets/layout.json";
 export default {
-  name: "DiscoverSection",
-  components: { DiscoverCard },
+  name: "NewsSection",
+  components: { NewsCard },
   props: ["layoutkey"],
   data() {
     return {
       layout: layout,
+      news: news,
     };
   },
 };
@@ -41,16 +45,12 @@ export default {
   padding: 5px;
 }
 .section {
-  text-align: left;
-  padding: 3em;
+  padding-top: 3em;
   padding-bottom: 1em;
+  text-align: left;
 }
 .header {
   font-size: 2em;
   font-weight: 600;
-}
-.subheader {
-  font-size: 1.2em;
-  font-weight: 300;
 }
 </style>

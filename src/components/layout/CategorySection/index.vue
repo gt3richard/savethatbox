@@ -1,29 +1,29 @@
 <template>
   <div class="container">
     <div class="row">
-      <div v-if="layout[layoutkey].header" class="col-12 section">
+      <div class="col-12 section">
         <h3 class="header">{{ layout[layoutkey].header }}</h3>
         <span v-if="layout[layoutkey].subheader" class="subheader">{{
           layout[layoutkey].subheader
         }}</span>
       </div>
       <div
-        class="col-xs-12 col-md-4 sectioncard"
-        v-for="(deal, idx) in layout[layoutkey].content"
+        class="col-xs-12 col-md-6 sectioncard"
+        v-for="(category, idx) in layout[layoutkey].content"
         :key="idx"
       >
-        <DealCard :dealkey="deal" staticBase="/" />
+        <CategoryCard :category="category" staticBase="/" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import DealCard from "../cards/DealCard.vue";
-import layout from "../../assets/layout.json";
+import CategoryCard from "./CategoryCard";
+import layout from "../../../assets/layout.json";
 export default {
-  name: "DealSection",
-  components: { DealCard },
+  name: "CategorySection",
+  components: { CategoryCard },
   props: ["layoutkey"],
   data() {
     return {

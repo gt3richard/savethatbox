@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import Discover from "../Discover.vue";
+import Discover from "../Discover";
 import VueJsonPretty from "vue-json-pretty";
 export default {
   name: "DiscoverEditor",

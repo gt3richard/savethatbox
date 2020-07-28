@@ -1,5 +1,5 @@
 <template>
-  <div class="returns body">
+  <div class="home body">
     <NavBar
       id="top"
       v-on:changeSearch="changeSearch"
@@ -25,12 +25,12 @@
           v-if="layout[layoutkey].type === 'discover'"
           :layoutkey="layoutkey"
         />
-        <CalloutSection
-          v-if="layout[layoutkey].type === 'callout'"
+        <NewsSection
+          v-if="layout[layoutkey].type === 'news'"
           :layoutkey="layoutkey"
         />
-        <DealSection
-          v-if="layout[layoutkey].type === 'deals'"
+        <TrendSection
+          v-if="layout[layoutkey].type === 'trend'"
           :layoutkey="layoutkey"
         />
         <HeaderBar v-if="idx === 2" :search="search" />
@@ -56,31 +56,31 @@
 </template>
 
 <script>
-import NavBar from "./bars/NavBar.vue";
-import HeaderBar from "./bars/HeaderBar.vue";
-import BannerBar from "./bars/BannerBar.vue";
-import FooterBar from "./bars/FooterBar.vue";
+import NavBar from "../../components/bars/NavBar";
+import HeaderBar from "../../components/bars/HeaderBar";
+import BannerBar from "../../components/bars/BannerBar";
+import FooterBar from "../../components/bars/FooterBar";
 
-import CategorySection from "./sections/CategorySection.vue";
-import TopicSection from "./sections/TopicSection.vue";
-import BusinessSection from "./sections/BusinessSection.vue";
-import DiscoverSection from "./sections/DiscoverSection.vue";
-import CalloutSection from "./sections/CalloutSection.vue";
-import DealSection from "./sections/DealSection.vue";
+import CategorySection from "../../components/layout/CategorySection";
+import TopicSection from "../../components/layout/TopicSection";
+import BusinessSection from "../../components/layout/BusinessSection";
+import DiscoverSection from "../../components/layout/DiscoverSection";
+import NewsSection from "../../components/layout/NewsSection";
+import TrendSection from "../../components/layout/TrendSection";
 
-import ScrollTopTool from "./tools/ScrollTopTool.vue";
+import ScrollTopTool from "../../components/tools/ScrollTopTool";
 
-import data from "../assets/data.json";
-import taxonomy from "../assets/taxonomy.json";
-import layout from "../assets/layout.json";
+import data from "../../assets/data.json";
+import taxonomy from "../../assets/taxonomy.json";
+import layout from "../../assets/layout.json";
 import {
   addDefaultCategory,
   filterBusinessBySearch,
   sortBusinessName,
   sortBusinessPolicy,
-} from "../scripts/business.js";
+} from "../../scripts/business.js";
 export default {
-  name: "Returns",
+  name: "Home",
   components: {
     NavBar,
     HeaderBar,
@@ -90,8 +90,8 @@ export default {
     TopicSection,
     BusinessSection,
     DiscoverSection,
-    CalloutSection,
-    DealSection,
+    NewsSection,
+    TrendSection,
     ScrollTopTool,
   },
   data() {

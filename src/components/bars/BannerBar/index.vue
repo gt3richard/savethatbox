@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import banner from "../../assets/banner.json";
+import banner from "./banner.json";
 export default {
   name: "BannerBar",
   props: ["show", "image"],

@@ -74,8 +74,8 @@
 </template>
 
 <script>
-import PolicyTemplate from "../templates/PolicyTemplate.vue";
-import policies from "../../assets/policy.json";
+import PolicyTemplate from "./PolicyTemplate";
+import policies from "./policy.json";
 export default {
   name: "BusinessCard",
   components: { PolicyTemplate },
