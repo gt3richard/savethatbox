@@ -1,15 +1,15 @@
 <template>
   <div class="container">
     <div class="row">
-      <div v-if="layout[layoutkey].header" class="col-12 section">
-        <h3 class="header">{{ layout[layoutkey].header }}</h3>
-        <span v-if="layout[layoutkey].subheader" class="subheader">{{
-          layout[layoutkey].subheader
+      <div v-if="layout.header" class="col-12 section">
+        <h3 class="header">{{ layout.header }}</h3>
+        <span v-if="layout.subheader" class="subheader">{{
+          layout.subheader
         }}</span>
       </div>
       <div
         class="col-xs-12 col-md-4 sectioncard"
-        v-for="(trend, idx) in layout[layoutkey].content"
+        v-for="(trend, idx) in layout.content"
         :key="idx"
       >
         <TrendCard :cardkey="trend" staticBase="/" />
@@ -20,15 +20,12 @@
 
 <script>
 import TrendCard from "./TrendCard";
-import layout from "../../../assets/layout.json";
 export default {
   name: "TrendSection",
   components: { TrendCard },
-  props: ["layoutkey"],
+  props: ["layout"],
   data() {
-    return {
-      layout: layout,
-    };
+    return {};
   },
 };
 </script>

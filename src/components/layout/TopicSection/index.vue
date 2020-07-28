@@ -1,16 +1,16 @@
 <template>
   <div class="topicsection">
     <div class="col-12 section">
-      <h3 class="header" :id="layoutkey">{{ layout[layoutkey].header }}</h3>
-      <span v-if="layout[layoutkey].subheader" class="subheader">{{
-        layout[layoutkey].subheader
+      <h3 class="header">{{ layout.header }}</h3>
+      <span v-if="layout.subheader" class="subheader">{{
+        layout.subheader
       }}</span>
     </div>
     <div class="container">
       <div class="row">
         <div
           class="col-xs-12 col-md-6 sectioncard"
-          v-for="(id, idx) in layout[layoutkey].content"
+          v-for="(id, idx) in layout.content"
           :key="idx"
         >
           <BusinessCard
@@ -35,16 +35,14 @@ import CategoryCard from "../CategorySection/CategoryCard";
 import SceneCard from "./SceneCard";
 
 import data from "../../../assets/data.json";
-import layout from "../../../assets/layout.json";
 import scenes from "./scenes.json";
 export default {
   name: "TopicSection",
   components: { BusinessCard, CategoryCard, SceneCard },
-  props: ["layoutkey"],
+  props: ["layout"],
   data() {
     return {
       businesses: data,
-      layout: layout,
       scenes: scenes,
     };
   },

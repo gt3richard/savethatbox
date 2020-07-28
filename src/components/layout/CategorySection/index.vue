@@ -2,14 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-12 section">
-        <h3 class="header">{{ layout[layoutkey].header }}</h3>
-        <span v-if="layout[layoutkey].subheader" class="subheader">{{
-          layout[layoutkey].subheader
+        <h3 class="header">{{ layout.header }}</h3>
+        <span v-if="layout.subheader" class="subheader">{{
+          layout.subheader
         }}</span>
       </div>
       <div
         class="col-xs-12 col-md-6 sectioncard"
-        v-for="(category, idx) in layout[layoutkey].content"
+        v-for="(category, idx) in layout.content"
         :key="idx"
       >
         <CategoryCard :category="category" staticBase="/" />
@@ -20,15 +20,12 @@
 
 <script>
 import CategoryCard from "./CategoryCard";
-import layout from "../../../assets/layout.json";
 export default {
   name: "CategorySection",
   components: { CategoryCard },
-  props: ["layoutkey"],
+  props: ["layout"],
   data() {
-    return {
-      layout: layout,
-    };
+    return {};
   },
 };
 </script>

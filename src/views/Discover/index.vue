@@ -98,7 +98,7 @@ import BannerBar from "../../components/bars/BannerBar";
 import BusinessCard from "../../components/layout/BusinessSection/BusinessCard";
 
 import data from "../../assets/data.json";
-import discover from "../../assets/discover.json";
+import discover from "./discover.json";
 export default {
   name: "Discover",
   components: { NavBar, FooterBar, BannerBar, BusinessCard },

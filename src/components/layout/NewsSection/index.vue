@@ -1,18 +1,18 @@
 <template>
   <div class="container">
     <div class="col-12 section">
-      <h3 v-if="layout[layoutkey].header" class="header" :id="layoutkey">
-        {{ layout[layoutkey].header }}
+      <h3 v-if="layout.header" class="header">
+        {{ layout.header }}
       </h3>
-      <span v-if="layout[layoutkey].subheader" class="subheader">{{
-        layout[layoutkey].subheader
+      <span v-if="layout.subheader" class="subheader">{{
+        layout.subheader
       }}</span>
     </div>
     <div class="container">
       <div class="row">
         <div
           class="col-xs-12 col-md-4 sectioncard"
-          v-for="(content, idx) in layout[layoutkey].content"
+          v-for="(content, idx) in layout.content"
           :key="idx"
         >
           <NewsCard :content="content" />
@@ -25,14 +25,12 @@
 <script>
 import NewsCard from "./NewsCard";
 import news from "./news.json";
-import layout from "../../../assets/layout.json";
 export default {
   name: "NewsSection",
   components: { NewsCard },
-  props: ["layoutkey"],
+  props: ["layout"],
   data() {
     return {
-      layout: layout,
       news: news,
     };
   },

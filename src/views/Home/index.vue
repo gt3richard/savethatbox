@@ -15,23 +15,23 @@
       >
         <TopicSection
           v-if="layout[layoutkey].type === 'topic'"
-          :layoutkey="layoutkey"
+          :layout="layout[layoutkey]"
         />
         <CategorySection
           v-if="layout[layoutkey].type === 'category'"
-          :layoutkey="layoutkey"
+          :layout="layout[layoutkey]"
         />
         <DiscoverSection
           v-if="layout[layoutkey].type === 'discover'"
-          :layoutkey="layoutkey"
+          :layout="layout[layoutkey]"
         />
         <NewsSection
           v-if="layout[layoutkey].type === 'news'"
-          :layoutkey="layoutkey"
+          :layout="layout[layoutkey]"
         />
         <TrendSection
           v-if="layout[layoutkey].type === 'trend'"
-          :layoutkey="layoutkey"
+          :layout="layout[layoutkey]"
         />
         <HeaderBar v-if="idx === 2" :search="search" />
       </div>
@@ -72,7 +72,7 @@ import ScrollTopTool from "../../components/tools/ScrollTopTool";
 
 import data from "../../assets/data.json";
 import taxonomy from "../../assets/taxonomy.json";
-import layout from "../../assets/layout.json";
+import layout from "./layout.json";
 import {
   addDefaultCategory,
   filterBusinessBySearch,
