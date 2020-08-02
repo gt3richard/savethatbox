@@ -4,7 +4,12 @@
       <a class="navbar-brand" href="/">
         <h1>📦 Save That Box</h1>
       </a>
-      <button class="btn navbar-btn" type="button">
+      <button
+        v-if="!simple"
+        class="btn navbar-btn"
+        type="button"
+        @click="clickStories"
+      >
         Stories
       </button>
       <button
@@ -84,6 +89,9 @@ export default {
       }
 
       window.location.href = "#/category/" + event;
+    },
+    clickStories: function (event) {
+      window.location.href = "#/story/";
     },
   },
 };
