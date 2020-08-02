@@ -4,6 +4,9 @@
       <a class="navbar-brand" href="/">
         <h1>📦 Save That Box</h1>
       </a>
+      <button class="btn navbar-btn" type="button">
+        Stories
+      </button>
       <button
         v-if="!simple"
         class="btn navbar-btn navbar-toggler"

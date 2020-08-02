@@ -41,4 +41,10 @@ export default {
 .searchbar {
   padding: 1em;
 }
+.form-control {
+  box-shadow: none !important;
+  border: 0;
+  background-color: #ffed21;
+  border-bottom: 1px solid black;
+}
 </style>
