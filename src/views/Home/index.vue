@@ -13,6 +13,10 @@
         v-for="(layoutkey, idx) in Object.keys(layout)"
         :key="idx"
       >
+        <FeaturedSection
+          v-if="layout[layoutkey].type === 'featured'"
+          :layout="layout[layoutkey]"
+        />
         <TopicSection
           v-if="layout[layoutkey].type === 'topic'"
           :layout="layout[layoutkey]"
@@ -25,15 +29,15 @@
           v-if="layout[layoutkey].type === 'discover'"
           :layout="layout[layoutkey]"
         />
-        <NewsSection
-          v-if="layout[layoutkey].type === 'news'"
+        <StorySection
+          v-if="layout[layoutkey].type === 'story'"
           :layout="layout[layoutkey]"
         />
         <TrendSection
           v-if="layout[layoutkey].type === 'trend'"
           :layout="layout[layoutkey]"
         />
-        <HeaderBar v-if="idx === 2" :search="search" />
+        <HeaderBar v-if="idx === 1" :search="search" />
       </div>
       <div
         v-if="search.length > 0"
@@ -65,8 +69,9 @@ import CategorySection from "../../components/layout/CategorySection";
 import TopicSection from "../../components/layout/TopicSection";
 import BusinessSection from "../../components/layout/BusinessSection";
 import DiscoverSection from "../../components/layout/DiscoverSection";
-import NewsSection from "../../components/layout/NewsSection";
+import StorySection from "../../components/layout/StorySection";
 import TrendSection from "../../components/layout/TrendSection";
+import FeaturedSection from "../../components/layout/FeaturedSection";
 
 import ScrollTopTool from "../../components/tools/ScrollTopTool";
 
@@ -90,8 +95,9 @@ export default {
     TopicSection,
     BusinessSection,
     DiscoverSection,
-    NewsSection,
+    StorySection,
     TrendSection,
+    FeaturedSection,
     ScrollTopTool,
   },
   data() {

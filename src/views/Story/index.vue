@@ -1,7 +1,7 @@
 <template>
-  <div class="blog body">
+  <div class="story body">
     <NavBar id="top" :simple="true" />
-    <div class="container"></div>
+    <div class="container"><Article :title="title" /></div>
     <FooterBar />
   </div>
 </template>
@@ -9,6 +9,7 @@
 <script>
 import NavBar from "../../components/bars/NavBar";
 import FooterBar from "../../components/bars/FooterBar";
+import Article from "./Article";
 
 import ScrollTopTool from "../../components/tools/ScrollTopTool";
 
@@ -17,6 +18,7 @@ export default {
   components: {
     NavBar,
     FooterBar,
+    Article,
     ScrollTopTool,
   },
   props: ["title"],
@@ -40,9 +42,9 @@ export default {
     track() {
       // eslint-disable-next-line
       gtag("config", "UA-170201347-1", {
-        page_title: "home:blog:" + this.title,
+        page_title: "home:story:" + this.title,
         page_location: window.location.host,
-        page_path: "/#/blog/" + this.title,
+        page_path: "/#/story/" + this.title,
       });
     },
   },

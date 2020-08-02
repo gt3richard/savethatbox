@@ -48,6 +48,13 @@ export default {
 .link:hover {
   color: grey;
 }
+.card-title-link {
+  color: grey;
+}
+.card-title-link:hover {
+  color: orange;
+  text-decoration: none;
+}
 .footerbar {
   background-color: #ffed21;
 }

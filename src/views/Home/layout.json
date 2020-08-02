@@ -1,39 +1,26 @@
 {
+  "featured": {
+    "type": "featured",
+    "content": 2007311,
+    "feed": [203, 204, 202]
+  },
   "trends": {
     "type": "trend",
     "header": "What's Trending",
     "subheader": "",
     "content": [300, 301, 302]
   },
-  "news": {
-    "type": "news",
-    "header": "Learn More",
+  "stories": {
+    "type": "story",
+    "header": "Latest Stories",
     "subheader": "",
-    "content": [203, 204, 202]
+    "content": [2008011, 2008012, 2008013]
   },
   "topretailers": {
     "type": "topic",
     "header": "Top Retailers",
     "content": [893, 807, 103, 843],
     "subheader": "These retailers make the return process a breeze by offering a generous return window with free shipping and even include a return label in your shipment."
-  },
-  "discover": {
-    "header": "",
-    "type": "discover",
-    "content": [
-      {
-        "name": "homeoffice",
-        "color": "#F43FBD",
-        "text": "Start a home office",
-        "texture": "asfalt-dark"
-      },
-      {
-        "name": "curbside",
-        "color": "#2FE199",
-        "text": "Try out curbside pickup",
-        "texture": "asfalt-light"
-      }
-    ]
   },
   "fitness": {
     "type": "topic",

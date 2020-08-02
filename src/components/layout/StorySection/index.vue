@@ -11,11 +11,11 @@
     <div class="container">
       <div class="row">
         <div
-          class="col-xs-12 col-md-4 sectioncard"
+          class="col-xs-12 col-lg-4 sectioncard"
           v-for="(content, idx) in layout.content"
           :key="idx"
         >
-          <NewsCard :content="content" />
+          <StoryCard :content="content" />
         </div>
       </div>
     </div>
@@ -23,16 +23,13 @@
 </template>
 
 <script>
-import NewsCard from "./NewsCard";
-import news from "./news.json";
+import StoryCard from "./StoryCard";
 export default {
-  name: "NewsSection",
-  components: { NewsCard },
+  name: "StorySection",
+  components: { StoryCard },
   props: ["layout"],
   data() {
-    return {
-      news: news,
-    };
+    return {};
   },
 };
 </script>

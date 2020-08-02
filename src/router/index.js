@@ -5,7 +5,7 @@ import Editor from "@/views/Editor";
 import Category from "@/views/Category";
 import Discover from "@/views/Discover";
 import Doc from "@/views/Doc";
-import Blog from "@/views/Blog";
+import Story from "@/views/Story";
 
 Vue.use(Router);
 
@@ -41,14 +41,14 @@ export default new Router({
       props: true,
     },
     {
-      path: "/blog/",
-      name: "Blog",
-      component: Blog,
+      path: "/story/",
+      name: "Story",
+      component: Story,
     },
     {
-      path: "/blog/:title",
-      name: "Blog",
-      component: Blog,
+      path: "/story/:title",
+      name: "Story",
+      component: Story,
       props: true,
     },
     {

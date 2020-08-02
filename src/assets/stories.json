@@ -1,0 +1,22 @@
+{
+  "2007311": {
+    "title": "5 Places to Explore in the Bay",
+    "category": "travel",
+    "thumbnail": "../static/scene/bridge.jpg"
+  },
+  "2008011": {
+    "title": "Shopping Experience at Apple",
+    "category": "shopping",
+    "thumbnail": "../static/scene/applestore.jpg"
+  },
+  "2008012": {
+    "title": "New Masks Designs",
+    "category": "travel",
+    "thumbnail": "../static/scene/masks.jpg"
+  },
+  "2008013": {
+    "title": "Try Curbside Pickup",
+    "category": "travel",
+    "thumbnail": "../static/scene/curbside.jpg"
+  }
+}
