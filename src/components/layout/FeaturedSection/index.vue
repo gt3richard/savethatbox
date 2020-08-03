@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row align-items-start">
       <div class="col-xs-12 col-lg-8 section panel">
         <FeaturedCard :content="layout.content" />
       </div>
       <div class="col-xs-12 col-lg-4 panel">
         <div class="row align-items-center">
           <div
-            class="sectioncard w-100"
+            class="sectioncard w-100 feed"
             v-for="(content, idx) in layout.feed"
             :key="idx"
           >
@@ -41,11 +41,20 @@ export default {
 .sectioncard,
 .section {
   padding: 5px;
+  margin-top: 0em;
 }
 .container {
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
 .panel {
   padding: 20px;
+}
+.feed {
+  padding-bottom: 0.2em;
+}
+@media (min-width: 992px) {
+  .feed {
+    padding-bottom: 1.5em;
+  }
 }
 </style>

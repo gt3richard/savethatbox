@@ -1,22 +1,19 @@
 <template>
   <div class="discover body" v-if="Object.keys(discover).includes(title)">
-    <NavBar id="top" :simple="true" />
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a class="breadcrumb-item" href="/">Home</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          {{ discover[title].breadcrumb }}
-        </li>
-      </ol>
-    </nav>
+    <NavBar
+      id="top"
+      v-on:changeSearch="changeSearch"
+      :categories="categories"
+      :mobile="isMobile"
+    />
+
     <BannerBar
       class="banner"
       :show="!isMobile"
       :image="discover[title].banner"
+      v-if="search.length === 0"
     />
-    <div class="container">
+    <div class="container" v-if="search.length === 0">
       <div class="row">
         <div class="col title">
           {{ discover[title].title }}
@@ -86,6 +83,24 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div
+        v-if="search.length > 0"
+        class="row"
+        v-for="category in categories.filter(
+          (c) => c !== 'all' && Object.keys(grouping).includes(c)
+        )"
+        :key="category"
+      >
+        <BusinessSection
+          :businesses="grouping[category]"
+          :category="category"
+          staticBase="/"
+        />
+      </div>
+    </div>
+
     <FooterBar />
   </div>
 </template>
@@ -96,16 +111,34 @@ import FooterBar from "../../components/bars/FooterBar";
 import BannerBar from "../../components/bars/BannerBar";
 
 import BusinessCard from "../../components/layout/BusinessSection/BusinessCard";
+import BusinessSection from "../../components/layout/BusinessSection";
 
 import data from "../../assets/data.json";
+import taxonomy from "../../assets/taxonomy.json";
 import discover from "./discover.json";
+import {
+  addDefaultCategory,
+  filterBusinessBySearch,
+  sortBusinessName,
+  sortBusinessPolicy,
+} from "../../scripts/business.js";
 export default {
   name: "Discover",
-  components: { NavBar, FooterBar, BannerBar, BusinessCard },
+  components: {
+    NavBar,
+    FooterBar,
+    BannerBar,
+    BusinessSection,
+    BusinessCard,
+  },
   props: ["title", "override"],
   data() {
     return {
+      search: "",
       businesses: data,
+      grouping: {},
+      taxonomy: taxonomy,
+      categories: Object.keys(taxonomy),
       discover: this.override ? this.override : discover,
       isMobile: false,
     };
@@ -116,6 +149,7 @@ export default {
     },
   },
   created() {
+    this.grouping = this.group();
     this.onResize();
     window.addEventListener("resize", this.onResize, { passive: true });
     this.track();
@@ -124,6 +158,25 @@ export default {
     window.removeEventListener("resize", this.onResize, { passive: true });
   },
   methods: {
+    changeSearch: function (event) {
+      this.search = event;
+      this.grouping = this.group();
+    },
+    filter: function () {
+      return this.businesses
+        .map(addDefaultCategory)
+        .filter((p) => filterBusinessBySearch(p, this.search))
+        .sort(sortBusinessName)
+        .sort(sortBusinessPolicy);
+    },
+    group: function () {
+      var grouping = {};
+      this.filter().forEach((p) => {
+        // Group data by category
+        p.cat in grouping ? grouping[p.cat].push(p) : (grouping[p.cat] = [p]);
+      });
+      return grouping;
+    },
     onResize() {
       this.isMobile = window.innerWidth < 600;
     },

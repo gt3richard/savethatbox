@@ -47,4 +47,9 @@ export default {
   background-color: #ffed21;
   border-bottom: 1px solid black;
 }
+@media (min-width: 992px) {
+  .searchbar {
+    min-width: 500px;
+  }
+}
 </style>

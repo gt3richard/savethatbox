@@ -69,8 +69,7 @@ export default {
 
 <style scoped>
 .featuredfeed {
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+  //border-radius: 10px;
   height: 120px;
   border: 1px solid rgba(0, 0, 0, 0.125);
   background-color: white;
@@ -85,9 +84,8 @@ export default {
   display: grid;
 }
 .img-bg {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+  //border-top-left-radius: 10px;
+  //border-bottom-left-radius: 10px;
   height: 120px;
   border: 1px solid rgba(0, 0, 0, 0.125);
   margin: -1px;

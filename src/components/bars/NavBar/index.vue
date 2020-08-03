@@ -4,36 +4,38 @@
       <a class="navbar-brand" href="/">
         <h1>📦 Save That Box</h1>
       </a>
-      <button
-        v-if="!simple"
-        class="btn navbar-btn"
-        type="button"
-        @click="clickStories"
-      >
-        Stories
-      </button>
-      <button
-        v-if="!simple"
-        class="btn navbar-btn navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarToggleExternalContent"
-      >
-        Categories
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          class="bi bi-caret-down-fill"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
+      <form class="form-inline">
+        <button
+          v-if="!simple"
+          class="btn navbar-btn"
+          type="button"
+          @click="clickStories"
         >
-          <path
-            d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
-          />
-        </svg>
-      </button>
-      <SearchBar v-if="!simple" v-on:changeSearch="changeSearch" />
+          Stories
+        </button>
+        <button
+          v-if="!simple"
+          class="btn navbar-btn navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+        >
+          Categories
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-caret-down-fill"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+            />
+          </svg>
+        </button>
+        <SearchBar v-if="!simple" v-on:changeSearch="changeSearch" />
+      </form>
     </nav>
     <div class="collapse collapse-categories" id="navbarToggleExternalContent">
       <div class="p-3 navbar-expand">

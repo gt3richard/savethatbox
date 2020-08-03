@@ -17,6 +17,7 @@
   "2008013": {
     "title": "Try Curbside Pickup",
     "category": "travel",
-    "thumbnail": "../static/scene/curbside.jpg"
+    "thumbnail": "../static/scene/curbside.jpg",
+    "override": "#/discover/curbside"
   }
 }
