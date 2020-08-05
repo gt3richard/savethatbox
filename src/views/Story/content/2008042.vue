@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       html: `
-      <h1>Conair Footbath with Bubbles & Heat</h1>
+      <h1>I tried to have a spa day</h1>
       <div class="subheader">
       <h2>Richard</h2><h2>August 4, 2020</h2>
       </div>

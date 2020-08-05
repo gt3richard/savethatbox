@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       html: `
-      <h1>New Policies for Apple Store Visits</h1>
+      <h1>Apple is now requiring reservations</h1>
       <div class="subheader">
       <h2>Richard</h2><h2>August 1, 2020</h2>
       </div>

@@ -1,33 +1,33 @@
 {
   "2008011": {
-    "title": "Shopping Experience at Apple",
+    "title": "Apple is now requiring reservations",
     "category": "shopping",
     "thumbnail": "../static/scene/applestore.jpg"
   },
   "2008012": {
-    "title": "New Masks Designs",
+    "title": "Face masks are the new accessory of 2020",
     "category": "shopping",
     "thumbnail": "../static/scene/masks.jpg"
   },
   "2008013": {
-    "title": "Try Curbside Pickup",
+    "title": "Have you tried curbside pickup",
     "category": "shopping",
     "thumbnail": "../static/scene/curbside.jpg",
     "override": "#/discover/curbside"
   },
   "2008014": {
-    "title": "Build that Home Office",
+    "title": "Time to build that home office",
     "category": "shopping",
     "thumbnail": "../static/scene/homeoffice.jpg",
     "override": "#/discover/homeoffice"
   },
   "2008041": {
-    "title": "Nike By You",
+    "title": "Designing my own sneakers",
     "category": "shopping",
     "thumbnail": "../static/scene/nikebyyou.png"
   },
   "2008042": {
-    "title": "Conair Footbath with Bubbles & Heat",
+    "title": "I tried to have a spa day",
     "category": "shopping",
     "thumbnail": "../static/scene/conairfootbath.png"
   }

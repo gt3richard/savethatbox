@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       html: `
-      <h1>So Many Face Masks Options</h1>
+      <h1>Face masks are the new accessory of 2020</h1>
       <div class="subheader">
       <h2>Richard</h2><h2>August 1, 2020</h2>
       </div>
