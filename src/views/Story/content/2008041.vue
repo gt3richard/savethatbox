@@ -16,6 +16,7 @@ export default {
       </p>
       <p>The interface was pretty easy to use and the real-time display of the design choices was a fun all afternoon experience playing with the different colors. I’d compare this to the many hours I’ve spent configuring car and computer builds. Nike allows you to change every aspect of the shoes from laces, logo colors, adding custom writing, and even the sole color. 
       </p>
+      <img class="start" src="../../../static/story/2008041/nike2.png"/>
       <p>The biggest downside was once I placed my order the delivery time was about a month. So this is definitely not an impulse buy but when it finally did arrive I was absolutely satisfied with the result. Nike even adds an extra touch by adding your name to the box to make it feel more like a unique creation. I really enjoyed the experience with Nike By You and would recommend it to everyone.
       </p>
       `,

@@ -59,4 +59,18 @@ export default {
   padding: 5px;
   margin-bottom: 20px;
 }
+.content >>> img {
+  width: auto;
+  max-width: 100%;
+  padding: 2em;
+  align-content: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .content >>> .start {
+    padding-top: 0em;
+  }
+}
 </style>
