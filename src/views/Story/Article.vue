@@ -38,22 +38,25 @@ export default {
 .content {
   text-align: left;
   padding: 2em;
-  font-family: Arial;
+  font-family: Helvetica Neue;
+  color: black;
 }
 .content >>> p {
-  color: #595959;
-  font-size: 14px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: black;
 }
 .content >>> h1 {
-  font-size: 19px;
-  line-height: 22.5px;
+  font-size: 2em;
   font-weight: 600;
-  color: #000000;
 }
 .content >>> h2 {
-  font-size: 16px;
-  line-height: 22.5px;
+  font-size: 1em;
   font-weight: 600;
-  color: #000000;
+  color: grey;
+}
+.content >>> .subheader {
+  padding: 5px;
+  margin-bottom: 20px;
 }
 </style>

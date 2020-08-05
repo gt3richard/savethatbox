@@ -47,7 +47,23 @@ export default {
 .card-title {
   text-align: left;
 }
+
 .card-img-center {
-  max-height: 400px;
+  max-height: 250px;
+}
+@media (min-width: 576px) {
+  .card-img-center {
+    max-height: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .card-img-center {
+    max-height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .card-img-center {
+    max-height: 350px;
+  }
 }
 </style>

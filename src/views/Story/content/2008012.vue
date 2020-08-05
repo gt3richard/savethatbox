@@ -1,0 +1,32 @@
+<template>
+  <div class="content" v-html="html"></div>
+</template>
+
+<script>
+export default {
+  name: "Masks",
+  data() {
+    return {
+      html: `
+      <h1>So Many Face Masks Options</h1>
+      <div class="subheader">
+      <h2>Richard</h2><h2>August 1, 2020</h2>
+      </div>
+      <p>Out of this pandemic a new category of accessory has arisen. Face masks have gone from plain fiber in white or light blue into fast fashion. There have never been more options to express your personal style in a new way. And with companies mandating masks to enter stores, retails are capitalizing on sales.
+      </p>
+      <p><a href="https://www.asos.com/us/search/?q=face+masks"><strong>Asos</strong></a> has a large selection of face masks for all different personalities. The great thing about these is most have adjustable straps to fit anyone’s face. Although they are made from similar fabrics used in their clothing so breathability may be harder compared with the material used in medical masks.
+      </p>
+      <p><a href="https://bonobos.com/products/riviera-face-mask"><strong>Bonobos</strong></a> is offering a pack of 3 face masks with a range of color designs from a simple solid color to a loud fashionable floral print. The biggest thing to research when buying these are the length of the straps since they are sold in a one size fits all.
+      </p>
+      <p><a href="https://www.underarmour.com/en-us/p/ua-sportsmask/1368010.html?start=0&breadCrumbLast=Headwear"><strong>Under Armour</strong></a> has their UA SPORTSMASK available for preorder with a more form fitting design that should fit better around the nose. The high-performance material is supposed to allow air to better flow into the masks while blocking moisture. With a lot of people having issues with current masks being too restrictive when exercising this should be a great alternative. 
+      </p>
+      <p>The biggest concern with a lot of these masks are the fit and being non-returnable be sure to read the reviews and make sure to measure your face.
+      </p>
+      `,
+    };
+  },
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped></style>

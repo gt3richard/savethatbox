@@ -53,8 +53,16 @@ export default {
 .card-text,
 .card-title {
   text-align: left;
+  font-size: 1em;
 }
 .card-img-center {
-  max-height: 200px;
+  max-height: auto;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .story .card-text,
+  .story .card-title {
+    font-size: 1.2em;
+  }
 }
 </style>

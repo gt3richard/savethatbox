@@ -28,6 +28,10 @@ export default {
       <li><a href="./#/category/beauty">Beauty</a></li>
       <li><a href="./#/category/other">Other</a></li>
       </ul>
+      <h2>Stories</h2>
+      <ul>
+      <li><a href="./#/story">All Stories</a></li>
+      </ul>
       <h2>Discover</h2>
       <ul>
       <li><a href="./#/discover/homeoffice">Build a Home Office</a></li>
