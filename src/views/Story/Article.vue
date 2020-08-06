@@ -68,18 +68,13 @@ export default {
   margin-right: auto;
 }
 .content >>> .figure {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
 .content >>> .stores {
   padding: 1em;
 }
 .content >>> .storecard {
   padding: 1em;
-}
-@media (min-width: 992px) {
-  .content >>> .start {
-    padding-top: 0em;
-  }
 }
 </style>
