@@ -1,23 +1,25 @@
 <template>
   <div class="businesscard" id="bc">
-    <div class="card w-100">
+    <div class="card">
       <div
         class="container img-container"
         :style="{ 'background-color': business.bg || 'white' }"
       >
-        <div class="row align-items-center img-row">
-          <a
-            class="img-a"
-            :href="'https://' + business.link"
-            v-on:click="track()"
-          >
-            <img
-              :src="staticBase + 'static/business/' + business.logo"
-              class="img"
-              loading="lazy"
-              :alt="business.name"
-            />
-          </a>
+        <div class="row align-items-center">
+          <div class="col-12">
+            <a
+              class="img-a"
+              :href="'https://' + business.link"
+              v-on:click="track()"
+            >
+              <img
+                :src="staticBase + 'static/business/' + business.logo"
+                class="img"
+                loading="lazy"
+                :alt="business.name"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div class="container policies-container">
@@ -41,18 +43,23 @@
             :valid="business.sl"
           />
         </div>
-        <div class="action">
-          <a
-            class="card-title-link"
-            :href="'https://' + business.link"
-            v-on:click="track()"
-          >
-            <h5 class="card-title">Shop Now</h5>
-          </a>
+        <div class="container action">
+          <div class="row">
+            <div class="col-12">
+              <a
+                class="card-title-link"
+                :href="'https://' + business.link"
+                v-on:click="track()"
+              >
+                <h5 class="card-title">Shop Now</h5>
+              </a>
+
+              <p class="card-text">
+                <small class="text-muted">Last updated {{ business.lu }}</small>
+              </p>
+            </div>
+          </div>
         </div>
-        <p class="card-text">
-          <small class="text-muted">Last updated {{ business.lu }}</small>
-        </p>
       </div>
     </div>
   </div>
@@ -88,18 +95,13 @@ export default {
 .card {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
+  margin: auto;
 }
 .img-container {
   height: 120px;
   display: grid;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-}
-.img-row {
-  padding: auto;
-}
-.img-a {
-  margin: auto;
 }
 .img {
   max-width: 200px;
@@ -115,9 +117,13 @@ export default {
   padding-bottom: 0.5em;
 }
 .action {
-  padding: 1em;
+  padding-top: 1em;
+  text-align: center;
 }
 .card-text {
   padding-bottom: 1em;
+}
+.card-title {
+  margin: auto;
 }
 </style>

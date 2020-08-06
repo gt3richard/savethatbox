@@ -37,7 +37,6 @@ export default {
 <style scoped>
 .content {
   text-align: left;
-  padding: 2em;
   font-family: Helvetica Neue;
   color: black;
 }
@@ -49,6 +48,7 @@ export default {
 .content >>> h1 {
   font-size: 2em;
   font-weight: 600;
+  padding-top: 2em;
 }
 .content >>> h2 {
   font-size: 1em;
@@ -62,11 +62,20 @@ export default {
 .content >>> img {
   width: auto;
   max-width: 100%;
-  padding: 2em;
   align-content: middle;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.content >>> .figure {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.content >>> .stores {
+  padding: 1em;
+}
+.content >>> .storecard {
+  padding: 1em;
 }
 @media (min-width: 992px) {
   .content >>> .start {

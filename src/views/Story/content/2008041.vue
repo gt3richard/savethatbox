@@ -1,12 +1,38 @@
 <template>
-  <div class="content" v-html="html"></div>
+  <div class="content">
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <div class="content" v-html="html"></div>
+      </div>
+      <div class="col-12 col-lg-5 stores">
+        <h4>Visit these stores</h4>
+        <div
+          class="row justify-content-center"
+          v-for="(id, idx) in business"
+          :key="idx"
+        >
+          <div class="col-12 col-md-8 col-lg-12 storecard">
+            <BusinessCard
+              :business="businesses.find((b) => b.id === id)"
+              staticBase="/"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import BusinessCard from "../../../components/layout/BusinessSection/BusinessCard";
+import data from "../../../assets/data.json";
 export default {
   name: "Nike By You",
+  components: { BusinessCard },
   data() {
     return {
+      business: [852, 823],
+      businesses: data,
       html: `
       <h1>Designing my own sneakers</h1>
       <div class="subheader">
@@ -16,7 +42,7 @@ export default {
       </p>
       <p>The interface was pretty easy to use and the real-time display of the design choices was a fun all afternoon experience playing with the different colors. I’d compare this to the many hours I’ve spent configuring car and computer builds. Nike allows you to change every aspect of the shoes from laces, logo colors, adding custom writing, and even the sole color. 
       </p>
-      <img class="start" src="../../../static/story/2008041/nike2.png"/>
+      <img class="start figure" src="../../../static/story/2008041/nike2.png"/>
       <p>The biggest downside was once I placed my order the delivery time was about a month. So this is definitely not an impulse buy but when it finally did arrive I was absolutely satisfied with the result. Nike even adds an extra touch by adding your name to the box to make it feel more like a unique creation. I really enjoyed the experience with Nike By You and would recommend it to everyone.
       </p>
       `,
