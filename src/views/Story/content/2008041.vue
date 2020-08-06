@@ -1,38 +1,14 @@
 <template>
-  <div class="content">
-    <div class="row">
-      <div class="col-12 col-lg-7">
-        <div class="content" v-html="html"></div>
-      </div>
-      <div class="col-12 col-lg-5 stores">
-        <h4>Visit these stores</h4>
-        <div
-          class="row justify-content-center"
-          v-for="(id, idx) in business"
-          :key="idx"
-        >
-          <div class="col-12 col-md-8 col-lg-12 storecard">
-            <BusinessCard
-              :business="businesses.find((b) => b.id === id)"
-              staticBase="/"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <Content :business="business" :html="html" />
 </template>
 
 <script>
-import BusinessCard from "../../../components/layout/BusinessSection/BusinessCard";
-import data from "../../../assets/data.json";
+import Content from "../Content";
 export default {
-  name: "Nike By You",
-  components: { BusinessCard },
+  components: { Content },
   data() {
     return {
       business: [852, 823],
-      businesses: data,
       html: `
       <h1>Designing my own sneakers</h1>
       <div class="subheader">

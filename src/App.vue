@@ -49,7 +49,7 @@ export default {
   color: grey;
 }
 .card-title-link {
-  color: grey;
+  color: black;
 }
 .card-title-link:hover {
   color: orange;
