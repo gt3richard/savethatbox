@@ -1,5 +1,5 @@
 <template>
-  <Content :business="business" :html="html" />
+  <Content :business="business" :html="html" :other="other" />
 </template>
 
 <script>
@@ -9,10 +9,11 @@ export default {
   data() {
     return {
       business: [826],
+      other: [2008012, 2008013, 2008014],
       html: `
       <h1>Apple is now requiring reservations</h1>
       <div class="subheader">
-      <h2>Richard • August 1, 2020</h2>
+      <h2>By Richard • August 1, 2020</h2>
       </div>
       <div class="row"><div class="col-12">
       <p>This weekend my wife needed to visit Nordstrom and instead of following her around while she shopped I decided to explore the mall and see what retailers are open and how everyone is enforcing the masks requirements. 

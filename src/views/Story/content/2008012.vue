@@ -1,5 +1,5 @@
 <template>
-  <Content :business="business" :html="html" />
+  <Content :business="business" :html="html" :other="other" />
 </template>
 
 <script>
@@ -9,10 +9,11 @@ export default {
   data() {
     return {
       business: [888, 807, 709],
+      other: [2008013, 2008014, 2008041],
       html: `
       <h1>Face masks are the new accessory of 2020</h1>
       <div class="subheader">
-      <h2>Richard • August 1, 2020</h2>
+      <h2>By Richard • August 1, 2020</h2>
       </div>
       <p>Out of this pandemic a new category of accessory has arisen. Face masks have gone from plain fiber in white or light blue into fast fashion. 
       </p>

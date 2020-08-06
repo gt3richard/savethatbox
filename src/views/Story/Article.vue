@@ -13,6 +13,17 @@ export default {
       component: null,
     };
   },
+  watch: {
+    title: function (newval, oldval) {
+      this.loader()
+        .then(() => {
+          this.component = () => this.loader();
+        })
+        .catch(() => {
+          this.component = () => import("./content/default");
+        });
+    },
+  },
   computed: {
     loader() {
       if (!this.title) {

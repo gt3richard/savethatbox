@@ -1,5 +1,5 @@
 <template>
-  <Content :business="business" :html="html" />
+  <Content :business="business" :html="html" :other="other" />
 </template>
 
 <script>
@@ -9,10 +9,11 @@ export default {
   data() {
     return {
       business: [852, 823],
+      other: [2008042, 2008011, 2008012],
       html: `
       <h1>Designing my own sneakers</h1>
       <div class="subheader">
-      <h2>Richard • August 4, 2020</h2>
+      <h2>By Richard • August 4, 2020</h2>
       </div>
       <p>I was in the market for a new pair of shoes and having been an Adidas guy for many years I couldn’t find a pair that interested me. I was looking to customize the colors but was disappointed to find Adidas had discontinued their custom color shoes. 
       </p>

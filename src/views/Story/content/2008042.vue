@@ -1,5 +1,5 @@
 <template>
-  <Content :business="business" :html="html" />
+  <Content :business="business" :html="html" :other="other" />
 </template>
 
 <script>
@@ -9,10 +9,11 @@ export default {
   data() {
     return {
       business: [819, 804],
+      other: [2008013, 2008011, 2008012],
       html: `
       <h1>I tried to have a spa day</h1>
       <div class="subheader">
-      <h2>Richard • August 4, 2020</h2>
+      <h2>By Richard • August 4, 2020</h2>
       </div>
       <p>Since we’re not able to get professional massages because of the COVID shutdown I thought I’d bring the spa to us. 
       </p>
