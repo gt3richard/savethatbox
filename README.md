@@ -24,3 +24,8 @@ yarn generate
 # deploy built project to AWS
 yarn deploy
 ```
+
+## AWS Notes
+
+Cloudfront needs custom error pages so 403 and 404 routes back to /index.html
+This is because it's a SPA
