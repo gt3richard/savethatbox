@@ -2,7 +2,7 @@
   <div class="categorycard card w-100">
     <a
       class="btn card-btn"
-      :href="'#/category/' + category"
+      :href="'/category/' + category"
       @click="track(category)"
       :style="{
         background:

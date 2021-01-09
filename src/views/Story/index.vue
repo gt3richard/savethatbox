@@ -120,7 +120,7 @@ export default {
       gtag("config", "UA-170201347-1", {
         page_title: "home:story:" + this.title,
         page_location: window.location.host,
-        page_path: "/#/story/" + this.title,
+        page_path: "/story/" + this.title,
       });
     },
   },

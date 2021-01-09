@@ -32,9 +32,7 @@
       <ul>
         <li v-for="(id, idx) in other" :key="idx">
           <a
-            :href="
-              stories[id].override ? stories[id].override : '#/story/' + id
-            "
+            :href="stories[id].override ? stories[id].override : '/story/' + id"
             ><span>{{ stories[id].title }}</span></a
           >
         </li>

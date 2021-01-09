@@ -39,7 +39,7 @@ export default {
       gtag("config", "UA-170201347-1", {
         page_title: "home:doc:" + this.page,
         page_location: window.location.host,
-        page_path: "/#/doc/" + this.page,
+        page_path: "/doc/" + this.page,
       });
     },
   },

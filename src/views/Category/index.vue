@@ -81,7 +81,7 @@ export default {
       gtag("config", "UA-170201347-1", {
         page_title: "home:category:" + this.category,
         page_location: window.location.host,
-        page_path: "/#/category/" + this.category,
+        page_path: "/category/" + this.category,
       });
     },
   },

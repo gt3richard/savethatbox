@@ -90,10 +90,10 @@ export default {
           .classList.remove("show");
       }
 
-      window.location.href = "#/category/" + event;
+      window.location.href = "/category/" + event;
     },
     clickStories: function (event) {
-      window.location.href = "#/story/";
+      window.location.href = "/story/";
     },
   },
 };

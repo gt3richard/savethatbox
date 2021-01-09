@@ -7,7 +7,7 @@
         alt="..."
       />
       <div class="card-body">
-        <a class="card-title-link" :href="'#/story/' + content">
+        <a class="card-title-link" :href="'/story/' + content">
           <h5 class="card-title">{{ stories[content].title }}</h5>
         </a>
         <p class="card-text">

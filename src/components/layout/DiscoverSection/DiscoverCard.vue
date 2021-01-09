@@ -2,7 +2,7 @@
   <div class="discovercard card w-100">
     <a
       class="btn card-btn"
-      :href="'#/discover/' + content.name"
+      :href="'/discover/' + content.name"
       @click="track(content.name)"
       :style="{
         'background-color': content.color,

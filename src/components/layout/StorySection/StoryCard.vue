@@ -12,7 +12,7 @@
           :href="
             stories[content].override
               ? stories[content].override
-              : '#/story/' + content
+              : '/story/' + content
           "
         >
           <h5 class="card-title">{{ stories[content].title }}</h5>

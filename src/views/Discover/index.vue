@@ -185,7 +185,7 @@ export default {
       gtag("config", "UA-170201347-1", {
         page_title: "home:discover:" + this.title,
         page_location: window.location.host,
-        page_path: "/#/discover/" + this.title,
+        page_path: "/discover/" + this.title,
       });
     },
   },
