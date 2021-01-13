@@ -1,7 +1,6 @@
 <template>
   <div class="footerbar">
     <div class="container">
-      <!--
       <div class="row">
         <div class="col">
           <span>Can't find what you're looking for?</span><br /><br />
@@ -11,9 +10,9 @@
         <div class="col">
           <a
             class="link"
-            href="mailto:support@savethatbox.com"
+            href="mailto:415dockyard@gmail.com"
             v-on:click="track()"
-            >support@savethatbox.com</a
+            >415dockyard@gmail.com</a
           >
         </div>
       </div>
@@ -25,19 +24,18 @@
           >
         </div>
       </div>
-      
+
       <div class="row justify-content-center py-4">
         <div class="col-sm-3 col-md-2 fineprint">
-          <a class="link" href="./doc/terms">Terms and Conditions</a>
+          <a class="link" href="/doc/terms">Terms and Conditions</a>
         </div>
         <div class="col-sm-3 col-md-2 fineprint">
-          <a class="link" href="./doc/privacy">Privacy Policy</a>
+          <a class="link" href="/doc/privacy">Privacy Policy</a>
         </div>
         <div class="col-sm-3 col-md-2 fineprint">
-          <a class="link" href="./doc/sitemap">Sitemap</a>
+          <a class="link" href="/doc/sitemap">Sitemap</a>
         </div>
       </div>
-      -->
     </div>
   </div>
 </template>
