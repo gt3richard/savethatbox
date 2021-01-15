@@ -2,38 +2,40 @@
   <div class="footerbar">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <span>Can't find what you're looking for?</span><br /><br />
+        <div class="col-6">
+          <h1>📦 Save That Box</h1>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <a
-            class="link"
-            href="mailto:415dockyard@gmail.com"
-            v-on:click="track()"
-            >415dockyard@gmail.com</a
-          >
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <span
-            >Help us improve this list. Email us with your store's return
-            experience.</span
-          >
-        </div>
-      </div>
 
-      <div class="row justify-content-center py-4">
-        <div class="col-sm-3 col-md-2 fineprint">
-          <a class="link" href="/doc/terms">Terms and Conditions</a>
-        </div>
-        <div class="col-sm-3 col-md-2 fineprint">
-          <a class="link" href="/doc/privacy">Privacy Policy</a>
-        </div>
-        <div class="col-sm-3 col-md-2 fineprint">
-          <a class="link" href="/doc/sitemap">Sitemap</a>
+        <div class="col-6 text-left">
+          <div class="row">
+            <div class="col header">
+              Company
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div className="col">
+                  <a class="link fineprint" href="/doc/terms"
+                    >Terms and Conditions</a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div className="col">
+                  <a class="link fineprint" href="/doc/privacy"
+                    >Privacy Policy</a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div className="col">
+                  <a class="link fineprint" href="/doc/sitemap">Sitemap</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -67,5 +69,12 @@ export default {
   font-size: 0.7em;
   white-space: nowrap;
   font-weight: 500;
+}
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+h1 {
+  font-family: "Exo", sans-serif;
 }
 </style>
