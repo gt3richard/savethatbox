@@ -3,7 +3,6 @@
     <a
       class="btn card-btn"
       :href="'/category/' + category"
-      @click="track(category)"
       :style="{
         background:
           'transparent url(\'../static/taxonomy/' + category + '.jpg\')',
@@ -30,16 +29,6 @@ export default {
     return {
       taxonomy: taxonomy,
     };
-  },
-  methods: {
-    track: function (category) {
-      // eslint-disable-next-line
-      gtag("event", "nav", {
-        event_category: "engagement",
-        event_label: category,
-        value: 1,
-      });
-    },
   },
 };
 </script>

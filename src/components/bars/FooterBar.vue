@@ -45,17 +45,6 @@
 <script>
 export default {
   name: "FooterBar",
-  data() {
-    return {};
-  },
-  methods: {
-    track: function (event) {
-      // eslint-disable-next-line
-      gtag("event", "contact", {
-        event_category: "engagement",
-      });
-    },
-  },
 };
 </script>
 

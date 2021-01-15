@@ -26,11 +26,7 @@
         </a>
       </div>
       <div class="col">
-        <a
-          class="card-title-link"
-          :href="feed[content].link.url"
-          v-on:click="track(feed[content].brand)"
-        >
+        <a class="card-title-link" :href="feed[content].link.url">
           <h5 class="text">{{ feed[content].text }}</h5>
         </a>
         <p class="card-text">
@@ -52,17 +48,6 @@ export default {
       data: data,
       feed: feed,
     };
-  },
-  methods: {
-    track: function (event) {
-      // eslint-disable-next-line
-      gtag("event", "featured", {
-        event_category: "engagement",
-        event_label: this.data.find((b) => b.id === event).name,
-        category: this.data.find((b) => b.id === event).cat,
-        value: 1,
-      });
-    },
   },
 };
 </script>

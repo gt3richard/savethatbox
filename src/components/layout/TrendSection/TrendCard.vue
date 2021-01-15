@@ -3,7 +3,6 @@
     <a
       class="btn card-btn"
       :href="trend[cardkey].link"
-      @click="track(cardkey)"
       :style="{
         background:
           'transparent url(\'../static/trend/' + trend[cardkey].img + '\')',
@@ -31,16 +30,6 @@ export default {
     return {
       trend: trend,
     };
-  },
-  methods: {
-    track: function (cardkey) {
-      // eslint-disable-next-line
-      gtag("event", "trend", {
-        event_category: "engagement",
-        event_label: cardkey,
-        value: 1,
-      });
-    },
   },
 };
 </script>

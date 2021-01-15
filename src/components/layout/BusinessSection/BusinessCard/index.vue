@@ -7,11 +7,7 @@
       >
         <div class="row align-items-center">
           <div class="col-12">
-            <a
-              class="img-a"
-              :href="'https://' + business.link"
-              v-on:click="track()"
-            >
+            <a class="img-a" :href="'https://' + business.link">
               <img
                 :src="staticBase + 'static/business/' + business.logo"
                 class="img"
@@ -46,11 +42,7 @@
         <div class="container action">
           <div class="row">
             <div class="col-12">
-              <a
-                class="card-title-link"
-                :href="'https://' + business.link"
-                v-on:click="track()"
-              >
+              <a class="card-title-link" :href="'https://' + business.link">
                 <h5 class="card-title">Shop Now</h5>
               </a>
 
@@ -76,17 +68,6 @@ export default {
     return {
       policies: policies,
     };
-  },
-  methods: {
-    track: function (event) {
-      // eslint-disable-next-line
-      gtag("event", "referral", {
-        event_category: "engagement",
-        event_label: this.business.name,
-        category: this.business.cat,
-        value: 1,
-      });
-    },
   },
 };
 </script>

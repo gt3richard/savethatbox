@@ -3,7 +3,6 @@
     <a
       class="btn card-btn"
       :href="'/discover/' + content.name"
-      @click="track(content.name)"
       :style="{
         'background-color': content.color,
         'background-image':
@@ -28,16 +27,6 @@ export default {
   props: ["content"],
   data() {
     return {};
-  },
-  methods: {
-    track: function (event) {
-      // eslint-disable-next-line
-      gtag("event", "discover", {
-        event_category: "engagement",
-        event_label: event,
-        value: 1,
-      });
-    },
   },
 };
 </script>

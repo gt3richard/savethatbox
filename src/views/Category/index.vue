@@ -48,15 +48,9 @@ export default {
       isMobile: false,
     };
   },
-  watch: {
-    category: function (newval, oldval) {
-      this.track();
-    },
-  },
   created() {
     this.onResize();
     window.addEventListener("resize", this.onResize, { passive: true });
-    this.track();
   },
   destroyed() {
     window.removeEventListener("resize", this.onResize, { passive: true });
@@ -75,14 +69,6 @@ export default {
     },
     onResize() {
       this.isMobile = window.innerWidth < 600;
-    },
-    track() {
-      // eslint-disable-next-line
-      gtag("config", "UA-170201347-1", {
-        page_title: "home:category:" + this.category,
-        page_location: window.location.host,
-        page_path: "/category/" + this.category,
-      });
     },
   },
 };

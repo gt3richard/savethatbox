@@ -23,14 +23,6 @@ export default {
     };
   },
   methods: {
-    track: function (name) {
-      // eslint-disable-next-line
-      gtag("event", "referral", {
-        event_category: "engagement",
-        event_label: name,
-        value: 1,
-      });
-    },
     onResize() {
       this.cardHeight =
         window.document.getElementById("bc").offsetHeight + "px";
